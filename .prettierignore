@@ -1,0 +1,12 @@
+node_modules
+.next
+dist
+storybook-static
+pnpm-lock.yaml
+playwright-report
+test-results
+packages/tokens/src/tokens.css
+packages/tokens/src/tailwind.css
+assets/figma/generated
+apps/docs/next-env.d.ts
+assets/previews/browser-evidence.json

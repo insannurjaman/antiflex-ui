@@ -1,0 +1,29 @@
+{
+  "name": "chamfer-foundation",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.34.3",
+  "scripts": {
+    "dev": "pnpm --filter @chamfer/docs dev",
+    "build": "pnpm tokens:build && pnpm --filter @chamfer/ui build && pnpm --filter @chamfer/docs build",
+    "tokens:build": "node scripts/build-tokens.mjs",
+    "tokens:check": "node scripts/build-tokens.mjs --check",
+    "typecheck": "pnpm -r typecheck",
+    "storybook": "pnpm --filter @chamfer/storybook dev",
+    "storybook:build": "pnpm --filter @chamfer/storybook build",
+    "test": "playwright test",
+    "check": "pnpm tokens:check && pnpm typecheck && pnpm build && pnpm storybook:build && pnpm test",
+    "figma:build": "node scripts/build-figma.mjs",
+    "previews": "node scripts/capture-previews.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^24.0.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.3"
+  },
+  "type": "module"
+}

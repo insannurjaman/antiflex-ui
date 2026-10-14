@@ -1,0 +1,735 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-14T15:31:41.481063+00:00",
+  "title": "Design System: Chamfer UI",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Canvas",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "subtle": {
+        "role": "neutral",
+        "displayName": "Subtle",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "inset": {
+        "role": "neutral",
+        "displayName": "Inset",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Foreground",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Border Strong",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(15.00% 0.08546 220.65)",
+          "oklch(26.43% 0.08546 220.65)",
+          "oklch(37.86% 0.08546 220.65)",
+          "oklch(49.29% 0.08546 220.65)",
+          "oklch(60.71% 0.08546 220.65)",
+          "oklch(72.14% 0.08546 220.65)",
+          "oklch(83.57% 0.08546 220.65)",
+          "oklch(95.00% 0.08546 220.65)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Accent Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.04372 225.27)",
+          "oklch(26.43% 0.04372 225.27)",
+          "oklch(37.86% 0.04372 225.27)",
+          "oklch(49.29% 0.04372 225.27)",
+          "oklch(60.71% 0.04372 225.27)",
+          "oklch(72.14% 0.04372 225.27)",
+          "oklch(83.57% 0.04372 225.27)",
+          "oklch(95.00% 0.04372 225.27)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Accent Soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.01733 210.19)",
+          "oklch(26.43% 0.01733 210.19)",
+          "oklch(37.86% 0.01733 210.19)",
+          "oklch(49.29% 0.01733 210.19)",
+          "oklch(60.71% 0.01733 210.19)",
+          "oklch(72.14% 0.01733 210.19)",
+          "oklch(83.57% 0.01733 210.19)",
+          "oklch(95.00% 0.01733 210.19)"
+        ]
+      },
+      "accent-foreground": {
+        "role": "neutral",
+        "displayName": "Accent Foreground",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15.00% 0.10002 219.64)",
+          "oklch(26.43% 0.10002 219.64)",
+          "oklch(37.86% 0.10002 219.64)",
+          "oklch(49.29% 0.10002 219.64)",
+          "oklch(60.71% 0.10002 219.64)",
+          "oklch(72.14% 0.10002 219.64)",
+          "oklch(83.57% 0.10002 219.64)",
+          "oklch(95.00% 0.10002 219.64)"
+        ]
+      },
+      "success": {
+        "role": "semantic",
+        "displayName": "Success",
+        "tonalRamp": [
+          "oklch(15.00% 0.10321 157.60)",
+          "oklch(26.43% 0.10321 157.60)",
+          "oklch(37.86% 0.10321 157.60)",
+          "oklch(49.29% 0.10321 157.60)",
+          "oklch(60.71% 0.10321 157.60)",
+          "oklch(72.14% 0.10321 157.60)",
+          "oklch(83.57% 0.10321 157.60)",
+          "oklch(95.00% 0.10321 157.60)"
+        ]
+      },
+      "success-soft": {
+        "role": "semantic",
+        "displayName": "Success Soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.01653 162.75)",
+          "oklch(26.43% 0.01653 162.75)",
+          "oklch(37.86% 0.01653 162.75)",
+          "oklch(49.29% 0.01653 162.75)",
+          "oklch(60.71% 0.01653 162.75)",
+          "oklch(72.14% 0.01653 162.75)",
+          "oklch(83.57% 0.01653 162.75)",
+          "oklch(95.00% 0.01653 162.75)"
+        ]
+      },
+      "warning": {
+        "role": "semantic",
+        "displayName": "Warning",
+        "tonalRamp": [
+          "oklch(15.00% 0.10071 69.86)",
+          "oklch(26.43% 0.10071 69.86)",
+          "oklch(37.86% 0.10071 69.86)",
+          "oklch(49.29% 0.10071 69.86)",
+          "oklch(60.71% 0.10071 69.86)",
+          "oklch(72.14% 0.10071 69.86)",
+          "oklch(83.57% 0.10071 69.86)",
+          "oklch(95.00% 0.10071 69.86)"
+        ]
+      },
+      "warning-soft": {
+        "role": "semantic",
+        "displayName": "Warning Soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.02600 82.39)",
+          "oklch(26.43% 0.02600 82.39)",
+          "oklch(37.86% 0.02600 82.39)",
+          "oklch(49.29% 0.02600 82.39)",
+          "oklch(60.71% 0.02600 82.39)",
+          "oklch(72.14% 0.02600 82.39)",
+          "oklch(83.57% 0.02600 82.39)",
+          "oklch(95.00% 0.02600 82.39)"
+        ]
+      },
+      "danger": {
+        "role": "semantic",
+        "displayName": "Danger",
+        "tonalRamp": [
+          "oklch(15.00% 0.16251 16.30)",
+          "oklch(26.43% 0.16251 16.30)",
+          "oklch(37.86% 0.16251 16.30)",
+          "oklch(49.29% 0.16251 16.30)",
+          "oklch(60.71% 0.16251 16.30)",
+          "oklch(72.14% 0.16251 16.30)",
+          "oklch(83.57% 0.16251 16.30)",
+          "oklch(95.00% 0.16251 16.30)"
+        ]
+      },
+      "danger-soft": {
+        "role": "semantic",
+        "displayName": "Danger Soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.01969 9.78)",
+          "oklch(26.43% 0.01969 9.78)",
+          "oklch(37.86% 0.01969 9.78)",
+          "oklch(49.29% 0.01969 9.78)",
+          "oklch(60.71% 0.01969 9.78)",
+          "oklch(72.14% 0.01969 9.78)",
+          "oklch(83.57% 0.01969 9.78)",
+          "oklch(95.00% 0.01969 9.78)"
+        ]
+      },
+      "dark-canvas": {
+        "role": "neutral",
+        "displayName": "Dark Canvas",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Dark Surface",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-subtle": {
+        "role": "neutral",
+        "displayName": "Dark Subtle",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-inset": {
+        "role": "neutral",
+        "displayName": "Dark Inset",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-foreground": {
+        "role": "neutral",
+        "displayName": "Dark Foreground",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark Muted",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-border": {
+        "role": "neutral",
+        "displayName": "Dark Border",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-border-strong": {
+        "role": "neutral",
+        "displayName": "Dark Border Strong",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-accent": {
+        "role": "primary",
+        "displayName": "Dark Accent",
+        "tonalRamp": [
+          "oklch(15.00% 0.11645 211.47)",
+          "oklch(26.43% 0.11645 211.47)",
+          "oklch(37.86% 0.11645 211.47)",
+          "oklch(49.29% 0.11645 211.47)",
+          "oklch(60.71% 0.11645 211.47)",
+          "oklch(72.14% 0.11645 211.47)",
+          "oklch(83.57% 0.11645 211.47)",
+          "oklch(95.00% 0.11645 211.47)"
+        ]
+      },
+      "dark-accent-hover": {
+        "role": "primary",
+        "displayName": "Dark Accent Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.03853 210.71)",
+          "oklch(26.43% 0.03853 210.71)",
+          "oklch(37.86% 0.03853 210.71)",
+          "oklch(49.29% 0.03853 210.71)",
+          "oklch(60.71% 0.03853 210.71)",
+          "oklch(72.14% 0.03853 210.71)",
+          "oklch(83.57% 0.03853 210.71)",
+          "oklch(95.00% 0.03853 210.71)"
+        ]
+      },
+      "dark-accent-soft": {
+        "role": "primary",
+        "displayName": "Dark Accent Soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.04372 225.27)",
+          "oklch(26.43% 0.04372 225.27)",
+          "oklch(37.86% 0.04372 225.27)",
+          "oklch(49.29% 0.04372 225.27)",
+          "oklch(60.71% 0.04372 225.27)",
+          "oklch(72.14% 0.04372 225.27)",
+          "oklch(83.57% 0.04372 225.27)",
+          "oklch(95.00% 0.04372 225.27)"
+        ]
+      },
+      "dark-accent-foreground": {
+        "role": "neutral",
+        "displayName": "Dark Accent Foreground",
+        "tonalRamp": [
+          "#0c131d",
+          "#131c27",
+          "#202c3a",
+          "#344254",
+          "#617083",
+          "#bac5d0",
+          "#edf0f3",
+          "#ffffff"
+        ]
+      },
+      "dark-focus": {
+        "role": "primary",
+        "displayName": "Dark Focus",
+        "tonalRamp": [
+          "oklch(15.00% 0.11645 211.47)",
+          "oklch(26.43% 0.11645 211.47)",
+          "oklch(37.86% 0.11645 211.47)",
+          "oklch(49.29% 0.11645 211.47)",
+          "oklch(60.71% 0.11645 211.47)",
+          "oklch(72.14% 0.11645 211.47)",
+          "oklch(83.57% 0.11645 211.47)",
+          "oklch(95.00% 0.11645 211.47)"
+        ]
+      },
+      "dark-success": {
+        "role": "semantic",
+        "displayName": "Dark Success",
+        "tonalRamp": [
+          "oklch(15.00% 0.13263 161.08)",
+          "oklch(26.43% 0.13263 161.08)",
+          "oklch(37.86% 0.13263 161.08)",
+          "oklch(49.29% 0.13263 161.08)",
+          "oklch(60.71% 0.13263 161.08)",
+          "oklch(72.14% 0.13263 161.08)",
+          "oklch(83.57% 0.13263 161.08)",
+          "oklch(95.00% 0.13263 161.08)"
+        ]
+      },
+      "dark-success-soft": {
+        "role": "semantic",
+        "displayName": "Dark Success Soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.04586 165.27)",
+          "oklch(26.43% 0.04586 165.27)",
+          "oklch(37.86% 0.04586 165.27)",
+          "oklch(49.29% 0.04586 165.27)",
+          "oklch(60.71% 0.04586 165.27)",
+          "oklch(72.14% 0.04586 165.27)",
+          "oklch(83.57% 0.04586 165.27)",
+          "oklch(95.00% 0.04586 165.27)"
+        ]
+      },
+      "dark-warning": {
+        "role": "semantic",
+        "displayName": "Dark Warning",
+        "tonalRamp": [
+          "oklch(15.00% 0.12041 81.36)",
+          "oklch(26.43% 0.12041 81.36)",
+          "oklch(37.86% 0.12041 81.36)",
+          "oklch(49.29% 0.12041 81.36)",
+          "oklch(60.71% 0.12041 81.36)",
+          "oklch(72.14% 0.12041 81.36)",
+          "oklch(83.57% 0.12041 81.36)",
+          "oklch(95.00% 0.12041 81.36)"
+        ]
+      },
+      "dark-warning-soft": {
+        "role": "semantic",
+        "displayName": "Dark Warning Soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.04129 75.72)",
+          "oklch(26.43% 0.04129 75.72)",
+          "oklch(37.86% 0.04129 75.72)",
+          "oklch(49.29% 0.04129 75.72)",
+          "oklch(60.71% 0.04129 75.72)",
+          "oklch(72.14% 0.04129 75.72)",
+          "oklch(83.57% 0.04129 75.72)",
+          "oklch(95.00% 0.04129 75.72)"
+        ]
+      },
+      "dark-danger": {
+        "role": "semantic",
+        "displayName": "Dark Danger",
+        "tonalRamp": [
+          "oklch(15.00% 0.13807 13.03)",
+          "oklch(26.43% 0.13807 13.03)",
+          "oklch(37.86% 0.13807 13.03)",
+          "oklch(49.29% 0.13807 13.03)",
+          "oklch(60.71% 0.13807 13.03)",
+          "oklch(72.14% 0.13807 13.03)",
+          "oklch(83.57% 0.13807 13.03)",
+          "oklch(95.00% 0.13807 13.03)"
+        ]
+      },
+      "dark-danger-soft": {
+        "role": "semantic",
+        "displayName": "Dark Danger Soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.04751 356.30)",
+          "oklch(26.43% 0.04751 356.30)",
+          "oklch(37.86% 0.04751 356.30)",
+          "oklch(49.29% 0.04751 356.30)",
+          "oklch(60.71% 0.04751 356.30)",
+          "oklch(72.14% 0.04751 356.30)",
+          "oklch(83.57% 0.04751 356.30)",
+          "oklch(95.00% 0.04751 356.30)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Landing headline; responsive sizes are documented in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Documentation page titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Dashboard page headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base interface reading text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Badges and table headers."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Default medium buttons."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "Code blocks."
+      },
+      "data": {
+        "displayName": "Data",
+        "purpose": "Repeated dashboard metrics."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "duration-fast",
+        "value": "120ms",
+        "purpose": "Button background, text, and border state transitions; disabled with reduced motion."
+      },
+      {
+        "name": "spinner",
+        "value": "0.8s linear infinite",
+        "purpose": "Busy-state rotation; disabled with reduced motion."
+      },
+      {
+        "name": "skeleton",
+        "value": "1.5s ease-in-out infinite",
+        "purpose": "Loading placeholder pulse; disabled with reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "767px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1100px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Compact primary action with medium size.",
+      "html": "<button class=\"ds-button ds-button--md ds-button--primary\">Save changes</button>",
+      "css": ".ds-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--ch-space-2);\n  border: 1px solid transparent;\n  border-radius: var(--ch-component-button-radius);\n  font:\n    500 var(--ch-fontSize-sm)/1 var(--ch-font-sans),\n    sans-serif;\n  cursor: pointer;\n  white-space: nowrap;\n  transition:\n    background var(--ch-duration-fast),\n    color var(--ch-duration-fast),\n    border-color var(--ch-duration-fast);\n  text-decoration: none;\n}\n.ds-button--md {\n  height: var(--ch-component-button-height-md);\n  padding: 0 var(--ch-space-4);\n}\n.ds-button:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-button:focus-visible,\n.ds-field-control:focus-within {\n  outline: 2px solid var(--ch-semantic-focus);\n  outline-offset: 3px;\n}\n.ds-button--primary {\n  background: var(--ch-component-button-bg);\n  color: var(--ch-component-button-fg);\n}\n.ds-button--primary:hover:not(:disabled) {\n  background: var(--ch-component-button-bg-hover);\n}\n@media (prefers-reduced-motion: reduce) {.ds-button {transition:none;}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Compact secondary action with medium size.",
+      "html": "<button class=\"ds-button ds-button--md ds-button--secondary\">Save changes</button>",
+      "css": ".ds-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--ch-space-2);\n  border: 1px solid transparent;\n  border-radius: var(--ch-component-button-radius);\n  font:\n    500 var(--ch-fontSize-sm)/1 var(--ch-font-sans),\n    sans-serif;\n  cursor: pointer;\n  white-space: nowrap;\n  transition:\n    background var(--ch-duration-fast),\n    color var(--ch-duration-fast),\n    border-color var(--ch-duration-fast);\n  text-decoration: none;\n}\n.ds-button--md {\n  height: var(--ch-component-button-height-md);\n  padding: 0 var(--ch-space-4);\n}\n.ds-button:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-button:focus-visible,\n.ds-field-control:focus-within {\n  outline: 2px solid var(--ch-semantic-focus);\n  outline-offset: 3px;\n}\n.ds-button--secondary {\n  background: var(--ch-semantic-surface);\n  color: var(--ch-semantic-foreground);\n  border-color: var(--ch-semantic-border-strong);\n}\n.ds-button--secondary:hover:not(:disabled),\n.ds-button--ghost:hover:not(:disabled) {\n  background: var(--ch-semantic-subtle);\n}\n@media (prefers-reduced-motion: reduce) {.ds-button {transition:none;}}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Compact ghost action with medium size.",
+      "html": "<button class=\"ds-button ds-button--md ds-button--ghost\">Save changes</button>",
+      "css": ".ds-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--ch-space-2);\n  border: 1px solid transparent;\n  border-radius: var(--ch-component-button-radius);\n  font:\n    500 var(--ch-fontSize-sm)/1 var(--ch-font-sans),\n    sans-serif;\n  cursor: pointer;\n  white-space: nowrap;\n  transition:\n    background var(--ch-duration-fast),\n    color var(--ch-duration-fast),\n    border-color var(--ch-duration-fast);\n  text-decoration: none;\n}\n.ds-button--md {\n  height: var(--ch-component-button-height-md);\n  padding: 0 var(--ch-space-4);\n}\n.ds-button:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-button:focus-visible,\n.ds-field-control:focus-within {\n  outline: 2px solid var(--ch-semantic-focus);\n  outline-offset: 3px;\n}\n.ds-button--secondary:hover:not(:disabled),\n.ds-button--ghost:hover:not(:disabled) {\n  background: var(--ch-semantic-subtle);\n}\n.ds-button--ghost {\n  background: transparent;\n  color: var(--ch-semantic-muted);\n}\n@media (prefers-reduced-motion: reduce) {.ds-button {transition:none;}}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Compact danger action with medium size.",
+      "html": "<button class=\"ds-button ds-button--md ds-button--danger\">Save changes</button>",
+      "css": ".ds-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--ch-space-2);\n  border: 1px solid transparent;\n  border-radius: var(--ch-component-button-radius);\n  font:\n    500 var(--ch-fontSize-sm)/1 var(--ch-font-sans),\n    sans-serif;\n  cursor: pointer;\n  white-space: nowrap;\n  transition:\n    background var(--ch-duration-fast),\n    color var(--ch-duration-fast),\n    border-color var(--ch-duration-fast);\n  text-decoration: none;\n}\n.ds-button--md {\n  height: var(--ch-component-button-height-md);\n  padding: 0 var(--ch-space-4);\n}\n.ds-button:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-button:focus-visible,\n.ds-field-control:focus-within {\n  outline: 2px solid var(--ch-semantic-focus);\n  outline-offset: 3px;\n}\n.ds-button--danger {\n  background: var(--ch-semantic-danger-soft);\n  color: var(--ch-semantic-danger);\n}\n.ds-button--danger:hover:not(:disabled) {\n  border-color: var(--ch-semantic-danger);\n}\n@media (prefers-reduced-motion: reduce) {.ds-button {transition:none;}}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Labeled native input with connected helper text.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-workspace\">Workspace name</label><div class=\"ds-field-control\"><input id=\"ds-workspace\" value=\"Acme workspace\" aria-describedby=\"ds-workspace-help\" /></div><span id=\"ds-workspace-help\" class=\"ds-field-help\">Visible to your team.</span></div>",
+      "css": ".ds-field {\n  display: grid;\n  gap: var(--ch-space-2);\n  min-width: 0;\n}\n.ds-field-label {\n  font-size: var(--ch-fontSize-sm);\n  font-weight: 500;\n  color: var(--ch-semantic-foreground);\n}\n.ds-field-control {\n  display: flex;\n  align-items: center;\n  gap: var(--ch-space-2);\n  height: 36px;\n  background: var(--ch-component-field-bg);\n  border: 1px solid var(--ch-component-field-border);\n  border-radius: var(--ch-component-field-radius);\n  padding: 0 var(--ch-space-3);\n}\n.ds-field-control--error {\n  border-color: var(--ch-semantic-danger);\n}\n.ds-field-control:has(input:disabled) {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-field-control input {\n  min-width: 0;\n  width: 100%;\n  background: transparent;\n  color: var(--ch-semantic-foreground);\n  border: 0;\n  outline: 0;\n  font:\n    400 var(--ch-fontSize-sm)/1.5 var(--ch-font-sans),\n    sans-serif;\n}\n.ds-field-control input::placeholder {\n  color: var(--ch-semantic-muted);\n  opacity: 1;\n}\n.ds-field-leading {\n  display: flex;\n  color: var(--ch-semantic-muted);\n}\n.ds-field-leading svg {\n  width: 16px;\n  height: 16px;\n}\n.ds-field-help {\n  font-size: var(--ch-fontSize-xs);\n  color: var(--ch-semantic-muted);\n}\n.ds-field-error {\n  color: var(--ch-semantic-danger);\n}\n.ds-field {font-family:var(--ch-font-sans),sans-serif;}.ds-field-help {line-height:1.5;} .ds-field-control:focus-within {outline:2px solid var(--ch-semantic-focus);outline-offset:3px;}"
+    },
+    {
+      "name": "Outline Card",
+      "kind": "card",
+      "refersTo": "card-outline",
+      "description": "Flat bordered grouping surface with default padding.",
+      "html": "<div class=\"ds-card ds-card--outline ds-card--md\"><strong>Workspace settings</strong><p>Manage access and preferences.</p></div>",
+      "css": ".ds-card {\n  background: var(--ch-component-card-bg);\n  border-radius: var(--ch-component-card-radius);\n  min-width: 0;\n}\n.ds-card--outline {\n  border: 1px solid var(--ch-component-card-border);\n}\n.ds-card--md {\n  padding: var(--ch-space-5);\n}\n.ds-card {font:400 14px/1.5 var(--ch-font-sans),sans-serif;color:var(--ch-semantic-foreground);} .ds-card strong {font-weight:500;} .ds-card p {margin:8px 0 0;color:var(--ch-semantic-muted);}"
+    },
+    {
+      "name": "Accent Badge",
+      "kind": "chip",
+      "refersTo": "badge-accent",
+      "description": "Quiet cyan status badge.",
+      "html": "<span class=\"ds-badge ds-badge--accent\">Core</span>",
+      "css": ".ds-badge {\n  display: inline-flex;\n  align-items: center;\n  border-radius: var(--ch-radius-sm);\n  font-size: var(--ch-fontSize-xs);\n  line-height: 1.5;\n  font-weight: 500;\n  white-space: nowrap;\n  padding: 2px 8px;\n}\n.ds-badge--accent {\n  color: var(--ch-semantic-accent);\n  background: var(--ch-semantic-accent-soft);\n}\n.ds-badge {font-family:var(--ch-font-sans),sans-serif;}"
+    },
+    {
+      "name": "Sidebar Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Compact links with quiet hover and explicit current state.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Documentation\"><a href=\"#overview\">Overview</a><a href=\"#components\" aria-current=\"page\">Components</a><a href=\"#tokens\">Tokens</a></nav>",
+      "css": ".ds-nav {\n  margin-bottom: 28px;\n  display: flex;\n  flex-direction: column;\n  gap: 3px;\n}\n.ds-nav a {\n  padding: 7px 10px;\n  font-size: 13px;\n  color: var(--ch-semantic-muted);\n  border-radius: 4px;\n}\n.ds-nav a:hover {\n  color: var(--ch-semantic-foreground);\n  background: var(--ch-semantic-subtle);\n}\n.ds-nav a[aria-current] {\n  background: var(--ch-semantic-accent-soft);\n  color: var(--ch-semantic-accent);\n  font-weight: 500;\n}\n.ds-nav {font-family:var(--ch-font-sans),sans-serif;line-height:1.5;} .ds-nav a {text-decoration:none;} .ds-nav a:focus-visible {outline:2px solid var(--ch-semantic-focus);outline-offset:4px;}"
+    },
+    {
+      "name": "Data Table",
+      "kind": "custom",
+      "refersTo": "table-row",
+      "description": "Native compact table with inset header and thin dividers.",
+      "html": "<table class=\"ds-table\"><caption>Example workspace members</caption><thead><tr><th scope=\"col\">Name</th><th scope=\"col\">Role</th></tr></thead><tbody><tr><td>Jordan Lee</td><td>Admin</td></tr><tr><td>Alex Kim</td><td>Member</td></tr></tbody></table>",
+      "css": ".ds-table {\n  border-collapse: collapse;\n  width: 100%;\n  font-size: var(--ch-fontSize-sm);\n  text-align: left;\n  color: var(--ch-semantic-foreground);\n}\n.ds-table th {\n  height: 40px;\n  background: var(--ch-component-table-header-bg);\n  font-size: var(--ch-fontSize-xs);\n  font-weight: 500;\n  color: var(--ch-semantic-muted);\n  white-space: nowrap;\n}\n.ds-table td {\n  height: var(--ch-component-table-row-height);\n}\n.ds-table th,\n.ds-table td {\n  padding: var(--ch-space-2) var(--ch-space-5);\n  border-bottom: 1px solid var(--ch-component-table-border);\n}\n.ds-table tbody tr:last-child td {\n  border-bottom: 0;\n}\n.ds-table tbody tr:hover {\n  background: var(--ch-semantic-inset);\n}\n.ds-table caption {\n  text-align: left;\n  padding: var(--ch-space-3) var(--ch-space-5);\n  font-size: var(--ch-fontSize-xs);\n  color: var(--ch-semantic-muted);\n}\n.ds-table {font-family:var(--ch-font-sans),sans-serif;line-height:1.5;}"
+    },
+    {
+      "name": "Chamfer Mark",
+      "kind": "custom",
+      "description": "Original identity geometry, using theme-aware cyan and canvas.",
+      "html": "<svg class=\"ds-mark\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" role=\"img\" aria-label=\"Chamfer UI\"><path d=\"M10 4H30L36 10V30L30 36H10L4 30V10L10 4Z\" fill=\"currentColor\"/><path d=\"M14 12H28V18H18V26H28V32H14L10 28V16L14 12Z\" fill=\"var(--ch-semantic-canvas)\"/></svg>",
+      "css": ".ds-mark {color:var(--ch-semantic-accent);display:block;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Precision UI for SaaS teams",
+    "overview": "Chamfer UI is a technical, compact system for SaaS designers and React developers. Cool neutral surfaces, restrained cyan, thin borders, and IBM Plex typography make controls and operational data easy to inspect. The original chamfered mark anchors the identity.\n\nThe visual thesis is precision across design and code. Semantic tokens own color roles and theme changes; reusable components own repeated geometry and states. This document records the implemented React and documentation styles. Matching Figma remains a product commitment; the prepared import scripts have not run, so live Figma tokens and layouts are not verified.",
+    "keyCharacteristics": [
+      "Technical, compact operational interfaces.",
+      "Cool neutrals with restrained cyan and separate status colors.",
+      "IBM Plex Sans for interface text; IBM Plex Mono for code and data.",
+      "Flat surfaces, thin borders, small control and card corners.",
+      "Native semantics, visible keyboard focus, reduced-motion support."
+    ],
+    "rules": [
+      {
+        "name": "The Semantic Color Rule",
+        "body": "Use the semantic role for each surface, text, border, action, and status; switch the role mapping with the theme rather than hardcoding a light-mode color into a component.",
+        "section": "colors"
+      },
+      {
+        "name": "The Task Accent Rule",
+        "body": "Use cyan for primary actions, active navigation, links, focus, and the identity mark. Use green, amber, and red to communicate status.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plex Role Rule",
+        "body": "Use Sans for reading and controls. Use Mono for code, token names, aligned amounts, and operational metrics.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Separate surfaces with neutral tone, spacing, and thin borders. Do not introduce shadows into the existing resting card and shell patterns.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use semantic colors so every component follows the light and dark theme mappings.",
+      "Do preserve the small control corners and slightly larger card corners defined in the frontmatter.",
+      "Do keep labels, helper text, error text, and keyboard focus connected to the control they explain.",
+      "Do use Plex Mono for technical names, code, and data that benefits from alignment.",
+      "Do reflow compact grids and reveal mobile navigation without hiding the page content."
+    ],
+    "donts": [
+      "Don't enlarge the cyan accent into a decorative background treatment across ordinary panels.",
+      "Don't replace flat bordered cards with elevated, heavily rounded containers.",
+      "Don't replace the approved chamfered identity mark or the Plex font pairing.",
+      "Don't communicate success, warning, or error with color alone; retain a readable label.",
+      "Don't treat the prepared Figma import as evidence of a verified live Figma system."
+    ]
+  }
+}

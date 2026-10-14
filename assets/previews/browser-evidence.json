@@ -1,0 +1,44 @@
+[
+  {
+    "name": "home-desktop",
+    "errors": [],
+    "overflow": false,
+    "font": "\"IBM Plex Sans\", sans-serif"
+  },
+  {
+    "name": "home-mobile",
+    "errors": [],
+    "overflow": false,
+    "font": "\"IBM Plex Sans\", sans-serif"
+  },
+  {
+    "name": "dashboard-desktop",
+    "errors": [],
+    "overflow": false,
+    "font": "\"IBM Plex Sans\", sans-serif"
+  },
+  {
+    "name": "dashboard-dark",
+    "errors": [],
+    "overflow": false,
+    "font": "\"IBM Plex Sans\", sans-serif"
+  },
+  {
+    "name": "dashboard-tablet",
+    "errors": [],
+    "overflow": false,
+    "font": "\"IBM Plex Sans\", sans-serif"
+  },
+  {
+    "name": "components-mobile",
+    "errors": [],
+    "overflow": false,
+    "font": "\"IBM Plex Sans\", sans-serif"
+  },
+  {
+    "name": "dashboard-mobile",
+    "errors": [],
+    "overflow": false,
+    "font": "\"IBM Plex Sans\", sans-serif"
+  }
+]
