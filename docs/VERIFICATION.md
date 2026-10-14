@@ -40,6 +40,10 @@
 
 `chamfer-ui@0.1.0-alpha.1` is available from npm under the owner's account. Its registry artifact was installed into a fresh independent React app; all eight components, strict TypeScript, production build, fonts, both themes, accessibility, and mobile keyboard behavior pass. Evidence: `assets/previews/npm-evidence.json`. Reproduce with `pnpm installer:smoke --registry`.
 
+## Linux release verification
+
+[Foundation CI](https://github.com/insannurjaman/chamfer-ui/actions/runs/38626202881) and the [tagged release workflow](https://github.com/insannurjaman/chamfer-ui/actions/runs/38626271271) pass for `c771cda` / `v0.1.0-alpha.1`. They verify tokens, registry integrity, 14 installer unit tests, TypeScript, UI/Next.js/Storybook builds, all 27 browser scenarios in Chromium/Firefox/WebKit, and the packed installer in an independent consumer. The published GitHub prerelease includes the tested tarball and checksum.
+
 ## Hosted alpha verification
 
 The production aliases return HTTP 200. Seven hosted documentation/dashboard routes and all 25 Storybook specimens pass Chromium rendering and axe checks. The full 18-scenario suite also passes against the hosted aliases in Chromium and WebKit. Hosted dashboard search/empty-state recovery, pagination, theme persistence, and mobile Escape/focus behavior pass without overflow or page errors. Evidence is in `assets/previews/hosted-evidence.json` and `docs/RELEASE.md`.

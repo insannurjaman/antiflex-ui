@@ -10,11 +10,12 @@ Account ownership and successful external publication must be verified before ma
 
 ## Current status — 2026-10-15
 
-- Documentation/dashboard: [chamfer-ui-docs.vercel.app](https://chamfer-ui-docs.vercel.app), deployment `dpl_Bxuu84op1qnjKL2YM9cvb7fDjTRG`, READY.
-- Storybook: [chamfer-ui-storybook.vercel.app](https://chamfer-ui-storybook.vercel.app), deployment `dpl_5w9vKFS3ga2JAuoDZ3oyEFzQKX9e`, READY.
-- Documentation was refreshed from source commit `4470618` to add the hosted Storybook link; Storybook remains on `7c5e18d`. The public aliases return HTTP 200. Unique deployment URLs retain Vercel Authentication; protection was preserved.
+- Documentation/dashboard: [chamfer-ui-docs.vercel.app](https://chamfer-ui-docs.vercel.app), deployment `dpl_H176ib6QUYznEv65JLB72t8JPdZ9`, READY.
+- Storybook: [chamfer-ui-storybook.vercel.app](https://chamfer-ui-storybook.vercel.app), deployment `dpl_FPQQD7RWxA3utY1thkKAQ2hRPUQ8`, READY.
+- Both projects automatically deployed source commit `c771cda` through Git integration. The public aliases return HTTP 200. Unique deployment URLs retain Vercel Authentication; protection was preserved.
 - Vercel connector scope access returned 403. The CLI's existing authentication successfully created, configured, and deployed the exact intended personal projects.
-- GitHub repository: public `insannurjaman/chamfer-ui` created under the verified owner account; source history uploaded to `main`; remote CI verification is in progress. Initial Linux scans exceeded the aggregate 30-second budget; bulk accessibility cases now have explicit budgets, while interaction assertions retain their normal timeouts.
+- GitHub repository: public `insannurjaman/chamfer-ui` created under the verified owner account; source history uploaded to `main`. [Foundation CI](https://github.com/insannurjaman/chamfer-ui/actions/runs/38626202881) and the [tagged release workflow](https://github.com/insannurjaman/chamfer-ui/actions/runs/38626271271) pass on `c771cda`: tokens, registry integrity, 14 installer tests, types, all three builds, 27 browser scenarios across Chromium/Firefox/WebKit, and the independent installer consumer. Bulk accessibility scans have explicit aggregate budgets. Only the disposable test consumer permits lockfile updates when initialization adds fonts; the repository installation remains frozen.
+- GitHub prerelease: [v0.1.0-alpha.1](https://github.com/insannurjaman/chamfer-ui/releases/tag/v0.1.0-alpha.1), published with the verified installer tarball and SHA-256 checksum.
 - npm publication: `chamfer-ui@0.1.0-alpha.1` published by `insannurjaman` and verified in registry metadata. The `alpha` tag points to this release.
 
 ## Verify and assemble
