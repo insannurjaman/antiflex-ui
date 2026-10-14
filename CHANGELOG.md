@@ -1,12 +1,12 @@
 # Changelog
 
-## 0.1.0-alpha.1 — Public release preparation
+## 0.1.0-alpha.1 — Public alpha
 
 - Publishable `chamfer-ui` installer package with explicit alpha distribution and release metadata.
 - Hosted documentation/dashboard and Storybook on separate Vercel projects.
 - Pinned GitHub Actions, verified release archives/checksums, draft release workflow, and npm trusted-publishing workflow.
 - Source-only deployment preparation and hosted browser verification.
-- GitHub upload and npm registry publication pending owner authentication.
+- Public source repository and verified npm alpha release under `insannurjaman`.
 
 ## Unreleased — Source installer and live Figma
 

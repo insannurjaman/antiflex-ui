@@ -99,6 +99,8 @@ test('field errors are associated and loading buttons prevent repeat activation'
 
 for (const theme of ['light', 'dark'])
   test(`${theme} theme passes accessibility checks on all primary surfaces`, async ({ page }) => {
+    // This case scans fourteen complete pages; the default single-interaction budget is too short on two-core CI runners.
+    test.setTimeout(90_000);
     await page.addInitScript((t) => localStorage.setItem('chamfer-theme', t), theme);
     for (const route of [
       '/',
@@ -134,11 +136,15 @@ test('every Storybook specimen renders and passes accessibility checks', async (
   page,
   request,
 }) => {
+  // Each specimen receives an axe scan; budget five seconds per story without weakening assertions.
   const storybookURL = process.env.CHAMFER_STORYBOOK_URL || 'http://127.0.0.1:6106';
   const response = await request.get(storybookURL + '/index.json');
   const index = await response.json();
   const entries = Object.values(index.entries) as { id: string; type: string }[];
-  for (const { id } of entries.filter((e) => e.type === 'story')) {
+  const stories = entries.filter((e) => e.type === 'story');
+  expect(stories.length).toBeGreaterThan(0);
+  test.setTimeout(Math.max(30_000, stories.length * 5_000));
+  for (const { id } of stories) {
     await page.goto(`${storybookURL}/iframe.html?id=${id}&viewMode=story`);
     await expect(page.locator('#storybook-root > div')).toBeVisible();
     await page.evaluate(() => document.fonts.ready);

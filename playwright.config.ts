@@ -3,8 +3,9 @@ const docsURL = process.env.CHAMFER_DOCS_URL || 'http://127.0.0.1:3100';
 const storybookURL = process.env.CHAMFER_STORYBOOK_URL || 'http://127.0.0.1:6106';
 export default defineConfig({
   testDir: './tests',
+  testMatch: '**/*.spec.ts',
   fullyParallel: true,
-  workers: 3,
+  workers: process.env.CI ? 2 : 3,
   retries: process.env.CI ? 1 : 0,
   reporter: [['list'], ['html', { open: 'never' }]],
   use: { baseURL: docsURL, colorScheme: 'light', trace: 'retain-on-failure' },

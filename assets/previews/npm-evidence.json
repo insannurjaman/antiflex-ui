@@ -1,0 +1,18 @@
+{
+  "registryPackage": "chamfer-ui@0.1.0-alpha.1",
+  "workspaceImports": false,
+  "components": 8,
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "sourceInstaller": "passed",
+  "themeColors": {
+    "light": "rgb(6, 103, 126)",
+    "dark": "rgb(72, 204, 227)"
+  },
+  "accessibilityViolations": 0,
+  "mobileOverflow": false,
+  "pageErrors": [],
+  "checkedAt": "2026-10-15",
+  "owner": "insannurjaman",
+  "sha512": "sha512-r2VqEpl3R/g1skj7LZTMeyHyXXIOkjnvJWMtlix9XHsSZ/EFNxWHFOeZCZoU0u+MABJ28Ubcsz7V0JNyIR7LqQ=="
+}

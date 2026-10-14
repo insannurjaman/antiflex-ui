@@ -14,8 +14,8 @@ Account ownership and successful external publication must be verified before ma
 - Storybook: [chamfer-ui-storybook.vercel.app](https://chamfer-ui-storybook.vercel.app), deployment `dpl_5w9vKFS3ga2JAuoDZ3oyEFzQKX9e`, READY.
 - Documentation was refreshed from source commit `4470618` to add the hosted Storybook link; Storybook remains on `7c5e18d`. The public aliases return HTTP 200. Unique deployment URLs retain Vercel Authentication; protection was preserved.
 - Vercel connector scope access returned 403. The CLI's existing authentication successfully created, configured, and deployed the exact intended personal projects.
-- GitHub repository upload: waiting for owner browser sign-in or creation of the empty public repository.
-- npm publication: waiting for the owner account and authentication. The name was available at preparation time; no npm release is claimed.
+- GitHub repository: public `insannurjaman/chamfer-ui` created under the verified owner account; source history uploaded to `main`; remote CI verification is in progress. Initial Linux scans exceeded the aggregate 30-second budget; bulk accessibility cases now have explicit budgets, while interaction assertions retain their normal timeouts.
+- npm publication: `chamfer-ui@0.1.0-alpha.1` published by `insannurjaman` and verified in registry metadata. The `alpha` tag points to this release.
 
 ## Verify and assemble
 
@@ -65,7 +65,7 @@ Do not advertise the registry command until `npm view chamfer-ui@0.1.0-alpha.1` 
 
 The app-local `vercel.json` files record build configuration. Root Directory is a project setting, not a `vercel.json` key. Workspace packages and shared configuration must be included in the source checkout.
 
-Prefer Vercel's Git integration after the repository exists. It supplies PR previews and deployment links; CI supplies behavior checks. Verify the project owner, directory, Git commit, and environment before deployment. Do not enable a token-based deployment workflow just to duplicate the Git integration.
+Both Vercel projects are connected to `insannurjaman/chamfer-ui` through Git integration. It supplies PR previews and deployment links; CI supplies behavior checks. Verify the project owner, directory, Git commit, and environment before deployment. Do not enable a token-based deployment workflow just to duplicate the Git integration.
 
 `pnpm deploy:prepare docs` and `pnpm deploy:prepare storybook` assemble explicit source-only API payloads under `artifacts/` for a connector deployment when Git integration is not yet available. Those commands do not deploy. They omit local environment files, node_modules, authentication state, tests, previews, and Figma exports.
 

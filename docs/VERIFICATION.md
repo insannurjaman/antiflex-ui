@@ -34,7 +34,11 @@
 ## External / environment limitations
 
 - Firefox's downloaded binary fails to launch on this macOS host before reaching application code (`Could not find profile folder`). Chromium/WebKit are the local defaults. The Linux CI configuration includes Firefox; CI has not been run remotely.
-- Public documentation/dashboard and Storybook are deployed on Vercel. GitHub upload and npm publication remain pending owner authentication; no domain or paid product has been published.
+- Public documentation/dashboard and Storybook are deployed on Vercel. Core source is public on GitHub, and the npm alpha is published by `insannurjaman`; no domain or paid product has been published.
+
+## Published installer verification
+
+`chamfer-ui@0.1.0-alpha.1` is available from npm under the owner's account. Its registry artifact was installed into a fresh independent React app; all eight components, strict TypeScript, production build, fonts, both themes, accessibility, and mobile keyboard behavior pass. Evidence: `assets/previews/npm-evidence.json`. Reproduce with `pnpm installer:smoke --registry`.
 
 ## Hosted alpha verification
 

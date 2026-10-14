@@ -9,7 +9,7 @@
 - [Documentation and dashboard](https://chamfer-ui-docs.vercel.app)
 - [Storybook](https://chamfer-ui-storybook.vercel.app)
 
-Hosting is live. The GitHub upload and npm publication still require owner authentication. The installer can already be packed and used locally. See [the release guide](docs/RELEASE.md).
+The [public source repository](https://github.com/insannurjaman/chamfer-ui) and [npm alpha installer](https://www.npmjs.com/package/chamfer-ui) are available. See [the release guide](docs/RELEASE.md).
 
 ## Run locally
 
@@ -41,7 +41,7 @@ pnpm check              # tokens, types, builds, browser/a11y tests
 | `packages/cli`    | Original source-copy installer with bundled registry, conflict protection, and backups         |
 | `scripts/figma`   | Native Figma generation from shared values and sample records                                  |
 
-The UI and token packages remain private workspace internals. The source installer is prepared for public distribution as `chamfer-ui`. They are consumed through `workspace:*`, not a published npm package. The UI package builds JavaScript and declarations into `packages/ui/dist`; documentation and Storybook transpile the shared source directly.
+The UI and token packages remain private workspace internals. The source installer is published on npm as `chamfer-ui`. They are consumed through `workspace:*`, not a published npm package. The UI package builds JavaScript and declarations into `packages/ui/dist`; documentation and Storybook transpile the shared source directly.
 
 ## Use a component
 
@@ -66,6 +66,14 @@ Mobile navigation is an inline disclosure. Escape closes it and returns focus. W
 ## Install into your own React app
 
 ```sh
+# From your React 19 / Tailwind CSS 4 project
+npx chamfer-ui@0.1.0-alpha.1 init --css src/index.css
+npx chamfer-ui@0.1.0-alpha.1 add button text-field
+```
+
+You can also build and use a local tarball:
+
+```sh
 # From this repository
 pnpm installer:pack
 
@@ -75,7 +83,7 @@ pnpm exec chamfer init --css src/index.css
 pnpm exec chamfer add button text-field
 ```
 
-Components are copied into your application as editable source. `chamfer add app-shell` resolves its Button dependency. `--dry-run` previews changes; `--force` backs up customized requested components before replacement. See [the installer guide](packages/cli/README.md). This is a local alpha, not a published npm package.
+Components are copied into your application as editable source. `chamfer add app-shell` resolves its Button dependency. `--dry-run` previews changes; `--force` backs up customized requested components before replacement. See [the installer guide](packages/cli/README.md). The first npm release is an alpha; component APIs may change before 1.0.
 
 ## Figma
 

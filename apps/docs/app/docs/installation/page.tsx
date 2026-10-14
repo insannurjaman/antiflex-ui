@@ -17,19 +17,21 @@ export default function Installation() {
       </p>
       <h2>Copy components into your project</h2>
       <p>
-        The source installer is available as a local alpha. First build its tarball from the Chamfer
-        repository:
-      </p>
-      <Code label="Chamfer repository">
-        {'pnpm installer:pack\n# Creates artifacts/chamfer-ui-0.1.0-alpha.1.tgz'}
-      </Code>
-      <p>
-        In an existing React 19 app with Tailwind CSS 4 configured, install that tarball and connect
-        your entry stylesheet. Replace the absolute path with your checkout location.
+        In an existing React 19 app with Tailwind CSS 4 configured, use the published alpha
+        installer. Node.js 22.18 or newer is required.
       </p>
       <Code label="Your React project">
         {
-          'pnpm add -D /absolute/path/to/DS1/artifacts/chamfer-ui-0.1.0-alpha.1.tgz\npnpm exec chamfer init --css src/index.css\npnpm exec chamfer add button text-field'
+          'npx chamfer-ui@0.1.0-alpha.1 init --css src/index.css\nnpx chamfer-ui@0.1.0-alpha.1 add button text-field'
+        }
+      </Code>
+      <p>
+        You can also build a local tarball from the Chamfer repository and install it into your
+        application:
+      </p>
+      <Code label="Local tarball">
+        {
+          'pnpm installer:pack\n# Creates artifacts/chamfer-ui-0.1.0-alpha.1.tgz\npnpm add -D /absolute/path/to/DS1/artifacts/chamfer-ui-0.1.0-alpha.1.tgz'
         }
       </Code>
       <p>
@@ -47,7 +49,7 @@ export default function Installation() {
       <h2>Choose and own your source</h2>
       <Code label="Terminal">
         {
-          'pnpm exec chamfer list\npnpm exec chamfer add app-shell\n# AppShell also includes its Button dependency\npnpm exec chamfer add --all\npnpm exec chamfer add button --dry-run'
+          'npx chamfer-ui@0.1.0-alpha.1 list\nnpx chamfer-ui@0.1.0-alpha.1 add app-shell\n# AppShell also includes its Button dependency\nnpx chamfer-ui@0.1.0-alpha.1 add --all\nnpx chamfer-ui@0.1.0-alpha.1 add button --dry-run'
         }
       </Code>
       <p>
@@ -81,8 +83,8 @@ export default function Installation() {
         {'pnpm storybook\n# http://localhost:6006\npnpm check\npnpm installer:smoke'}
       </Code>
       <p>
-        The CLI and packages have not been published to npm. Public distribution follows the local
-        foundation review.
+        The source installer is published as an alpha on npm. UI and token packages remain private
+        workspace internals; the installer copies their source into your app.
       </p>
     </>
   );

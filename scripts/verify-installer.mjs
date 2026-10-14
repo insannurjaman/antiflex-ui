@@ -14,7 +14,8 @@ function run(command, args, cwd = root) {
 const consumer = fs.mkdtempSync(path.join(os.tmpdir(), 'chamfer-react-consumer-'));
 const packageVersion = (p) => JSON.parse(fs.readFileSync(p, 'utf8')).version;
 const docs = JSON.parse(fs.readFileSync(path.join(root, 'apps/docs/package.json'), 'utf8'));
-run('pnpm', ['installer:pack']);
+const fromRegistry = process.argv.includes('--registry');
+if (!fromRegistry) run('pnpm', ['installer:pack']);
 const installer = JSON.parse(fs.readFileSync(path.join(root, 'packages/cli/package.json'), 'utf8'));
 const tarball = path.join(
   root,
@@ -29,7 +30,7 @@ const manifest = {
   scripts: { build: 'vite build' },
   dependencies: { react: docs.dependencies.react, 'react-dom': docs.dependencies['react-dom'] },
   devDependencies: {
-    [installer.name]: 'file:' + tarball,
+    [installer.name]: fromRegistry ? installer.version : 'file:' + tarball,
     vite: packageVersion(path.join(root, 'apps/storybook/node_modules/vite/package.json')),
     typescript: require('typescript/package.json').version,
     tailwindcss: docs.devDependencies.tailwindcss,
@@ -197,7 +198,7 @@ try {
   });
   const evidence = {
     consumer,
-    tarball,
+    ...(fromRegistry ? { registryPackage: installer.name + '@' + installer.version } : { tarball }),
     workspaceImports: false,
     components: 8,
     typecheck: 'passed',
@@ -209,7 +210,10 @@ try {
     pageErrors: errors,
   };
   fs.writeFileSync(
-    path.join(root, 'artifacts/installer-smoke.json'),
+    path.join(
+      root,
+      fromRegistry ? 'artifacts/installer-registry-smoke.json' : 'artifacts/installer-smoke.json',
+    ),
     JSON.stringify(evidence, null, 2),
   );
   console.log(JSON.stringify(evidence, null, 2));

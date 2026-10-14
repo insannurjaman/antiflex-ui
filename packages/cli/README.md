@@ -2,7 +2,14 @@
 
 An original installer for the Chamfer foundation. It copies editable React/TypeScript components and connects your existing Tailwind CSS 4 entry stylesheet to local tokens, styles, and IBM Plex fonts.
 
-This alpha is distributed as a local tarball; it has not been published to npm.
+The alpha installer copies original components into an existing React 19 / Tailwind CSS 4 project. Use Node.js 22.18 or newer.
+
+```sh
+npx chamfer-ui@0.1.0-alpha.1 init --css src/index.css
+npx chamfer-ui@0.1.0-alpha.1 add button text-field
+```
+
+You can also build and install the tarball from a local checkout:
 
 ```sh
 # From the Chamfer repository
