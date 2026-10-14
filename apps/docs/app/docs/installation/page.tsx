@@ -21,7 +21,7 @@ export default function Installation() {
         repository:
       </p>
       <Code label="Chamfer repository">
-        {'pnpm installer:pack\n# Creates artifacts/chamfer-cli-0.1.0.tgz'}
+        {'pnpm installer:pack\n# Creates artifacts/chamfer-ui-0.1.0-alpha.1.tgz'}
       </Code>
       <p>
         In an existing React 19 app with Tailwind CSS 4 configured, install that tarball and connect
@@ -29,7 +29,7 @@ export default function Installation() {
       </p>
       <Code label="Your React project">
         {
-          'pnpm add -D /absolute/path/to/DS1/artifacts/chamfer-cli-0.1.0.tgz\npnpm exec chamfer init --css src/index.css\npnpm exec chamfer add button text-field'
+          'pnpm add -D /absolute/path/to/DS1/artifacts/chamfer-ui-0.1.0-alpha.1.tgz\npnpm exec chamfer init --css src/index.css\npnpm exec chamfer add button text-field'
         }
       </Code>
       <p>

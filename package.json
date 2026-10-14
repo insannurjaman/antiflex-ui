@@ -20,8 +20,10 @@
     "registry:build": "node scripts/build-registry.mjs",
     "registry:check": "node scripts/build-registry.mjs --check",
     "installer:test": "node --test tests/installer.test.mjs",
-    "installer:pack": "pnpm --filter @chamfer/cli build && pnpm --filter @chamfer/cli pack --pack-destination artifacts",
-    "installer:smoke": "node scripts/verify-installer.mjs"
+    "installer:pack": "pnpm --filter chamfer-ui build && pnpm --filter chamfer-ui pack --pack-destination artifacts",
+    "installer:smoke": "node scripts/verify-installer.mjs",
+    "release:prepare": "node scripts/prepare-release.mjs",
+    "deploy:prepare": "node scripts/prepare-deployment.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.11.0",

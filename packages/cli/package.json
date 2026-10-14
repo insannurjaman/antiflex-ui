@@ -1,7 +1,7 @@
 {
-  "name": "@chamfer/cli",
-  "version": "0.1.0",
-  "private": true,
+  "name": "chamfer-ui",
+  "version": "0.1.0-alpha.1",
+  "private": false,
   "description": "Original source installer for Chamfer UI",
   "license": "MIT",
   "type": "module",
@@ -20,5 +20,26 @@
   "scripts": {
     "build": "node ../../scripts/build-registry.mjs",
     "test": "node --test ../../tests/installer.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insannurjaman/chamfer-ui.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/insannurjaman/chamfer-ui#readme",
+  "bugs": {
+    "url": "https://github.com/insannurjaman/chamfer-ui/issues"
+  },
+  "keywords": [
+    "react",
+    "design-system",
+    "tailwindcss",
+    "components",
+    "chamfer"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "alpha",
+    "registry": "https://registry.npmjs.org/"
   }
 }

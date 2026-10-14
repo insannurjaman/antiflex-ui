@@ -9,7 +9,7 @@ This alpha is distributed as a local tarball; it has not been published to npm.
 pnpm installer:pack
 
 # From your independent React app
-pnpm add -D /absolute/path/to/chamfer-cli-0.1.0.tgz
+pnpm add -D /absolute/path/to/chamfer-ui-0.1.0-alpha.1.tgz
 pnpm exec chamfer init --css src/index.css
 pnpm exec chamfer add button text-field
 ```

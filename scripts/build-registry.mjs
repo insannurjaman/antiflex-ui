@@ -43,7 +43,10 @@ const reactImport = source.statements.find(
 );
 const imports = reactImport.importClause.namedBindings.elements;
 const printer = ts.createPrinter({ newLine: ts.NewLineKind.LineFeed });
-const manifest = { version: 1, release: '0.1.0', components: {}, fonts: {} };
+const release = JSON.parse(
+  fs.readFileSync(path.join(root, 'packages/cli/package.json'), 'utf8'),
+).version;
+const manifest = { version: 1, release, components: {}, fonts: {} };
 const files = new Map();
 const usedIdentifiers = (statement) => {
   const names = new Set();

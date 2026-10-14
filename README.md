@@ -63,7 +63,7 @@ Mobile navigation is an inline disclosure. Escape closes it and returns focus. W
 pnpm installer:pack
 
 # From your React 19 / Tailwind CSS 4 project
-pnpm add -D /absolute/path/to/DS1/artifacts/chamfer-cli-0.1.0.tgz
+pnpm add -D /absolute/path/to/DS1/artifacts/chamfer-ui-0.1.0-alpha.1.tgz
 pnpm exec chamfer init --css src/index.css
 pnpm exec chamfer add button text-field
 ```

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "release": "0.1.0",
+  "release": "0.1.0-alpha.1",
   "components": {
     "button": {
       "file": "components/button.tsx",

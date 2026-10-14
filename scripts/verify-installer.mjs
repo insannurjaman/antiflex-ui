@@ -15,7 +15,12 @@ const consumer = fs.mkdtempSync(path.join(os.tmpdir(), 'chamfer-react-consumer-'
 const packageVersion = (p) => JSON.parse(fs.readFileSync(p, 'utf8')).version;
 const docs = JSON.parse(fs.readFileSync(path.join(root, 'apps/docs/package.json'), 'utf8'));
 run('pnpm', ['installer:pack']);
-const tarball = path.join(root, 'artifacts/chamfer-cli-0.1.0.tgz');
+const installer = JSON.parse(fs.readFileSync(path.join(root, 'packages/cli/package.json'), 'utf8'));
+const tarball = path.join(
+  root,
+  'artifacts',
+  installer.name.replace('@', '').replace('/', '-') + '-' + installer.version + '.tgz',
+);
 const manifest = {
   name: 'chamfer-independent-consumer',
   private: true,
@@ -24,7 +29,7 @@ const manifest = {
   scripts: { build: 'vite build' },
   dependencies: { react: docs.dependencies.react, 'react-dom': docs.dependencies['react-dom'] },
   devDependencies: {
-    '@chamfer/cli': 'file:' + tarball,
+    [installer.name]: 'file:' + tarball,
     vite: packageVersion(path.join(root, 'apps/storybook/node_modules/vite/package.json')),
     typescript: require('typescript/package.json').version,
     tailwindcss: docs.devDependencies.tailwindcss,
