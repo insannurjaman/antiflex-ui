@@ -174,5 +174,17 @@
     "mobileKeyboard": true,
     "overflow": false,
     "pageErrors": []
+  },
+  "documentationRefresh": {
+    "sourceCommit": "4470618",
+    "deploymentId": "dpl_Bxuu84op1qnjKL2YM9cvb7fDjTRG",
+    "status": "READY",
+    "storybookLink": "verified",
+    "mobileAccessibilityViolations": 0
+  },
+  "fullBrowserSuite": {
+    "scenarios": 18,
+    "browsers": ["chromium", "webkit"],
+    "result": "passed"
   }
 }

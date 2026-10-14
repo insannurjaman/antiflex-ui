@@ -10,9 +10,9 @@ Account ownership and successful external publication must be verified before ma
 
 ## Current status — 2026-10-15
 
-- Documentation/dashboard: [chamfer-ui-docs.vercel.app](https://chamfer-ui-docs.vercel.app), deployment `dpl_6EHPW1MUFCxJMLWq4bxQBdiYdY67`, READY.
+- Documentation/dashboard: [chamfer-ui-docs.vercel.app](https://chamfer-ui-docs.vercel.app), deployment `dpl_Bxuu84op1qnjKL2YM9cvb7fDjTRG`, READY.
 - Storybook: [chamfer-ui-storybook.vercel.app](https://chamfer-ui-storybook.vercel.app), deployment `dpl_5w9vKFS3ga2JAuoDZ3oyEFzQKX9e`, READY.
-- Both deployments were built from local source commit `7c5e18d`. The public aliases return HTTP 200. Unique deployment URLs retain Vercel Authentication; protection was preserved.
+- Documentation was refreshed from source commit `4470618` to add the hosted Storybook link; Storybook remains on `7c5e18d`. The public aliases return HTTP 200. Unique deployment URLs retain Vercel Authentication; protection was preserved.
 - Vercel connector scope access returned 403. The CLI's existing authentication successfully created, configured, and deployed the exact intended personal projects.
 - GitHub repository upload: waiting for owner browser sign-in or creation of the empty public repository.
 - npm publication: waiting for the owner account and authentication. The name was available at preparation time; no npm release is claimed.
