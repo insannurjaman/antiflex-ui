@@ -33,7 +33,7 @@
 
 ## External / environment limitations
 
-- Firefox's downloaded binary fails to launch on this macOS host before reaching application code (`Could not find profile folder`). Chromium/WebKit are the local defaults. The Linux CI configuration includes Firefox; CI has not been run remotely.
+- Firefox's downloaded binary fails to launch on this macOS host before reaching application code (`Could not find profile folder`). Chromium/WebKit are the local defaults. Linux CI successfully runs all 27 browser scenarios in Chromium, Firefox, and WebKit, including all accessibility scans.
 - Public documentation/dashboard and Storybook are deployed on Vercel. Core source is public on GitHub, and the npm alpha is published by `insannurjaman`; no domain or paid product has been published.
 
 ## Published installer verification

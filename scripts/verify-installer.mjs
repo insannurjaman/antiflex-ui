@@ -45,6 +45,9 @@ const manifest = {
 };
 fs.mkdirSync(path.join(consumer, 'src'), { recursive: true });
 fs.writeFileSync(path.join(consumer, 'package.json'), JSON.stringify(manifest, null, 2));
+// This disposable app deliberately changes dependencies during init, including in CI.
+// Keep the repository's frozen lockfile policy; allow only this consumer to update its lock.
+fs.writeFileSync(path.join(consumer, '.npmrc'), 'frozen-lockfile=false\n');
 fs.writeFileSync(
   path.join(consumer, 'index.html'),
   '<html lang="en"><head><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Independent Chamfer consumer</title></head><body><div id="root"></div><script type="module" src="/src/main.tsx"></script></body></html>',
