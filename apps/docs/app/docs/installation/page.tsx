@@ -73,6 +73,10 @@ export default function Installation() {
         }
       </Code>
       <h2>Explore and verify</h2>
+      <p>
+        <a href="https://chamfer-ui-storybook.vercel.app">Open the hosted Storybook</a> to inspect
+        component states, controls, and themes.
+      </p>
       <Code label="Terminal">
         {'pnpm storybook\n# http://localhost:6006\npnpm check\npnpm installer:smoke'}
       </Code>

@@ -1,5 +1,5 @@
 {
-  "tarball": "artifacts/chamfer-cli-0.1.0.tgz",
+  "tarball": "artifacts/chamfer-ui-0.1.0-alpha.1.tgz",
   "workspaceImports": false,
   "components": 8,
   "typecheck": "passed",
@@ -12,5 +12,5 @@
   "accessibilityViolations": 0,
   "mobileOverflow": false,
   "pageErrors": [],
-  "checkedAt": "2026-10-14"
+  "checkedAt": "2026-10-15"
 }

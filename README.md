@@ -4,6 +4,13 @@
 
 ![Chamfer dashboard](assets/previews/dashboard-desktop.png)
 
+## Hosted alpha
+
+- [Documentation and dashboard](https://chamfer-ui-docs.vercel.app)
+- [Storybook](https://chamfer-ui-storybook.vercel.app)
+
+Hosting is live. The GitHub upload and npm publication still require owner authentication. The installer can already be packed and used locally. See [the release guide](docs/RELEASE.md).
+
 ## Run locally
 
 Use Node.js 24 and pnpm 10.
@@ -34,7 +41,7 @@ pnpm check              # tokens, types, builds, browser/a11y tests
 | `packages/cli`    | Original source-copy installer with bundled registry, conflict protection, and backups         |
 | `scripts/figma`   | Native Figma generation from shared values and sample records                                  |
 
-The workspace packages are private in this milestone. They are consumed through `workspace:*`, not a published npm package. The UI package builds JavaScript and declarations into `packages/ui/dist`; documentation and Storybook transpile the shared source directly.
+The UI and token packages remain private workspace internals. The source installer is prepared for public distribution as `chamfer-ui`. They are consumed through `workspace:*`, not a published npm package. The UI package builds JavaScript and declarations into `packages/ui/dist`; documentation and Storybook transpile the shared source directly.
 
 ## Use a component
 
@@ -94,6 +101,6 @@ Automated accessibility checks complement manual keyboard and screen-reader revi
 
 ## License and boundaries
 
-Core code and the foundation assets in this repository use the [MIT license](LICENSE). Future Chamfer Pro assets will have a separate license and remain outside the public core repository. The larger library, paid templates, pricing, commerce, customer accounts, and public publication are later milestones.
+Core code and the foundation assets in this repository use the [MIT license](LICENSE). Future Chamfer Pro assets will have a separate license and remain outside the public core repository. The larger library, paid templates, pricing, commerce, and customer accounts are later milestones.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [CHANGELOG.md](CHANGELOG.md), and [PRODUCT.md](PRODUCT.md).

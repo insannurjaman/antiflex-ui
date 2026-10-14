@@ -134,11 +134,12 @@ test('every Storybook specimen renders and passes accessibility checks', async (
   page,
   request,
 }) => {
-  const response = await request.get('http://127.0.0.1:6106/index.json');
+  const storybookURL = process.env.CHAMFER_STORYBOOK_URL || 'http://127.0.0.1:6106';
+  const response = await request.get(storybookURL + '/index.json');
   const index = await response.json();
   const entries = Object.values(index.entries) as { id: string; type: string }[];
   for (const { id } of entries.filter((e) => e.type === 'story')) {
-    await page.goto(`http://127.0.0.1:6106/iframe.html?id=${id}&viewMode=story`);
+    await page.goto(`${storybookURL}/iframe.html?id=${id}&viewMode=story`);
     await expect(page.locator('#storybook-root > div')).toBeVisible();
     await page.evaluate(() => document.fonts.ready);
     const results = await new AxeBuilder({ page })

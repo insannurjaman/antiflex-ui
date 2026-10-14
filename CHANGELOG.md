@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.1 — Public release preparation
+
+- Publishable `chamfer-ui` installer package with explicit alpha distribution and release metadata.
+- Hosted documentation/dashboard and Storybook on separate Vercel projects.
+- Pinned GitHub Actions, verified release archives/checksums, draft release workflow, and npm trusted-publishing workflow.
+- Source-only deployment preparation and hosted browser verification.
+- GitHub upload and npm registry publication pending owner authentication.
+
 ## Unreleased — Source installer and live Figma
 
 - Original bundled source installer with dependency resolution, dry runs, conflict protection, and replacement backups.

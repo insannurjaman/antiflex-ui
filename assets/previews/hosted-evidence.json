@@ -1,0 +1,178 @@
+{
+  "checkedAt": "2026-10-15",
+  "docs": "https://chamfer-ui-docs.vercel.app",
+  "storybook": "https://chamfer-ui-storybook.vercel.app",
+  "sourceCommit": "7c5e18d",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/docs",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/docs/installation",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/docs/components/button",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/docs/components/app-shell",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/docs/foundations",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/dashboard",
+      "status": 200,
+      "accessibilityViolations": 0
+    }
+  ],
+  "stories": [
+    {
+      "id": "components-appshell--default",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-badge--neutral",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-badge--all-variants",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-badge--small",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-button--primary",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-button--secondary",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-button--ghost",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-button--danger",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-button--disabled",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-button--loading",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-button--sizes",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-card--outline",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-card--subtle",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-card--spacing",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-separator--horizontal",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-separator--vertical",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-skeleton--default",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-skeleton--loading-content",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-table--default",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-table--empty",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-textfield--default",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-textfield--error",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-textfield--disabled",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-textfield--hidden-label",
+      "status": 200,
+      "accessibilityViolations": 0
+    },
+    {
+      "id": "components-textfield--sizes",
+      "status": 200,
+      "accessibilityViolations": 0
+    }
+  ],
+  "dashboard": {
+    "search": true,
+    "pagination": true,
+    "themePersistence": true,
+    "mobileKeyboard": true,
+    "overflow": false,
+    "pageErrors": []
+  }
+}

@@ -34,7 +34,11 @@
 ## External / environment limitations
 
 - Firefox's downloaded binary fails to launch on this macOS host before reaching application code (`Could not find profile folder`). Chromium/WebKit are the local defaults. The Linux CI configuration includes Firefox; CI has not been run remotely.
-- No public repository, npm package, hosting, domain, or paid product has been published in this milestone.
+- Public documentation/dashboard and Storybook are deployed on Vercel. GitHub upload and npm publication remain pending owner authentication; no domain or paid product has been published.
+
+## Hosted alpha verification
+
+The production aliases return HTTP 200. Seven hosted documentation/dashboard routes and all 25 Storybook specimens pass Chromium rendering and axe checks. The full 18-scenario suite also passes against the hosted aliases in Chromium and WebKit. Hosted dashboard search/empty-state recovery, pagination, theme persistence, and mobile Escape/focus behavior pass without overflow or page errors. Evidence is in `assets/previews/hosted-evidence.json` and `docs/RELEASE.md`.
 
 ## Reproduce
 

@@ -8,6 +8,15 @@
 
 Account ownership and successful external publication must be verified before marking a target live. Package-name availability was checked before preparation; it is not reserved until publication succeeds.
 
+## Current status — 2026-10-15
+
+- Documentation/dashboard: [chamfer-ui-docs.vercel.app](https://chamfer-ui-docs.vercel.app), deployment `dpl_6EHPW1MUFCxJMLWq4bxQBdiYdY67`, READY.
+- Storybook: [chamfer-ui-storybook.vercel.app](https://chamfer-ui-storybook.vercel.app), deployment `dpl_5w9vKFS3ga2JAuoDZ3oyEFzQKX9e`, READY.
+- Both deployments were built from local source commit `7c5e18d`. The public aliases return HTTP 200. Unique deployment URLs retain Vercel Authentication; protection was preserved.
+- Vercel connector scope access returned 403. The CLI's existing authentication successfully created, configured, and deployed the exact intended personal projects.
+- GitHub repository upload: waiting for owner browser sign-in or creation of the empty public repository.
+- npm publication: waiting for the owner account and authentication. The name was available at preparation time; no npm release is claimed.
+
 ## Verify and assemble
 
 ```sh
@@ -61,3 +70,13 @@ Prefer Vercel's Git integration after the repository exists. It supplies PR prev
 `pnpm deploy:prepare docs` and `pnpm deploy:prepare storybook` assemble explicit source-only API payloads under `artifacts/` for a connector deployment when Git integration is not yet available. Those commands do not deploy. They omit local environment files, node_modules, authentication state, tests, previews, and Figma exports.
 
 Before promoting a tested release, check the documentation routes, component specimens, dashboard filtering/sorting/pagination, theme switching, mobile navigation, font loading, and Storybook iframe assets on the hosted URLs. Record the actual URLs and deployment IDs after successful builds.
+
+## Recheck the hosted release
+
+```sh
+CHAMFER_DOCS_URL=https://chamfer-ui-docs.vercel.app \
+CHAMFER_STORYBOOK_URL=https://chamfer-ui-storybook.vercel.app \
+pnpm test
+```
+
+These variables direct the complete browser suite to the hosted applications without starting local servers.
