@@ -1,6 +1,6 @@
 # Chamfer UI
 
-**Precision UI for SaaS teams.** An original, compact React design foundation with shared tokens, documentation, Storybook, a working SaaS dashboard, and a Figma import bundle.
+**Precision UI for SaaS teams.** An original, compact React design foundation with shared tokens, documentation, Storybook, a working SaaS dashboard, and an editable Figma library, and a source installer.
 
 ![Chamfer dashboard](assets/previews/dashboard-desktop.png)
 
@@ -31,6 +31,7 @@ pnpm check              # tokens, types, builds, browser/a11y tests
 | `packages/ui`     | Button, TextField, Badge, Card, Separator, Skeleton, semantic Table parts, responsive AppShell |
 | `apps/docs`       | Next.js site, component previews and API guidance, foundations, dashboard                      |
 | `apps/storybook`  | All component specimens, theme toolbar, controls, docs, accessibility addon                    |
+| `packages/cli`    | Original source-copy installer with bundled registry, conflict protection, and backups         |
 | `scripts/figma`   | Native Figma generation from shared values and sample records                                  |
 
 The workspace packages are private in this milestone. They are consumed through `workspace:*`, not a published npm package. The UI package builds JavaScript and declarations into `packages/ui/dist`; documentation and Storybook transpile the shared source directly.
@@ -55,11 +56,27 @@ All records are synthetic. Search customer names, emails, order IDs, or plans. F
 
 Mobile navigation is an inline disclosure. Escape closes it and returns focus. Wide tables scroll within their own region rather than overflowing the page.
 
-## Figma status
+## Install into your own React app
 
-The requested Eftax file is linked in [the Figma guide](assets/figma/README.md). This chat's connector still exposes the previous account and rejects edit access, so the canvas has **not** been populated or verified. The native import plugin and staged connector scripts are generated and syntax checked; see the guide for importing with the correct desktop account. This is the outstanding foundation deliverable.
+```sh
+# From this repository
+pnpm installer:pack
+
+# From your React 19 / Tailwind CSS 4 project
+pnpm add -D /absolute/path/to/DS1/artifacts/chamfer-cli-0.1.0.tgz
+pnpm exec chamfer init --css src/index.css
+pnpm exec chamfer add button text-field
+```
+
+Components are copied into your application as editable source. `chamfer add app-shell` resolves its Button dependency. `--dry-run` previews changes; `--force` backs up customized requested components before replacement. See [the installer guide](packages/cli/README.md). This is a local alpha, not a published npm package.
+
+## Figma
+
+The [Eftax foundation file](https://www.figma.com/design/H2vHC7eByauNSQL06qtO3o/Untitled?node-id=3-110) contains native foundations, light/dark variables, component variants, and desktop/mobile dashboard layouts. Source generation remains available for reproducible imports. See [the Figma guide](assets/figma/README.md) for node links, validation evidence, and visual comparison limits.
 
 ## Verification
+
+`pnpm installer:smoke` packs the CLI, installs it in an independent React application outside the workspace, copies all eight components, type-checks and builds the app, and checks rendering, fonts, themes, accessibility, and mobile keyboard behavior.
 
 `pnpm check` builds the UI, Next.js site, and Storybook, then runs Playwright behavior and axe accessibility tests. Tests cover the dashboard flow, loading/empty states, theme persistence, mobile focus, field errors, every primary documentation surface, and every Storybook specimen. Both themes are scanned on the main site.
 
@@ -77,6 +94,6 @@ Automated accessibility checks complement manual keyboard and screen-reader revi
 
 ## License and boundaries
 
-Core code and the foundation assets in this repository use the [MIT license](LICENSE). Future Chamfer Pro assets will have a separate license and remain outside the public core repository. The custom installer, larger library, paid templates, pricing, commerce, customer accounts, and public publication are later milestones.
+Core code and the foundation assets in this repository use the [MIT license](LICENSE). Future Chamfer Pro assets will have a separate license and remain outside the public core repository. The larger library, paid templates, pricing, commerce, customer accounts, and public publication are later milestones.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [CHANGELOG.md](CHANGELOG.md), and [PRODUCT.md](PRODUCT.md).

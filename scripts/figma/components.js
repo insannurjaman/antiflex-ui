@@ -48,8 +48,18 @@ async function buildComponents() {
   function labelProperty(set, name = 'Label', defaultValue = 'Label', nodeName = 'Label') {
     const key = set.addComponentProperty(name, 'TEXT', defaultValue);
     for (const c of set.children)
-      for (const t of c.findAll((n) => n.type === 'TEXT' && n.name === nodeName))
-        t.componentPropertyReferences = { characters: key };
+      for (const t of c.findAll((n) => n.type === 'TEXT' && n.name === nodeName)) {
+        let ancestor = t.parent;
+        let insideInstance = false;
+        while (ancestor && ancestor !== c) {
+          if (ancestor.type === 'INSTANCE') {
+            insideInstance = true;
+            break;
+          }
+          ancestor = ancestor.parent;
+        }
+        if (!insideInstance) t.componentPropertyReferences = { characters: key };
+      }
   }
   for (const variant of ['primary', 'secondary', 'ghost', 'danger']) {
     const variants = [];
@@ -62,6 +72,10 @@ async function buildComponents() {
           height,
         );
         gap(c, '2', map);
+        c.primaryAxisSizingMode = 'AUTO';
+        const inset = { sm: '3', md: '4', lg: '5' }[size];
+        bind(c, 'paddingLeft', 'space.' + inset, map);
+        bind(c, 'paddingRight', 'space.' + inset, map);
         bind(c, 'cornerRadius', 'component.button-radius', map);
         bind(c, 'height', 'component.button-height-' + size, map);
         const bg =
@@ -113,6 +127,7 @@ async function buildComponents() {
           'Medium',
         );
         label.name = 'Label';
+        label.lineHeight = { unit: 'PERCENT', value: 100 };
         variants.push(c);
       }
     const set = group('Button / ' + variant, variants, 3);
@@ -409,6 +424,7 @@ async function buildComponents() {
       instance(section, getVariant(sets[name], props));
     }
   }
+  await bindTypography(page, map);
   return result({
     pageId: page.id,
     frameId: review.id,

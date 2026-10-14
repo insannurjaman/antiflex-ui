@@ -1,0 +1,16 @@
+{
+  "tarball": "artifacts/chamfer-cli-0.1.0.tgz",
+  "workspaceImports": false,
+  "components": 8,
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "sourceInstaller": "passed",
+  "themeColors": {
+    "light": "rgb(6, 103, 126)",
+    "dark": "rgb(72, 204, 227)"
+  },
+  "accessibilityViolations": 0,
+  "mobileOverflow": false,
+  "pageErrors": [],
+  "checkedAt": "2026-10-14"
+}

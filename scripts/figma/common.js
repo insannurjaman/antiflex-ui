@@ -52,19 +52,22 @@ async function tokenMap() {
     map[v.name.replaceAll('/', '.')] = v;
   return { map, collections };
 }
-function paint(variable) {
+function paint(variable, consumer) {
   if (!variable) throw new Error('Missing color variable');
   return figma.variables.setBoundVariableForPaint(
-    { type: 'SOLID', color: { r: 0, g: 0, b: 0 } },
+    {
+      type: 'SOLID',
+      color: consumer ? variable.resolveForConsumer(consumer).value : { r: 0, g: 0, b: 0 },
+    },
     'color',
     variable,
   );
 }
 function fill(node, key, map) {
-  node.fills = [paint(map[key])];
+  node.fills = [paint(map[key], node)];
 }
 function border(node, key, map) {
-  node.strokes = [paint(map[key])];
+  node.strokes = [paint(map[key], node)];
   node.strokeWeight = 1;
 }
 function bind(node, property, key, map) {
@@ -80,8 +83,8 @@ function frame(parent, name, width, height = 100, direction = 'VERTICAL') {
   node.name = name;
   node.layoutMode = direction;
   node.resize(width, height);
-  node.primaryAxisSizingMode = 'AUTO';
-  node.counterAxisSizingMode = 'FIXED';
+  node.primaryAxisSizingMode = direction === 'HORIZONTAL' ? 'FIXED' : 'AUTO';
+  node.counterAxisSizingMode = direction === 'HORIZONTAL' && height === 100 ? 'AUTO' : 'FIXED';
   node.fills = [];
   node.itemSpacing = 16;
   parent.appendChild(node);
@@ -108,9 +111,15 @@ function text(
   node.name = value.slice(0, 60);
   node.fontName = { family: mono ? 'IBM Plex Mono' : 'IBM Plex Sans', style: weight };
   node.fontSize = size;
+  const sizeToken = Object.keys(map).find(
+    (key) => key.startsWith('fontSize.') && Object.values(map[key].valuesByMode)[0] === size,
+  );
+  if (sizeToken) bind(node, 'fontSize', sizeToken, map);
+  if (map['font.' + (mono ? 'mono' : 'sans')])
+    bind(node, 'fontFamily', 'font.' + (mono ? 'mono' : 'sans'), map);
   node.lineHeight = { unit: 'PERCENT', value: 150 };
   node.characters = value;
-  node.fills = [paint(map[key])];
+  node.fills = [paint(map[key], node)];
   parent.appendChild(node);
   if (width) {
     node.textAutoResize = 'HEIGHT';
@@ -128,9 +137,9 @@ function icon(parent, name, map, key = 'semantic.muted', size = 16) {
   for (const child of node.findAll(() => true)) {
     createdNodeIds.push(child.id);
     if ('strokes' in child && Array.isArray(child.strokes) && child.strokes.length)
-      child.strokes = child.strokes.map((p) => (p.type === 'SOLID' ? paint(map[key]) : p));
+      child.strokes = child.strokes.map((p) => (p.type === 'SOLID' ? paint(map[key], child) : p));
     if ('fills' in child && Array.isArray(child.fills) && child.fills.length)
-      child.fills = child.fills.map((p) => (p.type === 'SOLID' ? paint(map[key]) : p));
+      child.fills = child.fills.map((p) => (p.type === 'SOLID' ? paint(map[key], child) : p));
   }
   return node;
 }
@@ -154,6 +163,7 @@ function getVariant(set, values) {
 function instance(parent, component, label) {
   if (!component) throw new Error('Missing component variant');
   const node = remember(component.createInstance());
+  node.name = component.parent.type === 'COMPONENT_SET' ? component.parent.name : component.name;
   parent.appendChild(node);
   for (const child of node.findAll(() => true)) createdNodeIds.push(child.id);
   if (label) {
@@ -165,4 +175,37 @@ function instance(parent, component, label) {
     if (key) node.setProperties({ [key]: label });
   }
   return node;
+}
+async function bindTypography(page, map) {
+  const styles = await figma.getLocalTextStylesAsync();
+  const sizeTokens = Object.keys(map).filter((key) => key.startsWith('fontSize.'));
+  for (const node of page.findAll((node) => node.type === 'TEXT')) {
+    let parent = node.parent;
+    let inInstance = false;
+    while (parent && parent.type !== 'PAGE') {
+      if (parent.type === 'INSTANCE') inInstance = true;
+      parent = parent.parent;
+    }
+    if (inInstance || node.fontName === figma.mixed) continue;
+    const font = node.fontName;
+    for (const usedFont of node.getRangeAllFontNames(0, node.characters.length))
+      await figma.loadFontAsync(usedFont);
+    const matching = styles.find(
+      (style) =>
+        style.name.startsWith('Chamfer /') &&
+        style.fontName.family === font.family &&
+        style.fontName.style === font.style &&
+        style.fontSize === node.fontSize &&
+        style.lineHeight.unit === node.lineHeight.unit &&
+        style.lineHeight.value === node.lineHeight.value,
+    );
+    if (matching) await node.setTextStyleIdAsync(matching.id);
+    const sizeKey = sizeTokens.find(
+      (key) => Math.abs(Object.values(map[key].valuesByMode)[0] - node.fontSize) < 0.001,
+    );
+    if (sizeKey) bind(node, 'fontSize', sizeKey, map);
+    if (font.family === 'IBM Plex Sans' || font.family === 'IBM Plex Mono')
+      bind(node, 'fontFamily', font.family === 'IBM Plex Sans' ? 'font.sans' : 'font.mono', map);
+    mutatedNodeIds.push(node.id);
+  }
 }

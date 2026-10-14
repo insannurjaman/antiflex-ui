@@ -24,7 +24,7 @@ Precision UI for SaaS teams. Free core; future Chamfer Pro adds separately licen
 
 ## Capabilities and Constraints
 
-Foundation milestone: eight components, tokens, documentation, Storybook, and a responsive dashboard demonstration. Own styling and behavior. No shadcn, Radix, Base UI, or third-party behavior libraries. Installer, commerce, and public publication are later milestones.
+Foundation milestone: eight components, tokens, documentation, Storybook, and a responsive dashboard demonstration. Own styling and behavior. No shadcn, Radix, Base UI, or third-party behavior libraries. The local source installer copies editable components into independent React apps. Commerce and public publication are later milestones.
 
 ## Brand Commitments
 

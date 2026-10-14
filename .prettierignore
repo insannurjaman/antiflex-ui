@@ -10,3 +10,5 @@ packages/tokens/src/tailwind.css
 assets/figma/generated
 apps/docs/next-env.d.ts
 assets/previews/browser-evidence.json
+packages/cli/registry
+artifacts

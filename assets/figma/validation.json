@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-10-14",
+  "variableCount": 97,
+  "collections": [
+    {
+      "id": "VariableCollectionId:3:3",
+      "name": "Chamfer / Primitives",
+      "modes": ["Value"]
+    },
+    {
+      "id": "VariableCollectionId:3:4",
+      "name": "Chamfer / Semantic",
+      "modes": ["Light", "Dark"]
+    },
+    {
+      "id": "VariableCollectionId:3:5",
+      "name": "Chamfer / Components",
+      "modes": ["Value"]
+    }
+  ],
+  "problems": [],
+  "frames": [
+    {
+      "id": "6:127",
+      "name": "Dashboard / Desktop / Light",
+      "width": 1440,
+      "height": 1471,
+      "types": {
+        "FRAME": 119,
+        "VECTOR": 33,
+        "TEXT": 128,
+        "INSTANCE": 23,
+        "RECTANGLE": 14
+      },
+      "fonts": ["IBM Plex Sans", "IBM Plex Mono"],
+      "mode": {
+        "VariableCollectionId:3:4": "3:1"
+      }
+    },
+    {
+      "id": "6:407",
+      "name": "Dashboard / Desktop / Dark",
+      "width": 1440,
+      "height": 1471,
+      "types": {
+        "FRAME": 119,
+        "VECTOR": 34,
+        "TEXT": 128,
+        "INSTANCE": 23,
+        "RECTANGLE": 14
+      },
+      "fonts": ["IBM Plex Sans", "IBM Plex Mono"],
+      "mode": {
+        "VariableCollectionId:3:4": "3:2"
+      }
+    },
+    {
+      "id": "6:687",
+      "name": "Dashboard / Mobile / Light",
+      "width": 390,
+      "height": 2061,
+      "types": {
+        "FRAME": 101,
+        "VECTOR": 21,
+        "TEXT": 115,
+        "INSTANCE": 23,
+        "RECTANGLE": 14
+      },
+      "fonts": ["IBM Plex Sans", "IBM Plex Mono"],
+      "mode": {
+        "VariableCollectionId:3:4": "3:1"
+      }
+    },
+    {
+      "id": "6:937",
+      "name": "Dashboard / Mobile / Dark",
+      "width": 390,
+      "height": 2061,
+      "types": {
+        "FRAME": 101,
+        "VECTOR": 21,
+        "TEXT": 115,
+        "INSTANCE": 23,
+        "RECTANGLE": 14
+      },
+      "fonts": ["IBM Plex Sans", "IBM Plex Mono"],
+      "mode": {
+        "VariableCollectionId:3:4": "3:2"
+      }
+    }
+  ],
+  "sets": [
+    {
+      "id": "5:42",
+      "name": "Button / primary",
+      "variants": 18,
+      "properties": ["Label", "Size", "State"]
+    },
+    {
+      "id": "5:82",
+      "name": "Button / secondary",
+      "variants": 18,
+      "properties": ["Label", "Size", "State"]
+    },
+    {
+      "id": "5:122",
+      "name": "Button / ghost",
+      "variants": 18,
+      "properties": ["Label", "Size", "State"]
+    },
+    {
+      "id": "5:162",
+      "name": "Button / danger",
+      "variants": 18,
+      "properties": ["Label", "Size", "State"]
+    },
+    {
+      "id": "5:238",
+      "name": "TextField",
+      "variants": 15,
+      "properties": ["Label", "Value", "Hint", "Size", "State"]
+    },
+    {
+      "id": "5:259",
+      "name": "Badge",
+      "variants": 10,
+      "properties": ["Label", "Variant", "Size"]
+    },
+    {
+      "id": "5:284",
+      "name": "Card",
+      "variants": 8,
+      "properties": ["Label", "Variant", "Padding"]
+    },
+    {
+      "id": "5:289",
+      "name": "Separator",
+      "variants": 4,
+      "properties": ["Orientation", "Decorative"]
+    },
+    {
+      "id": "5:292",
+      "name": "Skeleton",
+      "variants": 2,
+      "properties": ["Width"]
+    },
+    {
+      "id": "5:366",
+      "name": "Table",
+      "variants": 3,
+      "properties": ["Caption", "State"]
+    },
+    {
+      "id": "5:386",
+      "name": "AppShell",
+      "variants": 2,
+      "properties": ["Viewport"]
+    }
+  ]
+}

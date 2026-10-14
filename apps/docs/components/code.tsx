@@ -28,7 +28,20 @@ export function Code({ children, label = 'TypeScript' }: { children: string; lab
           {copied ? 'Copied' : 'Copy'}
         </Button>
       </div>
-      <pre>
+      <pre
+        tabIndex={0}
+        role="region"
+        aria-label={`${label} code example`}
+        onKeyDown={(event) => {
+          if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+          const region = event.currentTarget;
+          if (region.scrollWidth <= region.clientWidth) return;
+          if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            region.scrollBy({ left: event.key === 'ArrowRight' ? 40 : -40, behavior: 'auto' });
+          }
+        }}
+      >
         <code>{children}</code>
       </pre>
       <span className="ch-sr-only" role="status">

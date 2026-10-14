@@ -12,11 +12,16 @@
     "storybook": "pnpm --filter @chamfer/storybook dev",
     "storybook:build": "pnpm --filter @chamfer/storybook build",
     "test": "playwright test",
-    "check": "pnpm tokens:check && pnpm typecheck && pnpm build && pnpm storybook:build && pnpm test",
+    "check": "pnpm tokens:check && pnpm registry:check && pnpm installer:test && pnpm typecheck && pnpm build && pnpm storybook:build && pnpm test",
     "figma:build": "node scripts/build-figma.mjs",
     "previews": "node scripts/capture-previews.mjs",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "registry:build": "node scripts/build-registry.mjs",
+    "registry:check": "node scripts/build-registry.mjs --check",
+    "installer:test": "node --test tests/installer.test.mjs",
+    "installer:pack": "pnpm --filter @chamfer/cli build && pnpm --filter @chamfer/cli pack --pack-destination artifacts",
+    "installer:smoke": "node scripts/verify-installer.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.11.0",

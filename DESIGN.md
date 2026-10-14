@@ -171,7 +171,7 @@ components:
 
 Chamfer UI is a technical, compact system for SaaS designers and React developers. Cool neutral surfaces, restrained cyan, thin borders, and IBM Plex typography make controls and operational data easy to inspect. The original chamfered mark anchors the identity.
 
-The visual thesis is precision across design and code. Semantic tokens own color roles and theme changes; reusable components own repeated geometry and states. This document records the implemented React and documentation styles. Matching Figma remains a product commitment; the prepared import scripts have not run, so live Figma tokens and layouts are not verified.
+The visual thesis is precision across design and code. Semantic tokens own color roles and theme changes; reusable components own repeated geometry and states. This document records the implemented React and documentation styles. The live Eftax Figma foundation now has verified primitive values, semantic modes, component aliases, and native component/dashboard layouts. See assets/figma/validation.json and assets/figma/README.md for evidence and the static dashboard comparison limits.
 
 **Key Characteristics:**
 

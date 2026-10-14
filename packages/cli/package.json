@@ -1,0 +1,24 @@
+{
+  "name": "@chamfer/cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Original source installer for Chamfer UI",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "chamfer": "src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "registry",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "node ../../scripts/build-registry.mjs",
+    "test": "node --test ../../tests/installer.test.mjs"
+  }
+}

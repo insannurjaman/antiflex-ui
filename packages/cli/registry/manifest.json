@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "release": "0.1.0",
+  "components": {
+    "button": {
+      "file": "components/button.tsx",
+      "dependencies": [],
+      "exports": [
+        "Button"
+      ]
+    },
+    "text-field": {
+      "file": "components/text-field.tsx",
+      "dependencies": [],
+      "exports": [
+        "TextField"
+      ]
+    },
+    "badge": {
+      "file": "components/badge.tsx",
+      "dependencies": [],
+      "exports": [
+        "Badge"
+      ]
+    },
+    "card": {
+      "file": "components/card.tsx",
+      "dependencies": [],
+      "exports": [
+        "Card"
+      ]
+    },
+    "separator": {
+      "file": "components/separator.tsx",
+      "dependencies": [],
+      "exports": [
+        "Separator"
+      ]
+    },
+    "skeleton": {
+      "file": "components/skeleton.tsx",
+      "dependencies": [],
+      "exports": [
+        "Skeleton"
+      ]
+    },
+    "table": {
+      "file": "components/table.tsx",
+      "dependencies": [],
+      "exports": [
+        "Table",
+        "TableHeader",
+        "TableBody",
+        "TableRow",
+        "TableHead",
+        "TableCell",
+        "TableCaption"
+      ]
+    },
+    "app-shell": {
+      "file": "components/app-shell.tsx",
+      "dependencies": [
+        "button"
+      ],
+      "exports": [
+        "AppShell"
+      ]
+    }
+  },
+  "fonts": {
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0"
+  },
+  "integrity": {
+    "components/button.tsx": "d2cca02a562161ee2492123230d373332fc2fab07dc5e90a078cce2b58243963",
+    "components/text-field.tsx": "f7c840291163491d058647c41767ab62f34e7c5bc5df8c0b2d4e8f228baab568",
+    "components/badge.tsx": "00c7ed1851a12ebb9a40931bbc61bb53a521dc968664088415dde0ef0fa9b9e7",
+    "components/card.tsx": "7ed491b863805f70bcee3d8651577d18f6170b589c24317fbba7c3dbf5fa20a0",
+    "components/separator.tsx": "69dc20aeb54163c13bf035ba4fde5d030382fd0f46b2700116d4e6d4714bb291",
+    "components/skeleton.tsx": "5e8296047b61c26cf50e561190572414323cfab34949deefdf76aa441163fcbf",
+    "components/table.tsx": "baf93fcbb90c078ffe14843b2b74806c8688eb0bae577ea2e5f9c583e6288f27",
+    "components/app-shell.tsx": "2a935df0a75ad6b853fba473b59bebb2711107c4e85fbe57a9dee742afe82ef1",
+    "components/utils.ts": "652e098d7c68c0f7d321de1bcbd113d7a45fe28a65b553a103a6fa6c37c9846f",
+    "styles/tokens.css": "89d0f6f10ceed2be3e45683a6d08583d57bedc4b9ed902e68c957a9dcb970889",
+    "styles/tokens.json": "9840fc73add53617913ee6c36c18283eac24789c86df4410ff02256ba56e3b70",
+    "styles/tailwind.css": "de2a49ec492ff29c72cd2a1b73538da7159af815671ee3583b9c8493f4f394a1",
+    "styles/components.css": "d60654cb844e1ec108f130878400447b364fd697cc2e90f72101d579ac165c9d",
+    "styles/fonts.css": "6caf5408c9e92d9acd7744d3fc1678b3b41f6c14b285d48617a38f0fbcfb3ac9",
+    "styles/index.css": "99153b6cd515563794aa890709da582a2e3675602ddf7f130eb2c95d65073498",
+    "styles/LICENSE-ibm-plex-sans.txt": "d0283623ef57e722fd0eb688a8041589670c608ab780cd3612d06ba6f153d3fd",
+    "styles/LICENSE-ibm-plex-mono.txt": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+    "styles/LICENSE-chamfer.txt": "5f3e8d02403c46f665c4af3e917a66118b3ca5616f4b2f60144a87fe19e7273b"
+  }
+}

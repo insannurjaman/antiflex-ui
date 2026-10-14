@@ -151,3 +151,33 @@ test('every Storybook specimen renders and passes accessibility checks', async (
     ).toEqual([]);
   }
 });
+
+test('mobile installation code can be read and scrolled with the keyboard in both themes', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const theme of ['light', 'dark']) {
+    await page.addInitScript((t) => localStorage.setItem('chamfer-theme', t), theme);
+    await page.goto('/docs/installation');
+    await expect(
+      page.getByRole('heading', { name: 'Copy components into your project' }),
+    ).toBeVisible();
+    const examples = page.locator('.code-block pre');
+    const overflowing = await examples.evaluateAll((nodes) =>
+      nodes.findIndex((node) => node.scrollWidth > node.clientWidth),
+    );
+    expect(overflowing).toBeGreaterThanOrEqual(0);
+    const example = examples.nth(overflowing);
+    await example.focus();
+    await expect(example).toBeFocused();
+    await page.keyboard.press('ArrowRight');
+    await expect.poll(() => example.evaluate((node) => node.scrollLeft)).toBeGreaterThan(0);
+    const results = await new AxeBuilder({ page })
+      .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
+      .analyze();
+    expect(results.violations).toEqual([]);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(
+      false,
+    );
+  }
+});

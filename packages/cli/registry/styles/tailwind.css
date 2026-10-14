@@ -1,0 +1,24 @@
+/* Generated Tailwind v4 semantic mappings. */
+@theme inline {
+  --color-canvas: var(--ch-semantic-canvas);
+  --color-surface: var(--ch-semantic-surface);
+  --color-subtle: var(--ch-semantic-subtle);
+  --color-inset: var(--ch-semantic-inset);
+  --color-foreground: var(--ch-semantic-foreground);
+  --color-muted: var(--ch-semantic-muted);
+  --color-border: var(--ch-semantic-border);
+  --color-border-strong: var(--ch-semantic-border-strong);
+  --color-accent: var(--ch-semantic-accent);
+  --color-accent-hover: var(--ch-semantic-accent-hover);
+  --color-accent-soft: var(--ch-semantic-accent-soft);
+  --color-accent-foreground: var(--ch-semantic-accent-foreground);
+  --color-focus: var(--ch-semantic-focus);
+  --color-success: var(--ch-semantic-success);
+  --color-success-soft: var(--ch-semantic-success-soft);
+  --color-warning: var(--ch-semantic-warning);
+  --color-warning-soft: var(--ch-semantic-warning-soft);
+  --color-danger: var(--ch-semantic-danger);
+  --color-danger-soft: var(--ch-semantic-danger-soft);
+  --font-sans: var(--ch-font-sans), sans-serif;
+  --font-mono: var(--ch-font-mono), monospace;
+}

@@ -47,20 +47,21 @@ async function buildFoundations() {
     v.setValueForMode(primitive.modes[0].modeId, type === 'COLOR' ? rgb(value) : value);
   }
   for (const [key, value] of Object.entries(TOKEN_DATA.semantic.light)) {
-    const scopes = key.includes('border')
-      ? ['STROKE_COLOR']
-      : [
-            'foreground',
-            'muted',
-            'accent',
-            'accent-hover',
-            'accent-foreground',
-            'success',
-            'warning',
-            'danger',
-          ].includes(key)
-        ? ['TEXT_FILL', 'FRAME_FILL', 'SHAPE_FILL']
-        : ['FRAME_FILL', 'SHAPE_FILL'];
+    const scopes =
+      key.includes('border') || key === 'focus'
+        ? ['STROKE_COLOR']
+        : [
+              'foreground',
+              'muted',
+              'accent',
+              'accent-hover',
+              'accent-foreground',
+              'success',
+              'warning',
+              'danger',
+            ].includes(key)
+          ? ['TEXT_FILL', 'FRAME_FILL', 'SHAPE_FILL']
+          : ['FRAME_FILL', 'SHAPE_FILL'];
     const v = variable(semantic, 'semantic.' + key, 'COLOR', scopes);
     for (const mode of ['Light', 'Dark']) {
       const target = map[TOKEN_DATA.semantic[mode.toLowerCase()][key]];
@@ -75,7 +76,7 @@ async function buildFoundations() {
     const type = target ? target.resolvedType : 'FLOAT';
     const scopes =
       type === 'COLOR'
-        ? key.includes('border')
+        ? key.includes('border') || key === 'focus'
           ? ['STROKE_COLOR']
           : key.endsWith('-fg')
             ? ['TEXT_FILL']
@@ -181,6 +182,7 @@ async function buildFoundations() {
         const block = remember(figma.createRectangle());
         block.resize(256, 72);
         fill(block, 'semantic.' + role, map);
+        border(block, 'semantic.border', map);
         bind(block, 'cornerRadius', 'radius.sm', map);
         swatch.appendChild(block);
         text(swatch, role, 12, 'semantic.muted', map, true);
@@ -228,6 +230,7 @@ async function buildFoundations() {
     'Regular',
     1050,
   );
+  await bindTypography(page, map);
   return result({
     pageId: page.id,
     frameId: board.id,

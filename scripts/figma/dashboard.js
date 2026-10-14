@@ -119,7 +119,10 @@ async function buildDashboard() {
     cell.paddingLeft = 20;
     cell.paddingRight = 20;
     if (field === 'Customer') {
-      avatar(cell, 'AM');
+      const customerAvatar = avatar(cell, 'AM');
+      const initials = customerAvatar.findOne((node) => node.type === 'TEXT');
+      propertyKeys.Initials = rowComp.addComponentProperty('Initials', 'TEXT', 'AM');
+      initials.componentPropertyReferences = { characters: propertyKeys.Initials };
       const info = frame(cell, 'Customer details', 280);
       info.itemSpacing = 0;
       const name = label(info, 'Alex Morgan', 12, 'semantic.foreground', false, 'Medium');
@@ -430,6 +433,7 @@ async function buildDashboard() {
       n.setProperties({
         [propertyKeys.Order]: o.id,
         [propertyKeys.Customer]: o.customer,
+        [propertyKeys.Initials]: o.initials,
         [propertyKeys.Email]: o.email,
         [propertyKeys.Plan]: o.plan,
         [propertyKeys.Amount]: money(o.amount),
@@ -462,8 +466,10 @@ async function buildDashboard() {
       'Regular',
       content,
     );
+    await reconcileDashboard(root, map, collections, sets, shared.metric);
     frames.push({ id: root.id, name: root.name, width: root.width, height: root.height });
   }
+  await bindTypography(page, map);
   return result({
     pageId: page.id,
     frames,

@@ -7,6 +7,8 @@ const React = require('react');
 const { renderToStaticMarkup } = require('react-dom/server');
 const icons = require('@tabler/icons-react');
 const names = [
+  'IconSun',
+  'IconMoon',
   'IconArrowDown',
   'IconArrowUp',
   'IconArrowUpRight',
@@ -33,7 +35,10 @@ const TOKEN_DATA = JSON.parse(
 const BRAND_SVG = fs.readFileSync(path.join(root, 'assets/brand/chamfer-mark.svg'), 'utf8');
 const { orders } = await import('../apps/docs/components/dashboard-data.ts');
 const preamble = `const TOKEN_DATA=${JSON.stringify(TOKEN_DATA)};\nconst ICONS=${JSON.stringify(ICONS)};\nconst BRAND_SVG=${JSON.stringify(BRAND_SVG)};\nconst ORDER_DATA=${JSON.stringify(orders)};\n`;
-const common = fs.readFileSync(path.join(root, 'scripts/figma/common.js'), 'utf8');
+const common =
+  fs.readFileSync(path.join(root, 'scripts/figma/common.js'), 'utf8') +
+  '\n' +
+  fs.readFileSync(path.join(root, 'scripts/figma/reconcile-dashboard.js'), 'utf8');
 const output = path.join(root, 'assets/figma/generated');
 fs.mkdirSync(output, { recursive: true });
 const phaseNames = ['foundations', 'components', 'dashboard'];
