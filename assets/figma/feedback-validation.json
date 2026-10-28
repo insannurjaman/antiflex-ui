@@ -1,0 +1,47 @@
+{
+  "pageId": "54:18",
+  "variableCount": 136,
+  "newComponentTokens": 14,
+  "componentFamilies": 15,
+  "variants": 99,
+  "specimens": 122,
+  "reviews": [
+    {
+      "id": "54:558",
+      "name": "Feedback / Review 1 / Light",
+      "width": 1200,
+      "height": 1471
+    },
+    {
+      "id": "54:704",
+      "name": "Feedback / Review 2 / Light",
+      "width": 1200,
+      "height": 2012
+    },
+    {
+      "id": "54:967",
+      "name": "Feedback / Review 3 / Light",
+      "width": 1200,
+      "height": 2175
+    },
+    {
+      "id": "54:1156",
+      "name": "Feedback / Review 1 / Dark",
+      "width": 1200,
+      "height": 1471
+    },
+    {
+      "id": "54:1302",
+      "name": "Feedback / Review 2 / Dark",
+      "width": 1200,
+      "height": 2012
+    },
+    {
+      "id": "54:1565",
+      "name": "Feedback / Review 3 / Dark",
+      "width": 1200,
+      "height": 2175
+    }
+  ],
+  "issues": []
+}

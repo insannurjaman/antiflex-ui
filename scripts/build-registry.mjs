@@ -1,98 +1,36 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import ts from 'typescript';
 import crypto from 'node:crypto';
 const root = path.resolve(import.meta.dirname, '..');
 const output = path.join(root, 'packages/cli/registry');
-const original = fs.readFileSync(path.join(root, 'packages/ui/src/index.tsx'), 'utf8');
-const source = ts.createSourceFile(
-  'index.tsx',
-  original,
-  ts.ScriptTarget.Latest,
-  true,
-  ts.ScriptKind.TSX,
+const inventory = JSON.parse(
+  fs.readFileSync(path.join(root, 'packages/ui/src/catalog.json'), 'utf8'),
 );
-const inventory = {
-  button: ['ButtonProps', 'Button'],
-  'text-field': ['TextFieldProps', 'TextField'],
-  badge: ['BadgeProps', 'Badge'],
-  card: ['CardProps', 'Card'],
-  separator: ['SeparatorProps', 'Separator'],
-  skeleton: ['Skeleton'],
-  table: [
-    'Table',
-    'TableHeader',
-    'TableBody',
-    'TableRow',
-    'TableHead',
-    'TableCell',
-    'TableCaption',
-  ],
-  'app-shell': ['AppShellProps', 'AppShell'],
-};
-const declarations = new Map();
-for (const statement of source.statements) {
-  if (ts.isVariableStatement(statement))
-    for (const declaration of statement.declarationList.declarations)
-      declarations.set(declaration.name.getText(source), statement);
-  else if ('name' in statement && statement.name)
-    declarations.set(statement.name.getText(source), statement);
-}
-const reactImport = source.statements.find(
-  (node) => ts.isImportDeclaration(node) && node.moduleSpecifier.text === 'react',
-);
-const imports = reactImport.importClause.namedBindings.elements;
-const printer = ts.createPrinter({ newLine: ts.NewLineKind.LineFeed });
 const release = JSON.parse(
   fs.readFileSync(path.join(root, 'packages/cli/package.json'), 'utf8'),
 ).version;
 const manifest = { version: 1, release, components: {}, fonts: {} };
 const files = new Map();
-const usedIdentifiers = (statement) => {
-  const names = new Set();
-  function visit(node) {
-    if (ts.isIdentifier(node)) names.add(node.text);
-    ts.forEachChild(node, visit);
-  }
-  visit(statement);
-  return names;
-};
-for (const [name, symbols] of Object.entries(inventory)) {
-  const statements = symbols.map((symbol) => {
-    const node = declarations.get(symbol);
-    if (!node) throw Error('Missing component symbol ' + symbol);
-    return node;
-  });
-  const used = new Set(statements.flatMap((node) => [...usedIdentifiers(node)]));
-  const selectedImports = imports.filter((node) => used.has(node.name.text));
-  const named = selectedImports
-    .map((node) => (node.isTypeOnly ? 'type ' : '') + node.name.text)
-    .join(', ');
-  let code = `'use client';\n\nimport { ${named} } from 'react';\n`;
-  const helpers = ['cx', 'Size'].filter((symbol) => used.has(symbol));
-  if (helpers.length)
-    code += `import { ${helpers.map((symbol) => (symbol === 'Size' ? 'type Size' : symbol)).join(', ')} } from './utils';\n`;
-  const dependencies = name === 'app-shell' ? ['button'] : [];
-  if (name === 'app-shell') code += "import { Button } from './button';\n";
-  code +=
-    '\n' +
-    statements
-      .map((node) => printer.printNode(ts.EmitHint.Unspecified, node, source))
-      .join('\n\n') +
-    '\n';
-  files.set(`components/${name}.tsx`, code);
+for (const [name, item] of Object.entries(inventory)) {
+  const file = `components/${name}.tsx`;
+  files.set(file, fs.readFileSync(path.join(root, 'packages/ui/src', name + '.tsx'), 'utf8'));
   manifest.components[name] = {
-    file: `components/${name}.tsx`,
-    dependencies,
-    exports: symbols.filter((symbol) => !symbol.endsWith('Props')),
+    file,
+    dependencies: item.dependencies,
+    ...(item.utilities ? { utilities: item.utilities } : {}),
+    exports: item.symbols.filter((symbol) => !symbol.endsWith('Props')),
   };
 }
 files.set(
   'components/utils.ts',
-  ['Size', 'cx']
-    .map((symbol) => printer.printNode(ts.EmitHint.Unspecified, declarations.get(symbol), source))
-    .join('\n\n') + '\n',
+  fs.readFileSync(path.join(root, 'packages/ui/src/utils.ts'), 'utf8'),
 );
+for (const file of new Set(Object.values(inventory).flatMap((item) => item.utilities || []))) {
+  files.set(
+    'components/' + file,
+    fs.readFileSync(path.join(root, 'packages/ui/src', file), 'utf8'),
+  );
+}
 for (const name of ['tokens.css', 'tokens.json', 'tailwind.css'])
   files.set(
     'styles/' + name,
@@ -102,20 +40,23 @@ files.set(
   'styles/components.css',
   fs
     .readFileSync(path.join(root, 'packages/ui/src/styles.css'), 'utf8')
-    .replace(/^@import ['"]@chamfer\/tokens\/css['"];\s*/, ''),
+    .replace(/^@import ['"]@antiflex\/tokens\/css['"];\s*/, ''),
 );
 const fontFaces = [];
-for (const [family, weights] of [
-  ['sans', [400, 500, 600]],
-  ['mono', [400, 500]],
-]) {
+const fontFamilies = [
+  ['dm-sans', 'DM Sans', [100, 200, 300, 400, 500, 600, 700, 800, 900]],
+  ['space-mono', 'Space Mono', [400, 700]],
+  ['anybody', 'Anybody', [100, 200, 300, 400, 500, 600, 700, 800, 900]],
+];
+for (const [slug, family, weights] of fontFamilies) {
   for (const weight of weights)
-    fontFaces.push(`@font-face {
-  font-family: 'IBM Plex ${family === 'sans' ? 'Sans' : 'Mono'}';
-  font-style: normal;
+    for (const style of ['normal', 'italic'])
+      fontFaces.push(`@font-face {
+  font-family: '${family}';
+  font-style: ${style};
   font-weight: ${weight};
   font-display: swap;
-  src: url('@fontsource/ibm-plex-${family}/files/ibm-plex-${family}-latin-${weight}-normal.woff2') format('woff2');
+  src: url('@fontsource/${slug}/files/${slug}-latin-${weight}-${style}.woff2') format('woff2');
 }`);
 }
 files.set('styles/fonts.css', fontFaces.join('\n\n') + '\n');
@@ -123,18 +64,22 @@ files.set(
   'styles/index.css',
   "@import './tokens.css';\n@import './tailwind.css';\n@import './components.css';\n@import './fonts.css';\n",
 );
-for (const family of ['sans', 'mono']) {
-  const name = '@fontsource/ibm-plex-' + family;
+for (const [slug] of fontFamilies) {
+  const name = '@fontsource/' + slug;
   const pkg = JSON.parse(
     fs.readFileSync(path.join(root, 'apps/docs/node_modules', name, 'package.json'), 'utf8'),
   );
   manifest.fonts[name] = '^' + pkg.version;
   files.set(
-    `styles/LICENSE-ibm-plex-${family}.txt`,
+    `styles/LICENSE-${slug}.txt`,
     fs.readFileSync(path.join(root, 'apps/docs/node_modules', name, 'LICENSE'), 'utf8'),
   );
 }
-files.set('styles/LICENSE-chamfer.txt', fs.readFileSync(path.join(root, 'LICENSE'), 'utf8'));
+files.set('styles/LICENSE-antiflex.txt', fs.readFileSync(path.join(root, 'LICENSE'), 'utf8'));
+files.set(
+  'styles/LICENSE-tailwindcss.txt',
+  fs.readFileSync(path.join(root, 'packages/tokens/licenses/tailwindcss.txt'), 'utf8'),
+);
 manifest.integrity = {};
 for (const [file, content] of files) {
   manifest.integrity[file] = crypto.createHash('sha256').update(content).digest('hex');

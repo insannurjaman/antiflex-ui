@@ -1,0 +1,1029 @@
+{
+  "createdNodeIds": [
+    "75:2593",
+    "75:2633",
+    "75:2634",
+    "75:2635",
+    "75:2636",
+    "75:2637",
+    "75:2638",
+    "75:2639",
+    "75:2640",
+    "75:2641",
+    "75:2642",
+    "75:2643",
+    "75:2644",
+    "75:2645",
+    "75:2646",
+    "75:2647",
+    "75:2648",
+    "75:2649",
+    "75:2650",
+    "75:2651",
+    "75:2652",
+    "75:2653",
+    "75:2654",
+    "75:2655",
+    "75:2656",
+    "75:2657",
+    "75:2658",
+    "75:2659",
+    "75:2660",
+    "75:2661",
+    "75:2662",
+    "75:2663",
+    "75:2664",
+    "75:2665",
+    "75:2666",
+    "75:2667",
+    "75:2668",
+    "75:2669",
+    "75:2670",
+    "75:2671",
+    "75:2672",
+    "75:2673",
+    "75:2674",
+    "75:2675",
+    "75:2676",
+    "75:2677",
+    "75:2678",
+    "75:2679",
+    "75:2680",
+    "75:2681",
+    "75:2682",
+    "75:2683",
+    "75:2684",
+    "75:2685",
+    "75:2686",
+    "75:2687",
+    "75:2688",
+    "75:2689",
+    "75:2690",
+    "75:2691",
+    "75:2692",
+    "75:2693",
+    "75:2694",
+    "75:2695",
+    "75:2696",
+    "75:2697",
+    "75:2698",
+    "75:2699",
+    "75:2700",
+    "75:2701",
+    "75:2702",
+    "75:2703",
+    "75:2704",
+    "75:2705",
+    "75:2706",
+    "75:2707",
+    "75:2708",
+    "75:2709",
+    "75:2710",
+    "75:2711",
+    "75:2712",
+    "75:2713",
+    "75:2714",
+    "75:2715",
+    "75:2716",
+    "75:2717",
+    "75:2718",
+    "75:2719",
+    "75:2720",
+    "75:2721",
+    "75:2722",
+    "75:2723",
+    "75:2724",
+    "75:2725",
+    "75:2726",
+    "75:2727",
+    "75:2728",
+    "75:2729",
+    "75:2730",
+    "75:2731",
+    "75:2732",
+    "75:2733",
+    "75:2734",
+    "75:2735",
+    "75:2736",
+    "75:2737",
+    "75:2738",
+    "75:2739",
+    "75:2740",
+    "75:2741",
+    "75:2742",
+    "75:2743",
+    "75:2744",
+    "75:2745",
+    "75:2746",
+    "75:2747",
+    "75:2748",
+    "75:2749",
+    "75:2750",
+    "75:2751",
+    "75:2752",
+    "75:2753",
+    "75:2754",
+    "75:2755",
+    "75:2756",
+    "75:2757",
+    "75:2758",
+    "75:2759",
+    "75:2760",
+    "75:2761",
+    "75:2762",
+    "75:2763",
+    "75:2764",
+    "75:2765",
+    "75:2766",
+    "75:2767",
+    "75:2768",
+    "75:2769",
+    "75:2770",
+    "75:2771",
+    "75:2772",
+    "75:2773",
+    "75:2774",
+    "75:2775",
+    "75:2776",
+    "75:2777",
+    "75:2778",
+    "75:2779",
+    "75:2780",
+    "75:2781",
+    "75:2782",
+    "75:2783",
+    "75:2784",
+    "75:2785",
+    "75:2786",
+    "75:2787",
+    "75:2788",
+    "75:2789",
+    "75:2790",
+    "75:2791",
+    "75:2792",
+    "75:2793",
+    "75:2794",
+    "75:2795",
+    "75:2796",
+    "75:2797",
+    "75:2798",
+    "75:2799",
+    "75:2800",
+    "75:2801",
+    "75:2802",
+    "75:2803",
+    "75:2804"
+  ],
+  "mutatedNodeIds": [],
+  "variableIds": [],
+  "pageId": "75:2593",
+  "styles": [
+    {
+      "id": "S:1bba5bf9e562001cdbb4c097247a0a900fbae9e0,",
+      "name": "Chamfer / Type scale / xs",
+      "size": 12,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 16
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:fb7eb75af879235b21f44d776491d13df4c3f807,",
+      "name": "Chamfer / Type scale / sm",
+      "size": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:43db395fdf8d20cd8349f62bb1e915576ba8b94c,",
+      "name": "Chamfer / Type scale / base",
+      "size": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:28854b4649f1eca3a4e9591d461496e047d6fa85,",
+      "name": "Chamfer / Type scale / lg",
+      "size": 18,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:f9c8758d74b7c58ab78acb6cb9e59d698062e10b,",
+      "name": "Chamfer / Type scale / xl",
+      "size": 20,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 28
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:c749260d004e21a199d72d2c6ba9b88abdb6a612,",
+      "name": "Chamfer / Type scale / 2xl",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:2874446308a8da1a6875c300047452d64d7bacdb,",
+      "name": "Chamfer / Type scale / 3xl",
+      "size": 30,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 36
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:367a5edc57fcfb7673b2d119f841613b7c90c75c,",
+      "name": "Chamfer / Type scale / 4xl",
+      "size": 36,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 40
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:0878814d2e7e73292645d2eb1ba432e46dd46696,",
+      "name": "Chamfer / Type scale / 5xl",
+      "size": 48,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 48
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:81d34380aadf12588b18ebc989391c60a504b13d,",
+      "name": "Chamfer / Type scale / 6xl",
+      "size": 60,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 60
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:c74b271f415bb2522efce2d6203ce73eafa5fe53,",
+      "name": "Chamfer / Type scale / 7xl",
+      "size": 72,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 72
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:33e19944d931d3ec3c0814cea7cdf297d3dc561d,",
+      "name": "Chamfer / Type scale / 8xl",
+      "size": 96,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 96
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:6ef86b2030db5b9ea702b96aa11f3d8b6cc639f3,",
+      "name": "Chamfer / Type scale / 9xl",
+      "size": 128,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 128
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:bd743170f73e5fb02330698ca9f3ebd44be6d981,",
+      "name": "Chamfer / Type weight / thin",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Thin",
+        "variationSettings": {
+          "wght": 100,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:c5287857c60808002f1b23586e0242fdbe11f4d8,",
+      "name": "Chamfer / Type weight / extralight",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "ExtraLight",
+        "variationSettings": {
+          "wght": 200,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:d74177430a9a5271ea4f55981727a0ecd135991f,",
+      "name": "Chamfer / Type weight / light",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Light",
+        "variationSettings": {
+          "wght": 300,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:c3e63bf9a1aa97aa5bed756f0d74c5c2d5ca75a5,",
+      "name": "Chamfer / Type weight / normal",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:abf704b7eacd13ececc967a9ae4a6439b7749118,",
+      "name": "Chamfer / Type weight / medium",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:9594e52fa6f6b7f5d64e40523cb0e574432a5483,",
+      "name": "Chamfer / Type weight / semibold",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:a84445913498a456bb60ae7cd3d83dd708aa7615,",
+      "name": "Chamfer / Type weight / bold",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:54993cb8161391939b7ccbf9dec27a0307b3e1e6,",
+      "name": "Chamfer / Type weight / extrabold",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "ExtraBold",
+        "variationSettings": {
+          "wght": 800,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:55d96d32f860a59f3d25e28602e742f7fcf01151,",
+      "name": "Chamfer / Type weight / black",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Black",
+        "variationSettings": {
+          "wght": 900,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:2888f0849bc7fad822d364ff8055c085bae662eb,",
+      "name": "Chamfer / Type tracking / tighter",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -5
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:0f6d289b82b1ea43705d99095bcd222ede72fe8e,",
+      "name": "Chamfer / Type tracking / tight",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2.5
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:8e7b75ca35057a1d26ba2a72095560d4486a5a0c,",
+      "name": "Chamfer / Type tracking / normal",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:7f5206c61013d588e001108a0086f0b3ebd48364,",
+      "name": "Chamfer / Type tracking / wide",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 2.5
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:e6d4e3bfa694d2757c94dede01b19c699e74cb31,",
+      "name": "Chamfer / Type tracking / wider",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:402836ca47be39557eaec8fed1c335c612fd8beb,",
+      "name": "Chamfer / Type tracking / widest",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 10
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:a20aca18d535331b6b3698a59329135da92692df,",
+      "name": "Chamfer / Type leading / none",
+      "size": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 100
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:0e02ad2ef036b8fb073a4a494be60e9327a48ef9,",
+      "name": "Chamfer / Type leading / tight",
+      "size": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 125
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:e38aac0c63d0170f123bceb91f83b1db0e2708e2,",
+      "name": "Chamfer / Type leading / snug",
+      "size": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 137.5
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:b8274f177731cf1a444e31880aa1a2a84edea720,",
+      "name": "Chamfer / Type leading / normal",
+      "size": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 150
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:39b9981f154037f325c5650aded841887a53b792,",
+      "name": "Chamfer / Type leading / relaxed",
+      "size": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 162.5
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:77c842f111dc4ea6c6d95e13721456156c51ec0e,",
+      "name": "Chamfer / Type leading / loose",
+      "size": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 200
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:389f8d3b87fc9ef5c7f41dd4eec1c453fb12b1c3,",
+      "name": "Chamfer / Type family / Sans",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:a9b01cfa33d5cccdf3a3f3d2f7f2b2bc49b293b5,",
+      "name": "Chamfer / Type family / Display",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "Anybody",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      }
+    },
+    {
+      "id": "S:4c46cbfd85abbdc2cc222a63294df46ecfc5a60f,",
+      "name": "Chamfer / Type family / Mono",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "Space Mono",
+        "style": "Regular"
+      }
+    },
+    {
+      "id": "S:c44ac9cda02e07ab58d7f8f79ab980d6505cd4d9,",
+      "name": "Chamfer / Type italic / DM Sans",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "DM Sans",
+        "style": "Italic",
+        "variationSettings": {
+          "wght": 400,
+          "opsz": 14
+        }
+      }
+    },
+    {
+      "id": "S:a870d7993bc7b8e511db71a518230c2ad2d21e5c,",
+      "name": "Chamfer / Type italic / Anybody",
+      "size": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "fontName": {
+        "family": "Anybody",
+        "style": "Italic",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "75:2633",
+      "name": "Type reference / Light",
+      "width": 1240,
+      "height": 2794
+    },
+    {
+      "id": "75:2719",
+      "name": "Type reference / Dark",
+      "width": 1240,
+      "height": 2794
+    }
+  ],
+  "reconcile": {
+    "createdNodeIds": [],
+    "mutatedNodeIds": [
+      "75:2713",
+      "75:2714",
+      "75:2715",
+      "75:2716",
+      "75:2717",
+      "75:2718",
+      "75:2799",
+      "75:2800",
+      "75:2801",
+      "75:2802",
+      "75:2803",
+      "75:2804"
+    ],
+    "reason": "Use 420px multiline leading specimens so rhythm differences are visible."
+  }
+}

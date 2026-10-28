@@ -1,9 +1,9 @@
 async function buildComponents() {
   await fonts();
-  const page = await pageFor('Chamfer / Components');
+  const page = await pageFor('antiflex / Components');
   const { map, collections } = await tokenMap();
   if (!map['semantic.accent']) throw new Error('Run foundations first.');
-  const existing = page.children.find((n) => n.name === 'Chamfer / Component specimens');
+  const existing = page.children.find((n) => n.name === 'antiflex / Component specimens');
   if (existing) return result({ pageId: page.id, frameId: existing.id, alreadyExists: true });
   const sets = {};
   let y = 200;
@@ -374,7 +374,7 @@ async function buildComponents() {
     shells.push(c);
   }
   group('AppShell', shells, 1);
-  const review = frame(page, 'Chamfer / Component specimens', 1240);
+  const review = frame(page, 'antiflex / Component specimens', 1240);
   review.x = 1700;
   review.y = 200;
   padding(review, '12', map);

@@ -1,0 +1,22 @@
+{
+  "pageId": "47:16",
+  "variableCount": 122,
+  "newComponentTokens": 14,
+  "componentFamilies": 10,
+  "variants": 119,
+  "reviews": [
+    {
+      "id": "49:10",
+      "name": "Forms / Review / Light",
+      "width": 1200,
+      "height": 1937
+    },
+    {
+      "id": "49:274",
+      "name": "Forms / Review / Dark",
+      "width": 1200,
+      "height": 1937
+    }
+  ],
+  "issues": []
+}

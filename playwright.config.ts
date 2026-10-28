@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
-const docsURL = process.env.CHAMFER_DOCS_URL || 'http://127.0.0.1:3100';
-const storybookURL = process.env.CHAMFER_STORYBOOK_URL || 'http://127.0.0.1:6106';
+const docsURL = process.env.ANTIFLEX_DOCS_URL || 'http://127.0.0.1:3100';
+const storybookURL = process.env.ANTIFLEX_STORYBOOK_URL || 'http://127.0.0.1:6106';
 export default defineConfig({
   testDir: './tests',
   testMatch: '**/*.spec.ts',
@@ -11,22 +11,22 @@ export default defineConfig({
   use: { baseURL: docsURL, colorScheme: 'light', trace: 'retain-on-failure' },
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-    ...(process.platform !== 'darwin' || process.env.CHAMFER_TEST_FIREFOX === '1'
+    ...(process.platform !== 'darwin' || process.env.ANTIFLEX_TEST_FIREFOX === '1'
       ? [{ name: 'firefox', use: { ...devices['Desktop Firefox'] } }]
       : []),
     { name: 'webkit', use: { ...devices['Desktop Safari'] } },
   ],
   webServer: [
-    ...(!process.env.CHAMFER_DOCS_URL
+    ...(!process.env.ANTIFLEX_DOCS_URL
       ? [
           {
-            command: 'pnpm --filter @chamfer/docs start --port 3100',
+            command: 'pnpm --filter @antiflex/docs start --port 3100',
             url: docsURL,
             reuseExistingServer: !process.env.CI,
           },
         ]
       : []),
-    ...(!process.env.CHAMFER_STORYBOOK_URL
+    ...(!process.env.ANTIFLEX_STORYBOOK_URL
       ? [
           {
             command: 'node scripts/serve-storybook.mjs',

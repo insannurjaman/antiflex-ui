@@ -1,0 +1,10 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"mutatedVariableIds\":[\"VariableID:47:5\",\"VariableID:47:6\",\"VariableID:47:7\",\"VariableID:47:8\",\"VariableID:47:9\",\"VariableID:97:125\"],\"changed\":[{\"id\":\"VariableID:47:5\",\"name\":\"component/choice-size-sm\",\"scopes\":[\"WIDTH_HEIGHT\"]},{\"id\":\"VariableID:47:6\",\"name\":\"component/choice-size-md\",\"scopes\":[\"WIDTH_HEIGHT\"]},{\"id\":\"VariableID:47:7\",\"name\":\"component/choice-size-lg\",\"scopes\":[\"WIDTH_HEIGHT\"]},{\"id\":\"VariableID:47:8\",\"name\":\"component/choice-checked-bg\",\"scopes\":[\"FRAME_FILL\",\"SHAPE_FILL\",\"TEXT_FILL\",\"STROKE_COLOR\"]},{\"id\":\"VariableID:47:9\",\"name\":\"component/choice-checked-fg\",\"scopes\":[\"FRAME_FILL\",\"SHAPE_FILL\",\"TEXT_FILL\",\"STROKE_COLOR\"]},{\"id\":\"VariableID:97:125\",\"name\":\"component/calendar-day-size\",\"scopes\":[\"WIDTH_HEIGHT\"]}]}"
+    }
+  ],
+  "structuredContent": null,
+  "isError": false
+}

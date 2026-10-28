@@ -6,9 +6,9 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
       <aside className="docs-sidebar">
         <DocsNavigation />
         <div className="sidebar-foot">
-          <span className="token-name">CHAMFER / FOUNDATION</span>
+          <span className="token-name">ANTIFLEX / FOUNDATION</span>
           <p>
-            Eight components.
+            One shared foundation.
             <br />
             One clear language.
           </p>

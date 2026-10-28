@@ -1,8 +1,11 @@
 'use client';
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
-import { Button } from '@chamfer/ui';
+import { Button } from '@antiflex/ui';
 import { IconMoon, IconSun } from '@tabler/icons-react';
 const Context = createContext({ theme: 'light', toggle: () => {} });
+export function useTheme() {
+  return useContext(Context);
+}
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState('light');
   useEffect(() => {
@@ -13,7 +16,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     setTheme(next);
     document.documentElement.dataset.theme = next;
     try {
-      localStorage.setItem('chamfer-theme', next);
+      localStorage.setItem('antiflex-theme', next);
     } catch {}
   };
   return <Context.Provider value={{ theme, toggle }}>{children}</Context.Provider>;

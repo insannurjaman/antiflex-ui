@@ -1,0 +1,486 @@
+{
+  "button": {
+    "name": "Button",
+    "symbols": ["ButtonProps", "Button"],
+    "dependencies": ["spinner"]
+  },
+  "text-field": {
+    "name": "TextField",
+    "symbols": ["TextFieldProps", "TextField"],
+    "dependencies": ["field", "input", "input-group"]
+  },
+  "badge": {
+    "name": "Badge",
+    "symbols": ["BadgeProps", "Badge"],
+    "dependencies": []
+  },
+  "card": {
+    "name": "Card",
+    "symbols": ["CardProps", "Card"],
+    "dependencies": []
+  },
+  "separator": {
+    "name": "Separator",
+    "symbols": ["SeparatorProps", "Separator"],
+    "dependencies": []
+  },
+  "skeleton": {
+    "name": "Skeleton",
+    "symbols": ["Skeleton"],
+    "dependencies": []
+  },
+  "table": {
+    "name": "Table",
+    "symbols": [
+      "Table",
+      "TableHeader",
+      "TableBody",
+      "TableRow",
+      "TableHead",
+      "TableCell",
+      "TableCaption"
+    ],
+    "dependencies": []
+  },
+  "app-shell": {
+    "name": "AppShell",
+    "symbols": ["AppShellProps", "AppShell"],
+    "dependencies": ["button"]
+  },
+  "input": {
+    "name": "Input",
+    "symbols": ["InputProps", "Input"],
+    "dependencies": [],
+    "utilities": ["form-utils.ts"]
+  },
+  "label": {
+    "name": "Label",
+    "symbols": ["LabelProps", "Label"],
+    "dependencies": []
+  },
+  "field": {
+    "name": "Field",
+    "symbols": ["FieldProps", "Field", "FieldSet", "FieldLegend"],
+    "dependencies": ["label"],
+    "utilities": ["form-utils.ts"]
+  },
+  "textarea": {
+    "name": "Textarea",
+    "symbols": ["TextareaProps", "Textarea"],
+    "dependencies": [],
+    "utilities": ["form-utils.ts"]
+  },
+  "native-select": {
+    "name": "Native Select",
+    "symbols": ["NativeSelectProps", "NativeSelect"],
+    "dependencies": [],
+    "utilities": ["form-utils.ts"]
+  },
+  "checkbox": {
+    "name": "Checkbox",
+    "symbols": ["CheckboxProps", "Checkbox"],
+    "dependencies": [],
+    "utilities": ["form-utils.ts"]
+  },
+  "radio-group": {
+    "name": "Radio Group",
+    "symbols": ["RadioGroupProps", "RadioGroup"],
+    "dependencies": [],
+    "utilities": ["form-utils.ts"]
+  },
+  "switch": {
+    "name": "Switch",
+    "symbols": ["SwitchProps", "Switch"],
+    "dependencies": [],
+    "utilities": ["form-utils.ts"]
+  },
+  "button-group": {
+    "name": "Button Group",
+    "symbols": ["ButtonGroupProps", "ButtonGroup"],
+    "dependencies": []
+  },
+  "input-group": {
+    "name": "Input Group",
+    "symbols": ["InputGroupProps", "InputGroup", "InputGroupAddon"],
+    "dependencies": []
+  },
+  "alert": {
+    "name": "Alert",
+    "symbols": ["AlertProps", "Alert"],
+    "dependencies": []
+  },
+  "avatar": {
+    "name": "Avatar",
+    "symbols": ["AvatarProps", "Avatar"],
+    "dependencies": []
+  },
+  "breadcrumb": {
+    "name": "Breadcrumb",
+    "symbols": [
+      "Breadcrumb",
+      "BreadcrumbList",
+      "BreadcrumbItem",
+      "BreadcrumbLink",
+      "BreadcrumbPage",
+      "BreadcrumbSeparator"
+    ],
+    "dependencies": []
+  },
+  "empty": {
+    "name": "Empty",
+    "symbols": ["EmptyProps", "Empty"],
+    "dependencies": []
+  },
+  "kbd": {
+    "name": "Kbd",
+    "symbols": ["Kbd", "KbdGroup"],
+    "dependencies": []
+  },
+  "pagination": {
+    "name": "Pagination",
+    "symbols": [
+      "Pagination",
+      "PaginationContent",
+      "PaginationItem",
+      "PaginationLinkProps",
+      "PaginationLink",
+      "PaginationButtonProps",
+      "PaginationButton",
+      "PaginationPrevious",
+      "PaginationNext",
+      "PaginationEllipsis"
+    ],
+    "dependencies": []
+  },
+  "progress": {
+    "name": "Progress",
+    "symbols": ["ProgressProps", "Progress"],
+    "dependencies": []
+  },
+  "spinner": {
+    "name": "Spinner",
+    "symbols": ["SpinnerProps", "Spinner"],
+    "dependencies": []
+  },
+  "tabs": {
+    "name": "Tabs",
+    "symbols": [
+      "TabsProps",
+      "Tabs",
+      "TabsList",
+      "TabsTriggerProps",
+      "TabsTrigger",
+      "TabsContentProps",
+      "TabsContent"
+    ],
+    "dependencies": [],
+    "utilities": ["interaction-utils.ts"]
+  },
+  "accordion": {
+    "name": "Accordion",
+    "symbols": [
+      "AccordionProps",
+      "Accordion",
+      "AccordionItemProps",
+      "AccordionItem",
+      "AccordionTrigger",
+      "AccordionContent"
+    ],
+    "dependencies": [],
+    "utilities": ["interaction-utils.ts"]
+  },
+  "collapsible": {
+    "name": "Collapsible",
+    "symbols": ["CollapsibleProps", "Collapsible", "CollapsibleTrigger", "CollapsibleContent"],
+    "dependencies": [],
+    "utilities": ["interaction-utils.ts"]
+  },
+  "toggle": {
+    "name": "Toggle",
+    "symbols": ["ToggleProps", "Toggle"],
+    "dependencies": [],
+    "utilities": ["interaction-utils.ts"]
+  },
+  "toggle-group": {
+    "name": "Toggle Group",
+    "symbols": ["ToggleGroupProps", "ToggleGroup", "ToggleGroupItemProps", "ToggleGroupItem"],
+    "dependencies": ["toggle"],
+    "utilities": ["interaction-utils.ts"]
+  },
+  "typography": {
+    "name": "Typography",
+    "symbols": ["TypographyProps", "Typography"],
+    "dependencies": []
+  },
+  "aspect-ratio": {
+    "name": "Aspect Ratio",
+    "symbols": ["AspectRatioProps", "AspectRatio"],
+    "dependencies": []
+  },
+  "dialog": {
+    "name": "Dialog",
+    "symbols": [
+      "Dialog",
+      "DialogProps",
+      "DialogTrigger",
+      "DialogContentProps",
+      "DialogContent",
+      "DialogHeader",
+      "DialogBody",
+      "DialogFooter",
+      "DialogTitle",
+      "DialogDescription",
+      "DialogClose"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["modal.tsx", "interaction-utils.ts"]
+  },
+  "alert-dialog": {
+    "name": "Alert Dialog",
+    "symbols": [
+      "AlertDialog",
+      "AlertDialogProps",
+      "AlertDialogTrigger",
+      "AlertDialogContentProps",
+      "AlertDialogContent",
+      "AlertDialogHeader",
+      "AlertDialogBody",
+      "AlertDialogFooter",
+      "AlertDialogTitle",
+      "AlertDialogDescription",
+      "AlertDialogCancel",
+      "AlertDialogAction"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["modal.tsx", "interaction-utils.ts"]
+  },
+  "popover": {
+    "name": "Popover",
+    "symbols": [
+      "Popover",
+      "PopoverProps",
+      "PopoverTrigger",
+      "PopoverContent",
+      "PopoverContentProps",
+      "PopoverTitle",
+      "PopoverDescription",
+      "PopoverClose"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["interaction-utils.ts", "floating-utils.ts"]
+  },
+  "tooltip": {
+    "name": "Tooltip",
+    "symbols": [
+      "Tooltip",
+      "TooltipProps",
+      "TooltipTrigger",
+      "TooltipContent",
+      "TooltipContentProps"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["interaction-utils.ts", "floating-utils.ts"]
+  },
+  "sheet": {
+    "name": "Sheet",
+    "symbols": [
+      "Sheet",
+      "SheetProps",
+      "SheetTrigger",
+      "SheetContent",
+      "SheetContentProps",
+      "SheetHeader",
+      "SheetBody",
+      "SheetFooter",
+      "SheetTitle",
+      "SheetDescription",
+      "SheetClose"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["modal.tsx", "interaction-utils.ts"]
+  },
+  "drawer": {
+    "name": "Drawer",
+    "symbols": [
+      "Drawer",
+      "DrawerProps",
+      "DrawerTrigger",
+      "DrawerContent",
+      "DrawerContentProps",
+      "DrawerHeader",
+      "DrawerBody",
+      "DrawerFooter",
+      "DrawerTitle",
+      "DrawerDescription",
+      "DrawerClose"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["modal.tsx", "interaction-utils.ts"]
+  },
+  "dropdown-menu": {
+    "name": "Dropdown Menu",
+    "symbols": [
+      "DropdownMenuProps",
+      "DropdownMenu",
+      "DropdownMenuTrigger",
+      "DropdownMenuContent",
+      "DropdownMenuItem",
+      "DropdownMenuLink",
+      "DropdownMenuCheckboxItem",
+      "DropdownMenuRadioGroup",
+      "DropdownMenuRadioItem",
+      "DropdownMenuSubTrigger",
+      "DropdownMenuGroup",
+      "DropdownMenuLabel",
+      "DropdownMenuSeparator",
+      "DropdownMenuShortcut",
+      "DropdownMenuSub",
+      "DropdownMenuContentProps",
+      "DropdownMenuItemProps",
+      "DropdownMenuLinkProps",
+      "DropdownMenuCheckboxItemProps",
+      "DropdownMenuRadioGroupProps",
+      "DropdownMenuRadioItemProps"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["menu.tsx", "floating-utils.ts", "interaction-utils.ts"]
+  },
+  "context-menu": {
+    "name": "Context Menu",
+    "symbols": [
+      "ContextMenuProps",
+      "ContextMenu",
+      "ContextMenuTrigger",
+      "ContextMenuContent",
+      "ContextMenuItem",
+      "ContextMenuLink",
+      "ContextMenuCheckboxItem",
+      "ContextMenuRadioGroup",
+      "ContextMenuRadioItem",
+      "ContextMenuSubTrigger",
+      "ContextMenuGroup",
+      "ContextMenuLabel",
+      "ContextMenuSeparator",
+      "ContextMenuShortcut",
+      "ContextMenuSub",
+      "ContextMenuContentProps",
+      "ContextMenuItemProps",
+      "ContextMenuLinkProps",
+      "ContextMenuCheckboxItemProps",
+      "ContextMenuRadioGroupProps",
+      "ContextMenuRadioItemProps"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["menu.tsx", "floating-utils.ts", "interaction-utils.ts"]
+  },
+  "toast": {
+    "name": "Toast",
+    "symbols": [
+      "Toast",
+      "ToastProps",
+      "ToastProvider",
+      "ToastProviderProps",
+      "ToastViewport",
+      "ToastViewportProps",
+      "useToast",
+      "ToastOptions",
+      "ToastUpdate",
+      "ToastApi",
+      "ToastActionOptions",
+      "ToastVariant",
+      "ToastDismissReason"
+    ],
+    "dependencies": ["button", "spinner"],
+    "utilities": ["floating-utils.ts"]
+  },
+  "hover-card": {
+    "name": "Hover Card",
+    "symbols": [
+      "HoverCard",
+      "HoverCardProps",
+      "HoverCardTrigger",
+      "HoverCardToggle",
+      "HoverCardContent",
+      "HoverCardContentProps",
+      "HoverCardTitle"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["floating-utils.ts", "interaction-utils.ts"]
+  },
+  "menubar": {
+    "name": "Menubar",
+    "symbols": [
+      "Menubar",
+      "MenubarProps",
+      "MenubarMenu",
+      "MenubarMenuProps",
+      "MenubarTrigger",
+      "MenubarContent",
+      "MenubarContentProps",
+      "MenubarItem",
+      "MenubarItemProps",
+      "MenubarLink",
+      "MenubarLinkProps",
+      "MenubarCheckboxItem",
+      "MenubarCheckboxItemProps",
+      "MenubarRadioGroup",
+      "MenubarRadioGroupProps",
+      "MenubarRadioItem",
+      "MenubarRadioItemProps",
+      "MenubarSub",
+      "MenubarSubTrigger",
+      "MenubarGroup",
+      "MenubarLabel",
+      "MenubarSeparator",
+      "MenubarShortcut"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["menu.tsx", "floating-utils.ts", "interaction-utils.ts"]
+  },
+  "navigation-menu": {
+    "name": "Navigation Menu",
+    "symbols": [
+      "NavigationMenu",
+      "NavigationMenuProps",
+      "NavigationMenuList",
+      "NavigationMenuItem",
+      "NavigationMenuItemProps",
+      "NavigationMenuTrigger",
+      "NavigationMenuContent",
+      "NavigationMenuContentProps",
+      "NavigationMenuLink"
+    ],
+    "dependencies": ["button"],
+    "utilities": ["floating-utils.ts", "interaction-utils.ts"]
+  },
+  "select": {
+    "name": "Select",
+    "symbols": ["Select", "SelectProps", "SelectOption"],
+    "dependencies": [],
+    "utilities": ["choice.tsx", "floating-utils.ts", "interaction-utils.ts", "form-utils.ts"]
+  },
+  "combobox": {
+    "name": "Combobox",
+    "symbols": ["Combobox", "ComboboxProps", "ComboboxOption"],
+    "dependencies": [],
+    "utilities": ["choice.tsx", "floating-utils.ts", "interaction-utils.ts", "form-utils.ts"]
+  },
+  "command": {
+    "name": "Command",
+    "symbols": ["Command", "CommandProps", "CommandItem", "CommandDialog", "CommandDialogProps"],
+    "dependencies": ["dialog"],
+    "utilities": ["choice.tsx", "floating-utils.ts", "interaction-utils.ts", "form-utils.ts"]
+  },
+  "calendar": {
+    "name": "Calendar",
+    "symbols": ["Calendar", "CalendarProps", "DateValue"],
+    "dependencies": ["button"],
+    "utilities": ["date-utils.ts", "interaction-utils.ts"]
+  },
+  "date-picker": {
+    "name": "Date Picker",
+    "symbols": ["DatePicker", "DatePickerProps"],
+    "dependencies": ["button", "calendar", "popover"],
+    "utilities": ["date-utils.ts", "interaction-utils.ts", "floating-utils.ts", "form-utils.ts"]
+  }
+}

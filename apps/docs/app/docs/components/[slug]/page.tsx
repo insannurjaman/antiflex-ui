@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { Badge, Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@chamfer/ui';
+import { Badge, Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@antiflex/ui';
 import { componentData } from '../../../../components/component-data';
 import { ComponentDemo } from '../../../../components/specimens';
 import { Code } from '../../../../components/code';
@@ -22,9 +22,10 @@ export default async function ComponentPage({ params }: { params: Promise<{ slug
         <Badge variant="success">Foundation</Badge>
       </div>
       <p className="doc-lead">{c.description}</p>
+      <h2>Interactive preview</h2>
       <div className="preview-panel">
         <div className="preview-panel-label">
-          <span>Interactive preview</span>
+          <span>Live specimen</span>
           <span>Try the component</span>
         </div>
         <div className="preview-content">

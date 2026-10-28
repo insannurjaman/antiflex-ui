@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { parseArgs } from 'node:util';
 import { initialize, addComponents, readRegistry } from './installer.mjs';
-const help = `Chamfer UI — original source installer\n\nUsage:\n  chamfer init [--css src/index.css] [--skip-install]\n  chamfer add button text-field\n  chamfer add --all\n  chamfer list\n\nOptions:\n  --cwd <path>             Target an existing React project\n  --components-dir <path>  Component location during init\n  --styles-dir <path>      Token and style location during init\n  --dry-run                Inspect planned changes without writing\n  --force                  Replace requested edited components with backups\n  --skip-install           Prepare files; install fonts yourself\n  --help                   Show this help\n  --version                Show the bundled release\n\nTailwind CSS 4 must already be configured. You own the copied source.\n`;
+const help = `antiflex/ui — original source installer\n\nUsage:\n  antiflex init [--css src/index.css] [--skip-install]\n  antiflex add button text-field\n  antiflex add --all\n  antiflex list\n\nOptions:\n  --cwd <path>             Target an existing React project\n  --components-dir <path>  Component location during init\n  --styles-dir <path>      Token and style location during init\n  --dry-run                Inspect planned changes without writing\n  --force                  Replace requested edited components with backups\n  --skip-install           Prepare files; install fonts yourself\n  --help                   Show this help\n  --version                Show the bundled release\n\nTailwind CSS 4 must already be configured. You own the copied source.\n`;
 try {
   const { values, positionals } = parseArgs({
     allowPositionals: true,
@@ -46,8 +46,8 @@ try {
       result.dryRun
         ? 'Dry run — no files changed.'
         : result.alreadyConfigured
-          ? 'Chamfer is already configured.'
-          : 'Chamfer is ready.',
+          ? 'antiflex is already configured.'
+          : 'antiflex is ready.',
     );
     for (const file of result.files)
       console.log((result.dryRun ? 'Would write: ' : 'Wrote: ') + file);
@@ -58,6 +58,6 @@ try {
       console.log('Next: ' + result.packageManager + ' install');
   }
 } catch (error) {
-  console.error('Chamfer: ' + error.message);
+  console.error('antiflex: ' + error.message);
   process.exitCode = 1;
 }

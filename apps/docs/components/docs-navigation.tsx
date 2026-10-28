@@ -2,17 +2,9 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { Button } from '@chamfer/ui';
-export const components = [
-  ['button', 'Button'],
-  ['text-field', 'TextField'],
-  ['badge', 'Badge'],
-  ['card', 'Card'],
-  ['separator', 'Separator'],
-  ['skeleton', 'Skeleton'],
-  ['table', 'Table'],
-  ['app-shell', 'AppShell'],
-];
+import { Button } from '@antiflex/ui';
+import { componentCatalog, componentCount } from '@antiflex/ui/catalog';
+export const components = componentCatalog.map(({ slug, name }) => [slug, name]);
 export function DocsNavigation() {
   const p = usePathname();
   const [open, setOpen] = useState(false);
@@ -43,11 +35,13 @@ export function DocsNavigation() {
           {link('/docs', 'Introduction')}
           {link('/docs/installation', 'Installation')}
           {link('/docs/foundations', 'Foundations')}
+          {link('/docs/foundations/colors', 'Colors')}
+          {link('/docs/foundations/typography', 'Typography')}
           {link('/docs/accessibility', 'Accessibility')}
         </div>
         <div className="nav-group">
           <h2>
-            Components <span>8</span>
+            Components <span>{componentCount}</span>
           </h2>
           {link('/docs/components', 'Overview')}
           {components.map(([s, n]) => link('/docs/components/' + s, n))}
@@ -55,6 +49,14 @@ export function DocsNavigation() {
         <div className="nav-group">
           <h2>Examples</h2>
           {link('/dashboard', 'SaaS dashboard')}
+          {link('/docs/forms', 'Composing forms')}
+          {link('/docs/feedback', 'Feedback and navigation')}
+          {link('/docs/modals', 'Tasks and confirmations')}
+          {link('/docs/floating', 'Anchored panels and help')}
+          {link('/docs/panels', 'Edge panels and bottom tasks')}
+          {link('/docs/menus', 'Actions and contextual menus')}
+          {link('/docs/notifications', 'Feedback without interruption')}
+          {link('/docs/workspace-tools', 'Workspace navigation and planning')}
         </div>
       </nav>
     </>

@@ -1,5 +1,14 @@
 'use client';
+import { WorkspaceComponentDemo } from './workspace-specimens';
+import { ToastComponentDemo } from './toast-specimens';
+import { MenuComponentDemo } from './menu-specimens';
 import { useState } from 'react';
+import { FloatingComponentDemo } from './floating-specimens';
+import { PanelComponentDemo } from './panel-specimens';
+import { ModalComponentDemo } from './modal-specimens';
+import { FormComponentDemo } from './form-specimens';
+import { FeedbackComponentDemo } from './feedback-specimens';
+import { feedbackComponentData } from './feedback-component-data';
 import {
   Button,
   TextField,
@@ -15,7 +24,7 @@ import {
   TableCell,
   TableCaption,
   AppShell,
-} from '@chamfer/ui';
+} from '@antiflex/ui';
 import {
   IconArrowRight,
   IconSearch,
@@ -67,7 +76,7 @@ export function OverviewSpecimen() {
         <Separator />
         <div className="specimen-foot">
           <span className="token-name">radius / sm</span>
-          <span className="token-name">4px</span>
+          <span className="token-name">1px</span>
         </div>
       </div>
     </div>
@@ -212,7 +221,34 @@ export function ComponentDemo({ name }: { name: string }) {
           </AppShell>
         </div>
       );
+    case 'hover-card':
+    case 'menubar':
+    case 'navigation-menu':
+    case 'select':
+    case 'combobox':
+    case 'command':
+    case 'calendar':
+    case 'date-picker':
+      return <WorkspaceComponentDemo name={name} />;
+    case 'toast':
+      return <ToastComponentDemo />;
+    case 'dropdown-menu':
+    case 'context-menu':
+      return <MenuComponentDemo name={name} />;
+    case 'sheet':
+    case 'drawer':
+      return <PanelComponentDemo name={name} />;
+    case 'popover':
+    case 'tooltip':
+      return <FloatingComponentDemo name={name} />;
+    case 'dialog':
+    case 'alert-dialog':
+      return <ModalComponentDemo name={name} />;
     default:
-      return null;
+      return name in feedbackComponentData ? (
+        <FeedbackComponentDemo name={name} />
+      ) : (
+        <FormComponentDemo name={name} />
+      );
   }
 }

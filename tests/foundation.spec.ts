@@ -24,7 +24,7 @@ test('dashboard filters, clears empty states, sorts, paginates, and exports', as
   await expect(page.locator('#orders tbody tr').first()).toContainText('$49');
   const download = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Export CSV', exact: true }).click();
-  expect((await download).suggestedFilename()).toBe('chamfer-sample-orders.csv');
+  expect((await download).suggestedFilename()).toBe('antiflex-sample-orders.csv');
 });
 
 test('date range and refresh loading states work', async ({ page }) => {
@@ -44,7 +44,9 @@ test('date range and refresh loading states work', async ({ page }) => {
     'aria-busy',
     'false',
   );
-  await expect(page.getByText('Sample records refreshed.')).toBeAttached();
+  await expect(
+    page.getByRole('group', { name: 'Sample records refreshed.', exact: true }),
+  ).toBeVisible();
 });
 
 test('theme persists across reload and navigation', async ({ page }) => {
@@ -101,7 +103,7 @@ for (const theme of ['light', 'dark'])
   test(`${theme} theme passes accessibility checks on all primary surfaces`, async ({ page }) => {
     // This case scans fourteen complete pages; the default single-interaction budget is too short on two-core CI runners.
     test.setTimeout(90_000);
-    await page.addInitScript((t) => localStorage.setItem('chamfer-theme', t), theme);
+    await page.addInitScript((t) => localStorage.setItem('antiflex-theme', t), theme);
     for (const route of [
       '/',
       '/dashboard',
@@ -137,7 +139,7 @@ test('every Storybook specimen renders and passes accessibility checks', async (
   request,
 }) => {
   // Each specimen receives an axe scan; budget five seconds per story without weakening assertions.
-  const storybookURL = process.env.CHAMFER_STORYBOOK_URL || 'http://127.0.0.1:6106';
+  const storybookURL = process.env.ANTIFLEX_STORYBOOK_URL || 'http://127.0.0.1:6106';
   const response = await request.get(storybookURL + '/index.json');
   const index = await response.json();
   const entries = Object.values(index.entries) as { id: string; type: string }[];
@@ -164,7 +166,7 @@ test('mobile installation code can be read and scrolled with the keyboard in bot
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   for (const theme of ['light', 'dark']) {
-    await page.addInitScript((t) => localStorage.setItem('chamfer-theme', t), theme);
+    await page.addInitScript((t) => localStorage.setItem('antiflex-theme', t), theme);
     await page.goto('/docs/installation');
     await expect(
       page.getByRole('heading', { name: 'Copy components into your project' }),

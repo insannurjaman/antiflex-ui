@@ -1,0 +1,124 @@
+{
+  "fileKey": "H2vHC7eByauNSQL06qtO3o",
+  "pageId": "66:8",
+  "families": [
+    {
+      "name": "Popover",
+      "id": "67:78",
+      "variants": 8
+    },
+    {
+      "name": "Tooltip",
+      "id": "67:87",
+      "variants": 4
+    }
+  ],
+  "variants": 12,
+  "variableCount": 150,
+  "newVariables": [
+    {
+      "id": "VariableID:66:2",
+      "name": "component/popover-width",
+      "values": {
+        "3:3": 320
+      },
+      "scopes": ["WIDTH_HEIGHT"],
+      "syntax": {
+        "WEB": "var(--ch-component-popover-width)"
+      }
+    },
+    {
+      "id": "VariableID:66:3",
+      "name": "component/popover-padding",
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:42"
+        }
+      },
+      "scopes": ["GAP"],
+      "syntax": {
+        "WEB": "var(--ch-component-popover-padding)"
+      }
+    },
+    {
+      "id": "VariableID:66:4",
+      "name": "component/popover-gap",
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:40"
+        }
+      },
+      "scopes": ["GAP"],
+      "syntax": {
+        "WEB": "var(--ch-component-popover-gap)"
+      }
+    },
+    {
+      "id": "VariableID:66:5",
+      "name": "component/tooltip-max-width",
+      "values": {
+        "3:3": 272
+      },
+      "scopes": ["WIDTH_HEIGHT"],
+      "syntax": {
+        "WEB": "var(--ch-component-tooltip-max-width)"
+      }
+    },
+    {
+      "id": "VariableID:66:6",
+      "name": "component/tooltip-bg",
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:71"
+        }
+      },
+      "scopes": ["FRAME_FILL", "SHAPE_FILL"],
+      "syntax": {
+        "WEB": "var(--ch-component-tooltip-bg)"
+      }
+    },
+    {
+      "id": "VariableID:66:7",
+      "name": "component/tooltip-fg",
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:68"
+        }
+      },
+      "scopes": ["TEXT_FILL"],
+      "syntax": {
+        "WEB": "var(--ch-component-tooltip-fg)"
+      }
+    }
+  ],
+  "sourceDimensions": {
+    "Popover": {
+      "width": 320,
+      "height": 200,
+      "padding": 16,
+      "gap": 8
+    },
+    "Tooltip": {
+      "width": 230,
+      "height": 34,
+      "maxWidth": 272,
+      "paddingBlock": 8,
+      "paddingInline": 12
+    }
+  },
+  "checks": {
+    "sharedTextStyles": true,
+    "componentDimensions": true,
+    "tokenAliasesScopesAndCodeSyntax": true,
+    "lightDarkModeBindings": true
+  },
+  "failures": [],
+  "screenshots": [
+    "design/previews/floating/figma-light.png",
+    "design/previews/floating/figma-dark.png"
+  ]
+}

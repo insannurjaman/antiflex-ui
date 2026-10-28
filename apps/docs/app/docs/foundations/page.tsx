@@ -1,4 +1,5 @@
-import tokens from '@chamfer/tokens/json';
+import tokens from '@antiflex/tokens/json';
+import Link from 'next/link';
 import { Code } from '../../../components/code';
 export const metadata = { title: 'Foundations' };
 export default function Foundations() {
@@ -9,16 +10,27 @@ export default function Foundations() {
       <p className="doc-lead">
         Primitives become purpose. Purpose becomes interface. Every layer has a name.
       </p>
-      <h2>Color</h2>
+      <div className="foundation-links">
+        <Link href="/docs/foundations/colors">
+          <strong>Color foundation</strong>
+          <span>26 palettes · 50–950 · inspect and copy</span>
+        </Link>
+        <Link href="/docs/foundations/typography">
+          <strong>Typography foundation</strong>
+          <span>xs–9xl · 100–900 · interactive playground</span>
+        </Link>
+      </div>
+      <h2>antiflex color roles</h2>
       <p>
-        Cool neutral surfaces keep the work in focus. Cyan marks actions and selected states.
-        Semantic colors communicate feedback.
+        Neutral is the default theme: white and gray surfaces, charcoal actions in light mode, and
+        light actions in dark mode. Links, selection, and focus use the same neutral scale. Success,
+        warning, and error colors communicate feedback.
       </p>
       <div className="color-specimen">
         {['canvas', 'subtle', 'border', 'foreground', 'accent', 'success', 'warning', 'danger'].map(
           (role) => (
             <div key={role}>
-              <div className="color-swatch" style={{ background: `var(--ch-semantic-${role})` }} />
+              <div className="color-swatch" style={{ background: `var(--af-semantic-${role})` }} />
               <code>{role}</code>
             </div>
           ),
@@ -26,18 +38,25 @@ export default function Foundations() {
       </div>
       <Code label="CSS">
         {
-          ':root {\n  --ch-semantic-accent: var(--ch-color-cyan-700);\n  --ch-component-button-bg: var(--ch-semantic-accent);\n}\n\n[data-theme="dark"] {\n  --ch-semantic-accent: var(--ch-color-cyan-400);\n}'
+          ':root {\n  --af-semantic-action: var(--af-color-neutral-900);\n  --af-component-button-bg: var(--af-semantic-action);\n}\n\n[data-theme="dark"] {\n  --af-semantic-action: var(--af-color-neutral-200);\n}'
         }
       </Code>
       <h2>Typography</h2>
       <div className="type-specimen">
         <div>
-          <span>IBM Plex Sans</span>
+          <span>Anybody · display</span>
+          <strong style={{ fontFamily: 'var(--af-font-display), sans-serif' }}>
+            less flex. More function.
+          </strong>
+          <p>Bold, wide headings give the brand its voice.</p>
+        </div>
+        <div>
+          <span>DM Sans</span>
           <strong>Clarity at every scale.</strong>
           <p>A practical interface face, with room to breathe.</p>
         </div>
         <div>
-          <span>IBM Plex Mono</span>
+          <span>Space Mono</span>
           <strong className="mono">0123456789</strong>
           <code>const precision = 'intentional';</code>
         </div>
@@ -60,7 +79,7 @@ export default function Foundations() {
       </div>
       <h2>Shape and motion</h2>
       <p>
-        Four-pixel control corners and six-pixel content corners. Thin borders create structure.
+        One-pixel control corners and square content corners. Thin borders create structure.
         Feedback transitions use 120ms; general transitions use 200ms. Reduced motion removes
         decorative animation.
       </p>

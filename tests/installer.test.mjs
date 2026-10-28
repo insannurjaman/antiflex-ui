@@ -7,7 +7,7 @@ import { spawnSync } from 'node:child_process';
 import { initialize, addComponents } from '../packages/cli/src/installer.mjs';
 const cli = path.resolve('packages/cli/src/cli.mjs');
 function fixture(t, extra = {}) {
-  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'chamfer-installer-'));
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'antiflex-installer-'));
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   fs.mkdirSync(path.join(root, 'src'), { recursive: true });
   fs.writeFileSync(
@@ -30,11 +30,11 @@ const init = (root) => initialize(root, { skipInstall: true });
 test('initialization connects styles, adds fonts, preserves app dependencies, and is idempotent', (t) => {
   const root = fixture(t, { example: '1.0.0' });
   const result = init(root);
-  assert.equal(result.config.componentsDir, 'src/components/chamfer');
-  assert.match(read(root, 'src/index.css'), /styles\/chamfer\/index.css/);
+  assert.equal(result.config.componentsDir, 'src/components/antiflex');
+  assert.match(read(root, 'src/index.css'), /styles\/antiflex\/index.css/);
   const manifest = JSON.parse(read(root, 'package.json'));
   assert.equal(manifest.dependencies.example, '1.0.0');
-  assert.ok(manifest.dependencies['@fontsource/ibm-plex-sans']);
+  assert.ok(manifest.dependencies['@fontsource/dm-sans']);
   const before = read(root, 'src/index.css');
   assert.equal(init(root).alreadyConfigured, true);
   assert.equal(read(root, 'src/index.css'), before);
@@ -47,7 +47,7 @@ test('init dry run never changes manifest, stylesheet, or creates directories', 
   assert.ok(result.files.length > 0);
   assert.equal(read(root, 'package.json'), pkg);
   assert.equal(read(root, 'src/index.css'), css);
-  assert.equal(fs.existsSync(path.join(root, 'chamfer.json')), false);
+  assert.equal(fs.existsSync(path.join(root, 'antiflex.json')), false);
   assert.equal(fs.existsSync(path.join(root, 'src/styles')), false);
 });
 test('add resolves AppShell dependencies without unrelated components', (t) => {
@@ -55,32 +55,60 @@ test('add resolves AppShell dependencies without unrelated components', (t) => {
   init(root);
   addComponents(root, ['app-shell']);
   for (const file of ['app-shell.tsx', 'button.tsx', 'utils.ts'])
-    assert.ok(fs.existsSync(path.join(root, 'src/components/chamfer', file)));
-  assert.equal(fs.existsSync(path.join(root, 'src/components/chamfer/table.tsx')), false);
-  assert.match(read(root, 'src/components/chamfer/app-shell.tsx'), /from '\.\/button'/);
+    assert.ok(fs.existsSync(path.join(root, 'src/components/antiflex', file)));
+  assert.equal(fs.existsSync(path.join(root, 'src/components/antiflex/table.tsx')), false);
+  assert.match(read(root, 'src/components/antiflex/app-shell.tsx'), /from '\.\/button'/);
   assert.equal(addComponents(root, ['app-shell']).files.length, 0);
+});
+test('new forms install with their shared context while preserving legacy utils', (t) => {
+  const root = fixture(t);
+  init(root);
+  addComponents(root, ['button']);
+  const utils = read(root, 'src/components/antiflex/utils.ts');
+  addComponents(root, ['text-field', 'radio-group', 'switch', 'checkbox']);
+  for (const file of ['field.tsx', 'label.tsx', 'input.tsx', 'input-group.tsx', 'form-utils.ts'])
+    assert.ok(fs.existsSync(path.join(root, 'src/components/antiflex', file)));
+  assert.equal(read(root, 'src/components/antiflex/utils.ts'), utils);
+  assert.match(read(root, 'src/components/antiflex/form-utils.ts'), /createContext/);
+  assert.equal(addComponents(root, ['text-field', 'switch']).files.length, 0);
 });
 test('customized dependencies are kept when adding another component', (t) => {
   const root = fixture(t);
   init(root);
   addComponents(root, ['button']);
-  const file = path.join(root, 'src/components/chamfer/button.tsx');
+  const file = path.join(root, 'src/components/antiflex/button.tsx');
   const content = fs.readFileSync(file, 'utf8') + '\n// User customization\n';
   fs.writeFileSync(file, content);
   const result = addComponents(root, ['app-shell']);
   assert.deepEqual(result.preserved, ['button']);
   assert.equal(fs.readFileSync(file, 'utf8'), content);
 });
+test('feedback collections install their original interaction helper and dependencies', (t) => {
+  const root = fixture(t);
+  init(root);
+  addComponents(root, ['tabs', 'accordion', 'collapsible', 'toggle-group']);
+  for (const file of [
+    'tabs.tsx',
+    'accordion.tsx',
+    'collapsible.tsx',
+    'toggle.tsx',
+    'toggle-group.tsx',
+    'interaction-utils.ts',
+  ])
+    assert.ok(fs.existsSync(path.join(root, 'src/components/antiflex', file)));
+  assert.equal(fs.existsSync(path.join(root, 'src/components/antiflex/input.tsx')), false);
+  assert.equal(addComponents(root, ['tabs', 'toggle-group']).files.length, 0);
+});
 test('an edited explicitly requested component causes no partial writes; force keeps a backup', (t) => {
   const root = fixture(t);
   init(root);
   addComponents(root, ['button']);
-  const file = path.join(root, 'src/components/chamfer/button.tsx');
+  const file = path.join(root, 'src/components/antiflex/button.tsx');
   fs.writeFileSync(file, '// Mine\n');
   assert.throws(() => addComponents(root, ['badge', 'button']), /has changes/);
-  assert.equal(fs.existsSync(path.join(root, 'src/components/chamfer/badge.tsx')), false);
+  assert.equal(fs.existsSync(path.join(root, 'src/components/antiflex/badge.tsx')), false);
   const result = addComponents(root, ['button'], { force: true });
-  assert.equal(read(root, result.backup + '/src/components/chamfer/button.tsx'), '// Mine\n');
+  assert.equal(read(root, result.backup + '/src/components/antiflex/button.tsx'), '// Mine\n');
   assert.match(fs.readFileSync(file, 'utf8'), /forwardRef/);
 });
 test('unknown items and path traversal fail before any app mutation', (t) => {
@@ -91,7 +119,7 @@ test('unknown items and path traversal fail before any app mutation', (t) => {
     /inside the project/,
   );
   assert.equal(read(root, 'src/index.css'), before);
-  assert.equal(fs.existsSync(path.join(root, 'chamfer.json')), false);
+  assert.equal(fs.existsSync(path.join(root, 'antiflex.json')), false);
   init(root);
   assert.throws(() => addComponents(root, ['button', '../../outside']), /Unknown component/);
   assert.equal(fs.existsSync(path.join(root, 'src/components')), false);
@@ -99,27 +127,27 @@ test('unknown items and path traversal fail before any app mutation', (t) => {
 test('symlink destinations are rejected even when configuration is edited', (t) => {
   const root = fixture(t);
   init(root);
-  const outside = fs.mkdtempSync(path.join(os.tmpdir(), 'chamfer-outside-'));
+  const outside = fs.mkdtempSync(path.join(os.tmpdir(), 'antiflex-outside-'));
   t.after(() => fs.rmSync(outside, { recursive: true, force: true }));
   fs.mkdirSync(path.join(root, 'src/components'), { recursive: true });
-  fs.symlinkSync(outside, path.join(root, 'src/components/chamfer'), 'dir');
+  fs.symlinkSync(outside, path.join(root, 'src/components/antiflex'), 'dir');
   assert.throws(() => addComponents(root, ['button']), /symlink/);
   assert.deepEqual(fs.readdirSync(outside), []);
 });
 test('stylesheet conflicts and overlapping paths do not partially initialize', (t) => {
   const root = fixture(t);
-  fs.mkdirSync(path.join(root, 'src/styles/chamfer'), { recursive: true });
-  fs.writeFileSync(path.join(root, 'src/styles/chamfer/tokens.css'), '/* My existing tokens */');
+  fs.mkdirSync(path.join(root, 'src/styles/antiflex'), { recursive: true });
+  fs.writeFileSync(path.join(root, 'src/styles/antiflex/tokens.css'), '/* My existing tokens */');
   const before = read(root, 'src/index.css');
   assert.throws(() => init(root), /Existing style/);
   assert.equal(read(root, 'src/index.css'), before);
-  assert.equal(fs.existsSync(path.join(root, 'chamfer.json')), false);
+  assert.equal(fs.existsSync(path.join(root, 'antiflex.json')), false);
 });
 test('add dry run leaves source files untouched and reports dependency files', (t) => {
   const root = fixture(t);
   init(root);
   const result = addComponents(root, ['app-shell'], { dryRun: true });
-  assert.deepEqual(result.components, ['button', 'app-shell']);
+  assert.deepEqual(result.components, ['spinner', 'button', 'app-shell']);
   assert.equal(fs.existsSync(path.join(root, 'src/components')), false);
 });
 test('custom paths and CSS charset are preserved', (t) => {
@@ -137,9 +165,9 @@ test('Next.js app-directory styles are discovered without assuming a src directo
   fs.writeFileSync(path.join(root, 'app/globals.css'), '@import "tailwindcss";\n');
   const result = init(root);
   assert.equal(result.config.css, 'app/globals.css');
-  assert.equal(result.config.componentsDir, 'components/chamfer');
+  assert.equal(result.config.componentsDir, 'components/antiflex');
   addComponents(root, ['button']);
-  assert.ok(fs.existsSync(path.join(root, 'components/chamfer/button.tsx')));
+  assert.ok(fs.existsSync(path.join(root, 'components/antiflex/button.tsx')));
 });
 test('CLI list works without a React app; failed commands report a nonzero exit status', (t) => {
   const root = fixture(t);
@@ -154,7 +182,7 @@ test('CLI list works without a React app; failed commands report a nonzero exit 
 });
 test('a tampered bundled file fails its integrity check without touching the app', (t) => {
   const root = fixture(t);
-  const copy = fs.mkdtempSync(path.join(os.tmpdir(), 'chamfer-package-'));
+  const copy = fs.mkdtempSync(path.join(os.tmpdir(), 'antiflex-package-'));
   t.after(() => fs.rmSync(copy, { recursive: true, force: true }));
   fs.cpSync(path.resolve('packages/cli'), copy, { recursive: true });
   fs.appendFileSync(path.join(copy, 'registry/styles/tokens.css'), '\n/* altered */');
@@ -167,7 +195,7 @@ test('a tampered bundled file fails its integrity check without touching the app
   assert.equal(run.status, 1);
   assert.match(run.stderr, /integrity/);
   assert.equal(read(root, 'package.json'), before);
-  assert.equal(fs.existsSync(path.join(root, 'chamfer.json')), false);
+  assert.equal(fs.existsSync(path.join(root, 'antiflex.json')), false);
 });
 
 test('non-CSS entries and self-importing style paths are rejected before writes', (t) => {
@@ -180,5 +208,35 @@ test('non-CSS entries and self-importing style paths are rejected before writes'
     () => initialize(root, { css: 'src/index.css', stylesDir: 'src', skipInstall: true }),
     /outside the generated/,
   );
-  assert.equal(fs.existsSync(path.join(root, 'chamfer.json')), false);
+  assert.equal(fs.existsSync(path.join(root, 'antiflex.json')), false);
+});
+
+test('modal families resolve shared native behavior and button dependencies without unrelated source', (t) => {
+  const root = fixture(t);
+  init(root);
+  const result = addComponents(root, ['dialog', 'alert-dialog']);
+  assert.deepEqual(result.components, ['spinner', 'button', 'dialog', 'alert-dialog']);
+  for (const file of ['modal.tsx', 'interaction-utils.ts', 'dialog.tsx', 'alert-dialog.tsx'])
+    assert.ok(fs.existsSync(path.join(root, 'src/components/antiflex', file)));
+  assert.equal(fs.existsSync(path.join(root, 'src/components/antiflex/input.tsx')), false);
+});
+
+test('floating families install their positioning and state helpers with native button dependencies', (t) => {
+  const root = fixture(t);
+  init(root);
+  const result = addComponents(root, ['popover', 'tooltip']);
+  assert.deepEqual(result.components, ['spinner', 'button', 'popover', 'tooltip']);
+  for (const file of ['floating-utils.ts', 'interaction-utils.ts', 'popover.tsx', 'tooltip.tsx'])
+    assert.ok(fs.existsSync(path.join(root, 'src/components/antiflex', file)));
+  assert.equal(fs.existsSync(path.join(root, 'src/components/antiflex/modal.tsx')), false);
+});
+
+test('edge panel families install shared modal utilities without other overlay families', (t) => {
+  const root = fixture(t);
+  init(root);
+  const result = addComponents(root, ['sheet', 'drawer']);
+  assert.deepEqual(result.components, ['spinner', 'button', 'sheet', 'drawer']);
+  for (const file of ['sheet.tsx', 'drawer.tsx', 'modal.tsx', 'interaction-utils.ts'])
+    assert.ok(fs.existsSync(path.join(root, 'src/components/antiflex', file)));
+  assert.equal(fs.existsSync(path.join(root, 'src/components/antiflex/dialog.tsx')), false);
 });

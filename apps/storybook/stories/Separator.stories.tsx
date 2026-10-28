@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Separator } from '@chamfer/ui';
+import { Separator } from '@antiflex/ui';
 const meta = {
   title: 'Components/Separator',
   component: Separator,

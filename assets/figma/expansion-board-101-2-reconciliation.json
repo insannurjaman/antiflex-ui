@@ -1,0 +1,10 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"createdNodeIds\":[],\"mutatedNodeIds\":[\"101:99\",\"101:143\",\"101:187\",\"101:231\",\"101:230\"],\"variableIds\":[],\"pageId\":\"101:2\"}"
+    }
+  ],
+  "structuredContent": null,
+  "isError": false
+}

@@ -1,6 +1,6 @@
 async function buildFoundations() {
   await fonts();
-  const page = await pageFor('Chamfer / Foundations');
+  const page = await pageFor('antiflex / Foundations');
   const existingCollections = await figma.variables.getLocalVariableCollectionsAsync();
   const existingVariables = await figma.variables.getLocalVariablesAsync();
   function collection(name, modes) {
@@ -12,9 +12,9 @@ async function buildFoundations() {
     }
     return c;
   }
-  const primitive = collection('Chamfer / Primitives', ['Value']);
-  const semantic = collection('Chamfer / Semantic', ['Light', 'Dark']);
-  const component = collection('Chamfer / Components', ['Value']);
+  const primitive = collection('antiflex / Primitives', ['Value']);
+  const semantic = collection('antiflex / Semantic', ['Light', 'Dark']);
+  const component = collection('antiflex / Components', ['Value']);
   const map = {};
   function variable(c, key, type, scopes) {
     const name = key.replaceAll('.', '/');
@@ -29,22 +29,40 @@ async function buildFoundations() {
   for (const [key, value] of flatten(TOKEN_DATA.primitives)) {
     // Elevation is represented as an effect style below rather than a string variable.
     if (key.startsWith('elevation.')) continue;
-    const type = key.startsWith('color.')
-      ? 'COLOR'
-      : typeof value === 'number'
-        ? 'FLOAT'
-        : 'STRING';
-    const scopes = key.startsWith('space.')
-      ? ['GAP']
-      : key.startsWith('radius.')
-        ? ['CORNER_RADIUS']
-        : key.startsWith('fontSize.')
-          ? ['FONT_SIZE']
-          : key.startsWith('font.')
-            ? ['FONT_FAMILY']
-            : [];
+    const type =
+      key.startsWith('color.') || key.startsWith('palette.')
+        ? 'COLOR'
+        : typeof value === 'number'
+          ? 'FLOAT'
+          : 'STRING';
+    const scopes = key.startsWith('palette.')
+      ? ['FRAME_FILL', 'SHAPE_FILL', 'TEXT_FILL', 'STROKE_COLOR']
+      : key.startsWith('typography.size.')
+        ? ['FONT_SIZE']
+        : key.startsWith('typography.line-height.')
+          ? ['LINE_HEIGHT']
+          : key.startsWith('typography.weight.')
+            ? ['FONT_WEIGHT']
+            : key === 'font.serif'
+              ? []
+              : key.startsWith('space.')
+                ? ['GAP']
+                : key.startsWith('radius.')
+                  ? ['CORNER_RADIUS']
+                  : key.startsWith('fontSize.')
+                    ? ['FONT_SIZE']
+                    : key.startsWith('font.')
+                      ? ['FONT_FAMILY']
+                      : [];
     const v = variable(primitive, key, type, scopes);
-    v.setValueForMode(primitive.modes[0].modeId, type === 'COLOR' ? rgb(value) : value);
+    v.setValueForMode(
+      primitive.modes[0].modeId,
+      key.startsWith('palette.')
+        ? referenceColorToSrgb(value)
+        : type === 'COLOR'
+          ? figma.util.rgba(value)
+          : value,
+    );
   }
   for (const [key, value] of Object.entries(TOKEN_DATA.semantic.light)) {
     const scopes =
@@ -92,36 +110,36 @@ async function buildFoundations() {
   }
   const styles = await figma.getLocalTextStylesAsync();
   for (const [name, size, family, style] of [
-    ['Display', 56, 'IBM Plex Sans', 'Medium'],
-    ['Heading', 28, 'IBM Plex Sans', 'Medium'],
-    ['Title', 20, 'IBM Plex Sans', 'Medium'],
-    ['Body', 14, 'IBM Plex Sans', 'Regular'],
-    ['Label', 12, 'IBM Plex Sans', 'Medium'],
-    ['Code', 12, 'IBM Plex Mono', 'Regular'],
+    ['Display', 56, 'Anybody', 'SemiBold'],
+    ['Heading', 28, 'DM Sans', 'Medium'],
+    ['Title', 20, 'DM Sans', 'Medium'],
+    ['Body', 14, 'DM Sans', 'Regular'],
+    ['Label', 12, 'Space Mono', 'Regular'],
+    ['Code', 12, 'Space Mono', 'Regular'],
   ]) {
-    let s = styles.find((s) => s.name === 'Chamfer / ' + name);
+    let s = styles.find((s) => s.name === 'antiflex / ' + name);
     if (!s) s = figma.createTextStyle();
-    s.name = 'Chamfer / ' + name;
+    s.name = 'antiflex / ' + name;
     s.fontName = { family, style };
     s.fontSize = size;
     s.lineHeight = { unit: 'PERCENT', value: 150 };
   }
   const effects = await figma.getLocalEffectStylesAsync();
-  let elevation = effects.find((s) => s.name === 'Chamfer / Elevation / Low');
+  let elevation = effects.find((s) => s.name === 'antiflex / Elevation / Low');
   if (!elevation) elevation = figma.createEffectStyle();
-  elevation.name = 'Chamfer / Elevation / Low';
+  elevation.name = 'antiflex / Elevation / Low';
   elevation.effects = [
     {
       type: 'DROP_SHADOW',
       visible: true,
       blendMode: 'NORMAL',
-      color: { ...rgb('#0c131d'), a: 0.06 },
+      color: { ...rgb('#171717'), a: 0.06 },
       offset: { x: 0, y: 2 },
       radius: 8,
       spread: 0,
     },
   ];
-  const existing = page.children.find((n) => n.name === 'Chamfer UI — Foundation');
+  const existing = page.children.find((n) => n.name === 'antiflex/ui — Foundation');
   if (existing)
     return result({
       pageId: page.id,
@@ -129,7 +147,7 @@ async function buildFoundations() {
       variables: Object.keys(map).length,
       alreadyExists: true,
     });
-  const board = frame(page, 'Chamfer UI — Foundation', 1240);
+  const board = frame(page, 'antiflex/ui — Foundation', 1240);
   board.x = 200;
   board.y = 200;
   padding(board, '12', map);
@@ -139,12 +157,12 @@ async function buildFoundations() {
   brandRow.counterAxisAlignItems = 'CENTER';
   gap(brandRow, '4', map);
   const mark = remember(figma.createNodeFromSvg(BRAND_SVG));
-  mark.name = 'Chamfer / Brand mark';
+  mark.name = 'antiflex / Brand mark';
   mark.resize(48, 48);
   brandRow.appendChild(mark);
   for (const n of mark.findAll(() => true)) createdNodeIds.push(n.id);
-  text(brandRow, 'chamfer/ui', 32, 'semantic.foreground', map, false, 'Medium');
-  text(board, 'Precision UI for SaaS teams.', 56, 'semantic.foreground', map, false, 'Medium');
+  text(brandRow, 'antiflex/ui', 32, 'semantic.foreground', map, false, 'Medium');
+  text(board, 'less flex. More function.', 56, 'semantic.foreground', map, false, 'Medium');
   text(
     board,
     'An original foundation. React + TypeScript + Tailwind CSS. Shared values in design and code.',
@@ -189,7 +207,7 @@ async function buildFoundations() {
       }
     }
   }
-  text(board, 'Typography / IBM Plex', 28, 'semantic.foreground', map, false, 'Medium');
+  text(board, 'Typography / antiflex', 28, 'semantic.foreground', map, false, 'Medium');
   text(board, 'Clarity at every scale.', 40, 'semantic.foreground', map, false, 'Medium');
   text(board, '0123456789  const precision = "intentional";', 24, 'semantic.foreground', map, true);
   text(board, 'Spacing / Four-pixel base', 28, 'semantic.foreground', map, false, 'Medium');
@@ -210,7 +228,7 @@ async function buildFoundations() {
   text(board, 'Shape / Motion', 28, 'semantic.foreground', map, false, 'Medium');
   text(
     board,
-    'Controls: 4px. Content: 6px. Thin borders. Feedback: 120ms. General transitions: 200ms.',
+    'Controls: 1px. Content: square. Thin borders. Feedback: 120ms. General transitions: 200ms.',
     14,
     'semantic.muted',
     map,
@@ -222,7 +240,7 @@ async function buildFoundations() {
   text(board, 'pnpm install  →  pnpm dev  →  pnpm storybook', 16, 'semantic.foreground', map, true);
   text(
     board,
-    'Core code is MIT licensed. Chamfer Pro assets and commerce are a future milestone. Dashboard records are synthetic.',
+    'Core code is MIT licensed. antiflex Pro assets and commerce are a future milestone. Dashboard records are synthetic.',
     14,
     'semantic.muted',
     map,

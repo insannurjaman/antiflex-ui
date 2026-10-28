@@ -1,0 +1,27 @@
+{
+  "errors": [],
+  "checkedVariables": 337,
+  "totalVariables": 496,
+  "numericTolerance": 0.000001,
+  "maxNumericError": 2.963241574338582e-8,
+  "boards": [
+    {
+      "id": "75:677",
+      "width": 1240,
+      "height": 3950,
+      "swatches": 289,
+      "mode": {
+        "VariableCollectionId:3:4": "3:1"
+      }
+    },
+    {
+      "id": "75:1635",
+      "width": 1240,
+      "height": 3950,
+      "swatches": 289,
+      "mode": {
+        "VariableCollectionId:3:4": "3:2"
+      }
+    }
+  ]
+}

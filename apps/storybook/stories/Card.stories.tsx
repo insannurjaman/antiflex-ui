@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Card } from '@chamfer/ui';
+import { Card } from '@antiflex/ui';
 const meta = {
   title: 'Components/Card',
   component: Card,

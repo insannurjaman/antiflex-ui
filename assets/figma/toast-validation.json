@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-21",
+  "fileKey": "H2vHC7eByauNSQL06qtO3o",
+  "pageId": "87:2",
+  "setId": "87:158",
+  "variants": [
+    {
+      "id": "87:10",
+      "name": "Variant=neutral, Action=None",
+      "width": 384,
+      "height": 80,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:20",
+      "name": "Variant=neutral, Action=Available",
+      "width": 384,
+      "height": 124,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:33",
+      "name": "Variant=neutral, Action=Pending",
+      "width": 384,
+      "height": 124,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:47",
+      "name": "Variant=success, Action=None",
+      "width": 384,
+      "height": 80,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:57",
+      "name": "Variant=success, Action=Available",
+      "width": 384,
+      "height": 124,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:70",
+      "name": "Variant=success, Action=Pending",
+      "width": 384,
+      "height": 124,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:84",
+      "name": "Variant=warning, Action=None",
+      "width": 384,
+      "height": 101,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:94",
+      "name": "Variant=warning, Action=Available",
+      "width": 384,
+      "height": 145,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:107",
+      "name": "Variant=warning, Action=Pending",
+      "width": 384,
+      "height": 145,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:121",
+      "name": "Variant=danger, Action=None",
+      "width": 384,
+      "height": 80,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:131",
+      "name": "Variant=danger, Action=Available",
+      "width": 384,
+      "height": 124,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    },
+    {
+      "id": "87:144",
+      "name": "Variant=danger, Action=Pending",
+      "width": 384,
+      "height": 124,
+      "padding": 16,
+      "gap": 12,
+      "borderInLayout": true
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:87:3",
+      "name": "component/toast-width",
+      "scopes": ["WIDTH_HEIGHT"],
+      "syntax": {
+        "WEB": "var(--ch-component-toast-width)"
+      },
+      "values": {
+        "3:3": 384
+      }
+    },
+    {
+      "id": "VariableID:87:4",
+      "name": "component/toast-offset",
+      "scopes": ["GAP"],
+      "syntax": {
+        "WEB": "var(--ch-component-toast-offset)"
+      },
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:44"
+        }
+      }
+    },
+    {
+      "id": "VariableID:87:5",
+      "name": "component/toast-padding",
+      "scopes": ["GAP"],
+      "syntax": {
+        "WEB": "var(--ch-component-toast-padding)"
+      },
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:42"
+        }
+      }
+    },
+    {
+      "id": "VariableID:87:6",
+      "name": "component/toast-gap",
+      "scopes": ["GAP"],
+      "syntax": {
+        "WEB": "var(--ch-component-toast-gap)"
+      },
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:40"
+        }
+      }
+    },
+    {
+      "id": "VariableID:87:7",
+      "name": "component/toast-bg",
+      "scopes": ["FRAME_FILL", "SHAPE_FILL"],
+      "syntax": {
+        "WEB": "var(--ch-component-toast-bg)"
+      },
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:68"
+        }
+      }
+    },
+    {
+      "id": "VariableID:87:8",
+      "name": "component/toast-fg",
+      "scopes": ["TEXT_FILL"],
+      "syntax": {
+        "WEB": "var(--ch-component-toast-fg)"
+      },
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:71"
+        }
+      }
+    },
+    {
+      "id": "VariableID:87:9",
+      "name": "component/toast-border",
+      "scopes": ["STROKE_COLOR"],
+      "syntax": {
+        "WEB": "var(--ch-component-toast-border)"
+      },
+      "values": {
+        "3:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:74"
+        }
+      }
+    }
+  ],
+  "totalVariables": 515,
+  "textStyles": 55,
+  "visualReview": "passed light/dark/mobile after border and specimen-copy correction",
+  "browserGeometry": {
+    "width": 384,
+    "padding": 16,
+    "gap": 12,
+    "border": 1,
+    "fontSize": 14,
+    "lineHeight": 21,
+    "icon": 20,
+    "closeFine": 28,
+    "closeCoarse": 44
+  },
+  "limitations": [
+    "Figma is visual; no simulated runtime behavior",
+    "Actual assistive technology announcement behavior needs manual screen-reader review"
+  ],
+  "errors": []
+}

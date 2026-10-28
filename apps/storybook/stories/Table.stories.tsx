@@ -8,7 +8,7 @@ import {
   TableHead,
   TableCell,
   Badge,
-} from '@chamfer/ui';
+} from '@antiflex/ui';
 const meta = {
   title: 'Components/Table',
   component: Table,

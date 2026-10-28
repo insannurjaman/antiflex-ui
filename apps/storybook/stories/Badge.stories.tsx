@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Badge } from '@chamfer/ui';
+import { Badge } from '@antiflex/ui';
 const meta = {
   title: 'Components/Badge',
   component: Badge,

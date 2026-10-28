@@ -1,217 +1,232 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-14T15:31:41.481063+00:00",
-  "title": "Design System: Chamfer UI",
+  "generatedAt": "2026-10-28T00:00:00+07:00",
+  "title": "Design System: antiflex/ui",
   "extensions": {
     "colorMeta": {
       "canvas": {
         "role": "neutral",
         "displayName": "Canvas",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "surface": {
         "role": "neutral",
         "displayName": "Surface",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "subtle": {
         "role": "neutral",
         "displayName": "Subtle",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "inset": {
         "role": "neutral",
         "displayName": "Inset",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "foreground": {
         "role": "neutral",
         "displayName": "Foreground",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "muted": {
         "role": "neutral",
         "displayName": "Muted",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "border": {
         "role": "neutral",
         "displayName": "Border",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "border-strong": {
         "role": "neutral",
         "displayName": "Border Strong",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "accent": {
         "role": "primary",
         "displayName": "Accent",
         "tonalRamp": [
-          "oklch(15.00% 0.08546 220.65)",
-          "oklch(26.43% 0.08546 220.65)",
-          "oklch(37.86% 0.08546 220.65)",
-          "oklch(49.29% 0.08546 220.65)",
-          "oklch(60.71% 0.08546 220.65)",
-          "oklch(72.14% 0.08546 220.65)",
-          "oklch(83.57% 0.08546 220.65)",
-          "oklch(95.00% 0.08546 220.65)"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "accent-hover": {
         "role": "primary",
         "displayName": "Accent Hover",
         "tonalRamp": [
-          "oklch(15.00% 0.04372 225.27)",
-          "oklch(26.43% 0.04372 225.27)",
-          "oklch(37.86% 0.04372 225.27)",
-          "oklch(49.29% 0.04372 225.27)",
-          "oklch(60.71% 0.04372 225.27)",
-          "oklch(72.14% 0.04372 225.27)",
-          "oklch(83.57% 0.04372 225.27)",
-          "oklch(95.00% 0.04372 225.27)"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "accent-soft": {
         "role": "primary",
         "displayName": "Accent Soft",
         "tonalRamp": [
-          "oklch(15.00% 0.01733 210.19)",
-          "oklch(26.43% 0.01733 210.19)",
-          "oklch(37.86% 0.01733 210.19)",
-          "oklch(49.29% 0.01733 210.19)",
-          "oklch(60.71% 0.01733 210.19)",
-          "oklch(72.14% 0.01733 210.19)",
-          "oklch(83.57% 0.01733 210.19)",
-          "oklch(95.00% 0.01733 210.19)"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "accent-foreground": {
-        "role": "neutral",
+        "role": "primary",
         "displayName": "Accent Foreground",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "focus": {
         "role": "primary",
         "displayName": "Focus",
         "tonalRamp": [
-          "oklch(15.00% 0.10002 219.64)",
-          "oklch(26.43% 0.10002 219.64)",
-          "oklch(37.86% 0.10002 219.64)",
-          "oklch(49.29% 0.10002 219.64)",
-          "oklch(60.71% 0.10002 219.64)",
-          "oklch(72.14% 0.10002 219.64)",
-          "oklch(83.57% 0.10002 219.64)",
-          "oklch(95.00% 0.10002 219.64)"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "success": {
         "role": "semantic",
         "displayName": "Success",
         "tonalRamp": [
-          "oklch(15.00% 0.10321 157.60)",
-          "oklch(26.43% 0.10321 157.60)",
-          "oklch(37.86% 0.10321 157.60)",
-          "oklch(49.29% 0.10321 157.60)",
-          "oklch(60.71% 0.10321 157.60)",
-          "oklch(72.14% 0.10321 157.60)",
-          "oklch(83.57% 0.10321 157.60)",
-          "oklch(95.00% 0.10321 157.60)"
+          "oklch(15.00% 0.09962 153.60)",
+          "oklch(26.43% 0.09962 153.60)",
+          "oklch(37.86% 0.09962 153.60)",
+          "oklch(49.29% 0.09962 153.60)",
+          "oklch(60.71% 0.09962 153.60)",
+          "oklch(72.14% 0.09962 153.60)",
+          "oklch(83.57% 0.09962 153.60)",
+          "oklch(95.00% 0.09962 153.60)"
         ]
       },
       "success-soft": {
         "role": "semantic",
         "displayName": "Success Soft",
         "tonalRamp": [
-          "oklch(15.00% 0.01653 162.75)",
-          "oklch(26.43% 0.01653 162.75)",
-          "oklch(37.86% 0.01653 162.75)",
-          "oklch(49.29% 0.01653 162.75)",
-          "oklch(60.71% 0.01653 162.75)",
-          "oklch(72.14% 0.01653 162.75)",
-          "oklch(83.57% 0.01653 162.75)",
-          "oklch(95.00% 0.01653 162.75)"
+          "oklch(15.00% 0.02308 157.60)",
+          "oklch(26.43% 0.02308 157.60)",
+          "oklch(37.86% 0.02308 157.60)",
+          "oklch(49.29% 0.02308 157.60)",
+          "oklch(60.71% 0.02308 157.60)",
+          "oklch(72.14% 0.02308 157.60)",
+          "oklch(83.57% 0.02308 157.60)",
+          "oklch(95.00% 0.02308 157.60)"
         ]
       },
       "warning": {
@@ -270,214 +285,345 @@
           "oklch(95.00% 0.01969 9.78)"
         ]
       },
+      "brand": {
+        "role": "primary",
+        "displayName": "Brand",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "brand-foreground": {
+        "role": "primary",
+        "displayName": "Brand Foreground",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Action",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "Action Hover",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "action-foreground": {
+        "role": "primary",
+        "displayName": "Action Foreground",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "display-ink": {
+        "role": "neutral",
+        "displayName": "Display Ink",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "display-surface": {
+        "role": "neutral",
+        "displayName": "Display Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
       "dark-canvas": {
         "role": "neutral",
         "displayName": "Dark Canvas",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "dark-surface": {
         "role": "neutral",
         "displayName": "Dark Surface",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "dark-subtle": {
         "role": "neutral",
         "displayName": "Dark Subtle",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "dark-inset": {
         "role": "neutral",
         "displayName": "Dark Inset",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "dark-foreground": {
         "role": "neutral",
         "displayName": "Dark Foreground",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "dark-muted": {
         "role": "neutral",
         "displayName": "Dark Muted",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "dark-border": {
         "role": "neutral",
         "displayName": "Dark Border",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "dark-border-strong": {
         "role": "neutral",
         "displayName": "Dark Border Strong",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
         ]
       },
       "dark-accent": {
         "role": "primary",
         "displayName": "Dark Accent",
         "tonalRamp": [
-          "oklch(15.00% 0.11645 211.47)",
-          "oklch(26.43% 0.11645 211.47)",
-          "oklch(37.86% 0.11645 211.47)",
-          "oklch(49.29% 0.11645 211.47)",
-          "oklch(60.71% 0.11645 211.47)",
-          "oklch(72.14% 0.11645 211.47)",
-          "oklch(83.57% 0.11645 211.47)",
-          "oklch(95.00% 0.11645 211.47)"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "dark-accent-hover": {
         "role": "primary",
         "displayName": "Dark Accent Hover",
         "tonalRamp": [
-          "oklch(15.00% 0.03853 210.71)",
-          "oklch(26.43% 0.03853 210.71)",
-          "oklch(37.86% 0.03853 210.71)",
-          "oklch(49.29% 0.03853 210.71)",
-          "oklch(60.71% 0.03853 210.71)",
-          "oklch(72.14% 0.03853 210.71)",
-          "oklch(83.57% 0.03853 210.71)",
-          "oklch(95.00% 0.03853 210.71)"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "dark-accent-soft": {
         "role": "primary",
         "displayName": "Dark Accent Soft",
         "tonalRamp": [
-          "oklch(15.00% 0.04372 225.27)",
-          "oklch(26.43% 0.04372 225.27)",
-          "oklch(37.86% 0.04372 225.27)",
-          "oklch(49.29% 0.04372 225.27)",
-          "oklch(60.71% 0.04372 225.27)",
-          "oklch(72.14% 0.04372 225.27)",
-          "oklch(83.57% 0.04372 225.27)",
-          "oklch(95.00% 0.04372 225.27)"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "dark-accent-foreground": {
-        "role": "neutral",
+        "role": "primary",
         "displayName": "Dark Accent Foreground",
         "tonalRamp": [
-          "#0c131d",
-          "#131c27",
-          "#202c3a",
-          "#344254",
-          "#617083",
-          "#bac5d0",
-          "#edf0f3",
-          "#ffffff"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "dark-focus": {
         "role": "primary",
         "displayName": "Dark Focus",
         "tonalRamp": [
-          "oklch(15.00% 0.11645 211.47)",
-          "oklch(26.43% 0.11645 211.47)",
-          "oklch(37.86% 0.11645 211.47)",
-          "oklch(49.29% 0.11645 211.47)",
-          "oklch(60.71% 0.11645 211.47)",
-          "oklch(72.14% 0.11645 211.47)",
-          "oklch(83.57% 0.11645 211.47)",
-          "oklch(95.00% 0.11645 211.47)"
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
         ]
       },
       "dark-success": {
         "role": "semantic",
         "displayName": "Dark Success",
         "tonalRamp": [
-          "oklch(15.00% 0.13263 161.08)",
-          "oklch(26.43% 0.13263 161.08)",
-          "oklch(37.86% 0.13263 161.08)",
-          "oklch(49.29% 0.13263 161.08)",
-          "oklch(60.71% 0.13263 161.08)",
-          "oklch(72.14% 0.13263 161.08)",
-          "oklch(83.57% 0.13263 161.08)",
-          "oklch(95.00% 0.13263 161.08)"
+          "oklch(15.00% 0.11998 156.15)",
+          "oklch(26.43% 0.11998 156.15)",
+          "oklch(37.86% 0.11998 156.15)",
+          "oklch(49.29% 0.11998 156.15)",
+          "oklch(60.71% 0.11998 156.15)",
+          "oklch(72.14% 0.11998 156.15)",
+          "oklch(83.57% 0.11998 156.15)",
+          "oklch(95.00% 0.11998 156.15)"
         ]
       },
       "dark-success-soft": {
         "role": "semantic",
         "displayName": "Dark Success Soft",
         "tonalRamp": [
-          "oklch(15.00% 0.04586 165.27)",
-          "oklch(26.43% 0.04586 165.27)",
-          "oklch(37.86% 0.04586 165.27)",
-          "oklch(49.29% 0.04586 165.27)",
-          "oklch(60.71% 0.04586 165.27)",
-          "oklch(72.14% 0.04586 165.27)",
-          "oklch(83.57% 0.04586 165.27)",
-          "oklch(95.00% 0.04586 165.27)"
+          "oklch(15.00% 0.03889 156.38)",
+          "oklch(26.43% 0.03889 156.38)",
+          "oklch(37.86% 0.03889 156.38)",
+          "oklch(49.29% 0.03889 156.38)",
+          "oklch(60.71% 0.03889 156.38)",
+          "oklch(72.14% 0.03889 156.38)",
+          "oklch(83.57% 0.03889 156.38)",
+          "oklch(95.00% 0.03889 156.38)"
         ]
       },
       "dark-warning": {
@@ -535,12 +681,156 @@
           "oklch(83.57% 0.04751 356.30)",
           "oklch(95.00% 0.04751 356.30)"
         ]
+      },
+      "dark-brand": {
+        "role": "primary",
+        "displayName": "Dark Brand",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "dark-brand-foreground": {
+        "role": "primary",
+        "displayName": "Dark Brand Foreground",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "dark-action": {
+        "role": "primary",
+        "displayName": "Dark Action",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "dark-action-hover": {
+        "role": "primary",
+        "displayName": "Dark Action Hover",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "dark-action-foreground": {
+        "role": "primary",
+        "displayName": "Dark Action Foreground",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "dark-display-ink": {
+        "role": "neutral",
+        "displayName": "Dark Display Ink",
+        "tonalRamp": [
+          "oklch(98.5% 0 none)",
+          "oklch(97% 0 none)",
+          "oklch(92.2% 0 none)",
+          "oklch(87% 0 none)",
+          "oklch(70.8% 0 none)",
+          "oklch(55.6% 0 none)",
+          "oklch(43.9% 0 none)",
+          "oklch(37.1% 0 none)",
+          "oklch(26.9% 0 none)",
+          "oklch(20.5% 0 none)",
+          "oklch(14.5% 0 none)"
+        ]
+      },
+      "dark-display-surface": {
+        "role": "neutral",
+        "displayName": "Dark Display Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "overlay": {
+        "role": "neutral",
+        "displayName": "Modal Scrim",
+        "tonalRamp": [
+          "oklch(15.00% 0 0 / 50.2%)",
+          "oklch(26.43% 0 0 / 50.2%)",
+          "oklch(37.86% 0 0 / 50.2%)",
+          "oklch(49.29% 0 0 / 50.2%)",
+          "oklch(60.71% 0 0 / 50.2%)",
+          "oklch(72.14% 0 0 / 50.2%)",
+          "oklch(83.57% 0 0 / 50.2%)",
+          "oklch(95.00% 0 0 / 50.2%)"
+        ]
+      },
+      "dark-overlay": {
+        "role": "neutral",
+        "displayName": "Dark Modal Scrim",
+        "tonalRamp": [
+          "oklch(15.00% 0 0 / 50.2%)",
+          "oklch(26.43% 0 0 / 50.2%)",
+          "oklch(37.86% 0 0 / 50.2%)",
+          "oklch(49.29% 0 0 / 50.2%)",
+          "oklch(60.71% 0 0 / 50.2%)",
+          "oklch(72.14% 0 0 / 50.2%)",
+          "oklch(83.57% 0 0 / 50.2%)",
+          "oklch(95.00% 0 0 / 50.2%)"
+        ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Landing headline; responsive sizes are documented in DESIGN.md."
+        "purpose": "Marketing hero statements."
       },
       "headline": {
         "displayName": "Headline",
@@ -548,45 +838,62 @@
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Dashboard page headings."
+        "purpose": "Operational page headings."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Base interface reading text."
+        "purpose": "Interface text and reading copy."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Badges and table headers."
+        "purpose": "Badges and supporting labels."
       },
       "control": {
         "displayName": "Control",
-        "purpose": "Default medium buttons."
+        "purpose": "Core native button labels."
+      },
+      "table-label": {
+        "displayName": "Table Label",
+        "purpose": "Uppercase technical table headers."
       },
       "code": {
         "displayName": "Code",
-        "purpose": "Code blocks."
+        "purpose": "Code blocks and technical examples."
       },
       "data": {
         "displayName": "Data",
-        "purpose": "Repeated dashboard metrics."
+        "purpose": "Repeated operational summary values."
+      },
+      "dialog-title": {
+        "displayName": "Modal Title",
+        "purpose": "Shared Dialog and AlertDialog task titles."
+      },
+      "dialog-description": {
+        "displayName": "Modal Description",
+        "purpose": "Shared muted task explanation in modal headers."
       }
     },
     "shadows": [],
     "motion": [
       {
-        "name": "duration-fast",
+        "name": "fast",
         "value": "120ms",
-        "purpose": "Button background, text, and border state transitions; disabled with reduced motion."
+        "purpose": "Button background, text, and border changes plus disclosure-chevron rotation; removed for reduced motion."
       },
       {
         "name": "spinner",
         "value": "0.8s linear infinite",
-        "purpose": "Busy-state rotation; disabled with reduced motion."
+        "purpose": "Busy state rotation; disabled for reduced motion."
       },
       {
         "name": "skeleton",
         "value": "1.5s ease-in-out infinite",
-        "purpose": "Loading placeholder pulse; disabled with reduced motion."
+        "purpose": "Loading structure pulse; disabled for reduced motion."
+      },
+      {
+        "name": "progress",
+        "value": "1.4s linear infinite",
+        "purpose": "Indeterminate progress track movement; removed for reduced motion."
       }
     ],
     "breakpoints": [
@@ -601,135 +908,649 @@
       {
         "name": "wide-min",
         "value": "1500px"
+      },
+      {
+        "name": "form-stack-max",
+        "value": "600px",
+        "purpose": "Documentation form columns stack independently of the shell mobile breakpoint."
+      },
+      {
+        "name": "modal-footer-stack-max",
+        "value": "480px",
+        "purpose": "Dialog, AlertDialog, Sheet, and Drawer footer actions stack at full width without changing DOM order."
+      },
+      {
+        "name": "foundation-reflow-max",
+        "value": "640px",
+        "purpose": "Color toolbar stacks, ramp steps reflow to six columns, typography controls reflow to two columns, and inspector wraps."
       }
-    ]
+    ],
+    "floating": {
+      "popoverGap": {
+        "value": "8px",
+        "token": "--af-component-popover-gap",
+        "purpose": "Internal grid gap, aliased to space.2."
+      },
+      "tooltipMaxWidth": {
+        "value": "272px",
+        "token": "--af-component-tooltip-max-width",
+        "purpose": "Maximum readable tooltip width; further constrained by viewport placement."
+      },
+      "placement": {
+        "sideOffset": "8px",
+        "collisionPadding": "8px",
+        "purpose": "Default anchor gap and viewport clearance; flips, clamps, tracks scrolling/resizing, and dismisses a clipped anchor. Top/bottom logical alignment follows RTL."
+      },
+      "tooltipTiming": {
+        "hoverDelay": "500ms",
+        "leaveGrace": "180ms",
+        "purpose": "Focus opens immediately; hover bridge and leave grace keep supplemental text reachable. These are interaction delays, not animation."
+      },
+      "layering": "Native popover=\"manual\" top layer; no scrim, focus trap, scroll lock, shadow, decorative arrow, or entrance/exit animation."
+    },
+    "panels": {
+      "sheet": {
+        "defaultSide": "right",
+        "defaultSize": "md",
+        "sideModel": "Physical top/right/bottom/left; left and right do not swap in RTL.",
+        "dimensions": "Left/right use the sheet-width component tokens and fill 100dvh; top/bottom fill width and use sheet-height component tokens, capped at 100dvh.",
+        "attachedBorders": "Remove borders at viewport edges and retain the interior seam."
+      },
+      "drawer": {
+        "defaultSize": "md",
+        "placement": "Bottom centered; drawer-width component tokens capped at viewport width.",
+        "height": "Intrinsic content height, capped at 85dvh.",
+        "gestures": "No swipe, drag handle, or snap-point behavior."
+      },
+      "anatomy": "Direct Header/Body/Footer children of Content, or one direct form containing those parts; flex Body shrinks and scrolls independently while Header/Footer remain reachable.",
+      "safeArea": "Header top and panel horizontal padding use max(dialog-padding, corresponding safe-area inset); footer bottom uses max(16px, safe-area-inset-bottom).",
+      "behavior": "Shared native Dialog modality, focus containment/return, Escape/outside dismissal, scroll lock, accessible naming, and consumer-owned state. No added panel motion or shadow.",
+      "evidence": {
+        "figmaValidation": "assets/figma/panels-validation.json",
+        "previews": "design/previews/panels/",
+        "figmaVariables": 159,
+        "panelVariants": 34,
+        "componentFamilies": 39,
+        "stories": 196
+      }
+    },
+    "referenceFoundations": {
+      "purpose": "Optional reference library; semantic antiflex theme and normative brand defaults remain unchanged.",
+      "source": "packages/tokens/src/tokens.json",
+      "reference": {
+        "package": "tailwindcss",
+        "version": "4.3.3",
+        "source": "https://github.com/tailwindlabs/tailwindcss/blob/v4.3.3/packages/tailwindcss/theme.css",
+        "license": "MIT",
+        "sourceSha256": "443d7af364200f8ec8352dc78e39485a118a1840d498c97967bf0ae402b39167",
+        "basePixelsPerRem": 16
+      },
+      "licenseFile": "packages/tokens/licenses/tailwindcss.txt",
+      "generator": "scripts/build-tokens.mjs",
+      "sharedHelpers": "packages/tokens/src/foundations.ts",
+      "colors": {
+        "rampCount": 26,
+        "steps": [
+          "50",
+          "100",
+          "200",
+          "300",
+          "400",
+          "500",
+          "600",
+          "700",
+          "800",
+          "900",
+          "950"
+        ],
+        "baseColors": [
+          "black",
+          "white",
+          "transparent"
+        ],
+        "total": 289,
+        "cssNamespace": "--af-palette-*",
+        "tailwindExample": "bg-af-blue-500",
+        "canonical": "OKLCH reference ramps; source hex for base colors.",
+        "preview": "Figma variables and HEX use gamut-clipped sRGB; do not round-trip previews into canonical tokens.",
+        "browser": "Search by ramp name; copy CSS variable, source OKLCH/base value, HEX preview, or Tailwind class; selected inspector and status feedback; manual-copy fallback."
+      },
+      "typography": {
+        "cssNamespace": "--af-typography-*",
+        "tailwindExamples": [
+          "text-af-base",
+          "font-af-medium",
+          "leading-af-relaxed",
+          "tracking-af-tight"
+        ],
+        "sizeCount": 13,
+        "weightCount": 9,
+        "leadingCount": 6,
+        "trackingCount": 6,
+        "sourceGroups": [
+          "size",
+          "line-height",
+          "weight",
+          "leading",
+          "tracking"
+        ],
+        "defaults": "Existing frontmatter type roles remain normative; 128px and -0.05em are optional user-requested reference choices.",
+        "playground": "Editable text, family, supported weight, size, leading, tracking, italic, numeric figures, bounded scrollable preview, and generated CSS.",
+        "fonts": {
+          "bundledFaceCount": 40,
+          "DM Sans": "100–900, normal and italic",
+          "Anybody": "100–900, normal and italic",
+          "Space Mono": "400/700, normal and italic",
+          "Georgia": "Browser-provided, not bundled, unavailable in current Figma environment.",
+          "synthesis": "Preview font-synthesis is none; unsupported family weights are disabled.",
+          "numericFeatures": "Rendering depends on selected font OpenType support."
+        },
+        "figmaUnitBridge": {
+          "size": "Pixels, bound to variables.",
+          "defaultLineHeight": "Pixels, bound to variables.",
+          "leading": "Unitless CSS ratio × 100 → Figma line-height PERCENT.",
+          "tracking": "CSS em × 100 → Figma letter-spacing PERCENT."
+        }
+      },
+      "evidence": {
+        "newVariables": 337,
+        "totalVariables": 496,
+        "newTextStyles": 39,
+        "totalTextStyles": 55,
+        "colorValidation": "assets/figma/expanded-foundations-color-validation.json",
+        "typeValidation": "assets/figma/expanded-foundations-type-validation.json",
+        "previews": "design/previews/expanded-foundations/",
+        "coverage": "Desktop/mobile browser in light/dark; Figma color and typography boards in light/dark.",
+        "reviewerDisposition": "ship",
+        "materialFixes": [],
+        "newComponentFamilies": 0
+      }
+    },
+    "menus": {
+      "scope": "menus-extension-2026-10-20",
+      "anatomy": "Root with Trigger and Content; native command Item and real Link; optional Group, Label, Separator, Shortcut, CheckboxItem, RadioGroup/RadioItem, and nested Sub/SubTrigger/Content. Parts remain DOM descendants of their owning level, including through rendered wrappers.",
+      "density": {
+        "minimumItemHeight": {
+          "sm": "28px",
+          "md": "32px",
+          "lg": "40px"
+        },
+        "intrinsicSizing": "Minimums allow text and padding to grow; a small body-text row is intrinsically 29px high.",
+        "coarsePointerMinimum": "44px",
+        "itemPadding": "4px 8px",
+        "itemGap": "8px",
+        "iconAndIndicator": "16px",
+        "shortcut": "12px/1.5 Space Mono, muted; visual hint only."
+      },
+      "placement": "Native manual popover top layer; 4px default trigger gap (0px for context coordinates), 8px collision padding. Follows resize/scroll, flips and clamps to visual viewport; hidden anchors request dismissal. Check nested anchors within their actual top-layer container. Native direction inheritance, logical spacing, RTL submenu keys and chevrons.",
+      "focus": "Named role=menu with roving focus per level, wrapping Up/Down, Home/End and buffered typeahead. Disabled items retain aria-disabled and navigation discoverability without activation. Escape closes one level; Tab/Shift+Tab close the tree and move beyond the root invoker. Selection restores only menu-owned focus, preserving a newly opened modal focus destination.",
+      "choices": "Checkbox and radio items stay open by default. Consumer-owned controlled values and open state; cancellable onSelect controls automatic close and choice changes and Link navigation.",
+      "contextEntry": "Right-click coordinates or Shift+F10/ContextMenu key near a named focusable target; equivalent visible actions button required. No custom long-press recognizer or global shortcut bindings.",
+      "limits": "Discrete commands and choices only; no hover-open submenu, focus trap, scrim, shadow, or added animation. Use Popover or a modal for forms."
+    },
+    "toasts": {
+      "scope": "Scoped Toast extension; incumbent antiflex visual world retained.",
+      "anatomy": "Local ToastProvider and useToast with one ToastViewport. Presentational Toast is a named group containing a decorative SVG, title, optional description/action, and named dismiss button; no timer or live role on the visible group.",
+      "density": {
+        "stackGap": "var(--af-component-toast-gap)",
+        "logicalOffset": "var(--af-component-toast-offset)",
+        "icon": "20px",
+        "dismissFinePointer": "28px",
+        "dismissCoarsePointer": "44px",
+        "dismissIcon": "16px",
+        "titleWeight": 500,
+        "descriptionGap": "4px",
+        "actionGap": "12px",
+        "text": "14px/1.5 DM Sans"
+      },
+      "material": "All four semantic variants retain surface/foreground/strong-border roles. Only the restrained icon uses muted, success, warning, or danger tone. Near-square, flat material; no scrim, shadow, added animation, or swipe gesture. Forced colors uses CanvasText border and icon.",
+      "queue": "Three visible and 50 total by default; bounded 1–5 visible and 1–100 total, capacity at least visible count. Queued records wait until visible; overflow returns null. Explicit IDs replace; updates reset duration. State is provider-local.",
+      "timing": "Ordinary neutral/success defaults to 6000ms. Warning/danger/action defaults persist; duration=0 disables expiry. Timers run only while visible with an attached viewport; hover, viewport focus, hidden tab, and window blur pause with remaining time. Pending actions pause their own timer.",
+      "announcements": "Stable separate polite/status and assertive/alert announcers announce visible new/updated records. Polite by default; consumer reserves assertive for urgency. Essential information remains in application content.",
+      "focus": "No automatic focus. Explicit Review notifications action may focus the viewport ref. Escape is scoped to the viewport. Dismissing focused content moves to another notification control or recorded origin only while focus remains owned, preserving an action-opened modal.",
+      "placement": "Native manual popover for fixed layout; bottom-end default, four logical corner positions, safe-area clearance, viewport-bounded width and internal scrolling. Inline remains in document flow. Native popover support required for fixed layout. Put both provider and viewport inside an active native modal for actionable messages.",
+      "actions": "Success dismisses; false retains; rejection creates persistent danger feedback for retry. Backend persistence, cancellation, and undo effects remain consumer-owned. No global store, shortcut, or history."
+    },
+    "workspaceTools": {
+      "scope": "workspace-tools-extension-2026-10-23; eight families, incumbent visual world retained",
+      "families": [
+        "Hover Card",
+        "Menubar",
+        "Navigation Menu",
+        "Select",
+        "Combobox",
+        "Command",
+        "Calendar",
+        "Date Picker"
+      ],
+      "material": "Existing semantic surface/foreground/strong-border; 1px seams, 1px control radius, no added shadow or scrim. Calendar committed selection uses action/action-foreground; active listbox rows use accent-soft/accent.",
+      "geometry": {
+        "hoverCard": {
+          "width": "{components.hover-card.width}",
+          "padding": "{components.hover-card.padding}",
+          "gap": "8px",
+          "title": "500 16px/1.5 DM Sans"
+        },
+        "menubar": {
+          "minimumHeight": "42px",
+          "padding": "{components.menubar.padding}",
+          "gap": "4px",
+          "wrap": true
+        },
+        "navigationMenu": {
+          "width": "{components.navigation-menu.width}",
+          "padding": "{components.navigation-menu.padding}",
+          "headingGap": "8px",
+          "contentGap": "4px",
+          "linkPadding": "12px"
+        },
+        "selection": {
+          "width": "{components.selection-control.width}",
+          "fieldHeights": "Existing field-sm/field/field-lg",
+          "popupMaximumHeight": "288px",
+          "popupPadding": "{components.selection-popup.padding}",
+          "listboxMaximumHeight": "min(calc(var(--af-component-choice-max-height) - 10px), calc(100dvh - 26px))",
+          "rowMinimumHeight": "36px",
+          "rowCoarseMinimumHeight": "44px",
+          "rowPadding": "8px 12px",
+          "rowGap": "12px",
+          "icon": "16px",
+          "description": "12px",
+          "activeOutline": "1px solid var(--af-semantic-focus), offset -1px",
+          "controlFocus": "2px solid var(--af-semantic-focus), offset 2px"
+        },
+        "command": {
+          "outerMaximumWidth": "{components.command.width}",
+          "padding": "{components.command.padding}",
+          "popupBorderBoxMaximumHeight": "320px",
+          "listboxMaximumHeight": "calc(var(--af-component-command-height) - 10px)",
+          "resolvedListboxMaximumHeight": "310px",
+          "reason": "Reserve 8px popup padding plus 2px borders so the complete final row and active outline remain within the popup."
+        },
+        "calendar": {
+          "width": "{components.calendar.width}",
+          "dayMinimumHeight": "36px",
+          "coarseDayMinimumHeight": "44px",
+          "grid": "7 columns, 6 weeks, 2px separate cell spacing; widths remain intrinsic to bounded grid, not fixed square targets",
+          "headerGap": "8px",
+          "headerBottomGap": "12px",
+          "helpTopGap": "8px"
+        },
+        "datePicker": {
+          "contentWidth": "min(calc(var(--af-component-calendar-width) + 32px), calc(100vw - 16px))",
+          "contentPadding": "{components.date-picker-content.padding}",
+          "triggerMinimumWidth": "min(240px, 100%)",
+          "actionsGap": "8px",
+          "actionsTopGap": "12px"
+        }
+      },
+      "roles": {
+        "hover-card-width": "var(--af-component-hover-card-width)",
+        "hover-card-padding": "var(--af-component-hover-card-padding)",
+        "hover-card-bg": "var(--af-component-hover-card-bg)",
+        "hover-card-fg": "var(--af-component-hover-card-fg)",
+        "hover-card-border": "var(--af-component-hover-card-border)",
+        "menubar-height": "var(--af-component-menubar-height)",
+        "menubar-padding": "var(--af-component-menubar-padding)",
+        "menubar-gap": "var(--af-component-menubar-gap)",
+        "navigation-menu-width": "var(--af-component-navigation-menu-width)",
+        "navigation-menu-padding": "var(--af-component-navigation-menu-padding)",
+        "navigation-menu-gap": "var(--af-component-navigation-menu-gap)",
+        "choice-width": "var(--af-component-choice-width)",
+        "choice-max-height": "var(--af-component-choice-max-height)",
+        "choice-item-height": "var(--af-component-choice-item-height)",
+        "choice-bg": "var(--af-component-choice-bg)",
+        "choice-fg": "var(--af-component-choice-fg)",
+        "choice-border": "var(--af-component-choice-border)",
+        "command-height": "var(--af-component-command-height)",
+        "command-width": "var(--af-component-command-width)",
+        "calendar-width": "var(--af-component-calendar-width)",
+        "calendar-day-size": "var(--af-component-calendar-day-size)"
+      },
+      "hoverCard": "600ms open / 300ms close defaults; focus opens immediately. Real anchor plus explicit visible touch toggle; named region, no initial focus transfer; pointer/focus outside or Escape dismisses top layer. Entry into content cancels closure.",
+      "menubar": "One roving heading Tab stop; RTL-aware Left/Right, Home/End, 700ms buffered heading typeahead. Pointer switches headings only while a top-level menu is already open. Existing command menu ownership, choices, submenus and Tab exit remain intact; no hover-open submenus.",
+      "navigation": "Named nav, ordinary links and disclosure buttons; normal Tab order; Down/Up enters first/last link. Escape returns owned panel focus; outside/focus exit dismisses. 120ms chevron rotation disabled for reduced motion.",
+      "selection": "Control retains DOM focus with aria-activedescendant. Enabled Up/Down wraps; Select supports open Home/End and 700ms buffered typeahead. Combobox filters normalized label/keywords, separates query from committed value, restores label on dismissal, clears value for empty input. Explicit loading/empty/error rows; hidden native select preserves form/required/reset semantics; controlled state stays consumer-owned. af-selection namespace stays distinct from native Radio Group af-choice.",
+      "command": "Editable inline list; consumer-owned synchronous actions; false suppresses successful onAction and CommandDialog closure. Native Dialog focuses search and closes after success. Escape clears inline query. Listbox scroll never scrolls the document. No async lifecycle, virtualization, or global shortcut service.",
+      "calendar": "Single YYYY-MM-DD Gregorian value. Six-week named grid; one day Tab stop, RTL days, week arrows, Home/End relative to explicit weekStartsOn, Page month, Shift+Page year. Today border, unavailable aria-disabled days, committed action-fill date. en-US/Sunday defaults; locale labels do not infer week start. Controlled value/month and min/max/predicate supported.",
+      "datePicker": "Nonmodal Popover focuses active day; select/clear commits and closes, Cancel closes without committing another value. Hidden native date input owns name/form/required/min/max and custom predicate validity; uncontrolled reset restores default, controlled reset stays consumer-owned. Read-only blocks opening while retaining submission.",
+      "evidence": {
+        "catalogFamilies": 50,
+        "stories": 304,
+        "newStories": 64,
+        "figmaVariables": 536,
+        "figmaTextStyles": 55,
+        "newComponentRoles": 21,
+        "publicVisualVariants": 42,
+        "internalBuildingBlocks": 11,
+        "figmaValidation": "assets/figma/expansion-validation.json",
+        "review": "design/research/workspace-tools-finish-review.md",
+        "commandConfirmation": "Four command*-long-{desktop-light,mobile-dark}.png captures in .impeccable/review; full final Sample action 40 row and outline contained at maximum scroll.",
+        "verification": "260-case pre-namespace full regression; 56-case post-namespace scoped pass; Command containment case Chromium/WebKit. Runs have distinct scopes."
+      },
+      "limits": "Single Gregorian date; no ranges, alternative calendars, typed date entry, virtualized list, global shortcut or backend. Figma states are visual specimens, not browser behavior prototypes. No npm/GitHub release asserted."
+    }
   },
   "components": [
     {
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Compact primary action with medium size.",
-      "html": "<button class=\"ds-button ds-button--md ds-button--primary\">Save changes</button>",
-      "css": ".ds-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--ch-space-2);\n  border: 1px solid transparent;\n  border-radius: var(--ch-component-button-radius);\n  font:\n    500 var(--ch-fontSize-sm)/1 var(--ch-font-sans),\n    sans-serif;\n  cursor: pointer;\n  white-space: nowrap;\n  transition:\n    background var(--ch-duration-fast),\n    color var(--ch-duration-fast),\n    border-color var(--ch-duration-fast);\n  text-decoration: none;\n}\n.ds-button--md {\n  height: var(--ch-component-button-height-md);\n  padding: 0 var(--ch-space-4);\n}\n.ds-button:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-button:focus-visible,\n.ds-field-control:focus-within {\n  outline: 2px solid var(--ch-semantic-focus);\n  outline-offset: 3px;\n}\n.ds-button--primary {\n  background: var(--ch-component-button-bg);\n  color: var(--ch-component-button-fg);\n}\n.ds-button--primary:hover:not(:disabled) {\n  background: var(--ch-component-button-bg-hover);\n}\n@media (prefers-reduced-motion: reduce) {.ds-button {transition:none;}}"
+      "description": "Compact primary action.",
+      "html": "<button class=\"ds-button-primary\">View components</button>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:var(--af-radius-sm,1px);height:32px;padding:0 16px;font-family:var(--af-font-sans, \"DM Sans\"),sans-serif;font-size:14px;font-weight:400;text-decoration:none;cursor:pointer;transition:background 120ms,color 120ms,border-color 120ms;background:var(--af-semantic-action, #171717);color:var(--af-semantic-action-foreground, #fafafa);}.ds-button-primary:hover:not(:disabled){background:var(--af-semantic-action-hover, #262626);}.ds-button-primary:focus-visible{outline:2px solid var(--af-semantic-focus, #737373);outline-offset:3px;}.ds-button-primary:active:not(:disabled){filter:brightness(.94)}.ds-button-primary:disabled{opacity:.5;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none}}"
     },
     {
       "name": "Secondary Button",
       "kind": "button",
       "refersTo": "button-secondary",
-      "description": "Compact secondary action with medium size.",
-      "html": "<button class=\"ds-button ds-button--md ds-button--secondary\">Save changes</button>",
-      "css": ".ds-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--ch-space-2);\n  border: 1px solid transparent;\n  border-radius: var(--ch-component-button-radius);\n  font:\n    500 var(--ch-fontSize-sm)/1 var(--ch-font-sans),\n    sans-serif;\n  cursor: pointer;\n  white-space: nowrap;\n  transition:\n    background var(--ch-duration-fast),\n    color var(--ch-duration-fast),\n    border-color var(--ch-duration-fast);\n  text-decoration: none;\n}\n.ds-button--md {\n  height: var(--ch-component-button-height-md);\n  padding: 0 var(--ch-space-4);\n}\n.ds-button:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-button:focus-visible,\n.ds-field-control:focus-within {\n  outline: 2px solid var(--ch-semantic-focus);\n  outline-offset: 3px;\n}\n.ds-button--secondary {\n  background: var(--ch-semantic-surface);\n  color: var(--ch-semantic-foreground);\n  border-color: var(--ch-semantic-border-strong);\n}\n.ds-button--secondary:hover:not(:disabled),\n.ds-button--ghost:hover:not(:disabled) {\n  background: var(--ch-semantic-subtle);\n}\n@media (prefers-reduced-motion: reduce) {.ds-button {transition:none;}}"
+      "description": "Compact secondary action.",
+      "html": "<button class=\"ds-button-secondary\">View components</button>",
+      "css": ".ds-button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:var(--af-radius-sm,1px);height:32px;padding:0 16px;font-family:var(--af-font-sans, \"DM Sans\"),sans-serif;font-size:14px;font-weight:400;text-decoration:none;cursor:pointer;transition:background 120ms,color 120ms,border-color 120ms;background:var(--af-semantic-surface, #ffffff);color:var(--af-semantic-foreground, #0a0a0a);border-color:var(--af-semantic-border-strong, #737373);}.ds-button-secondary:hover:not(:disabled){background:var(--af-semantic-subtle, #f5f5f5);}.ds-button-secondary:focus-visible{outline:2px solid var(--af-semantic-focus, #737373);outline-offset:3px;}.ds-button-secondary:active:not(:disabled){filter:brightness(.94)}.ds-button-secondary:disabled{opacity:.5;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-button-secondary{transition:none}}"
     },
     {
       "name": "Ghost Button",
       "kind": "button",
       "refersTo": "button-ghost",
-      "description": "Compact ghost action with medium size.",
-      "html": "<button class=\"ds-button ds-button--md ds-button--ghost\">Save changes</button>",
-      "css": ".ds-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--ch-space-2);\n  border: 1px solid transparent;\n  border-radius: var(--ch-component-button-radius);\n  font:\n    500 var(--ch-fontSize-sm)/1 var(--ch-font-sans),\n    sans-serif;\n  cursor: pointer;\n  white-space: nowrap;\n  transition:\n    background var(--ch-duration-fast),\n    color var(--ch-duration-fast),\n    border-color var(--ch-duration-fast);\n  text-decoration: none;\n}\n.ds-button--md {\n  height: var(--ch-component-button-height-md);\n  padding: 0 var(--ch-space-4);\n}\n.ds-button:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-button:focus-visible,\n.ds-field-control:focus-within {\n  outline: 2px solid var(--ch-semantic-focus);\n  outline-offset: 3px;\n}\n.ds-button--secondary:hover:not(:disabled),\n.ds-button--ghost:hover:not(:disabled) {\n  background: var(--ch-semantic-subtle);\n}\n.ds-button--ghost {\n  background: transparent;\n  color: var(--ch-semantic-muted);\n}\n@media (prefers-reduced-motion: reduce) {.ds-button {transition:none;}}"
+      "description": "Compact ghost action.",
+      "html": "<button class=\"ds-button-ghost\">View components</button>",
+      "css": ".ds-button-ghost{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:var(--af-radius-sm,1px);height:32px;padding:0 16px;font-family:var(--af-font-sans, \"DM Sans\"),sans-serif;font-size:14px;font-weight:400;text-decoration:none;cursor:pointer;transition:background 120ms,color 120ms,border-color 120ms;background:transparent;color:var(--af-semantic-muted, #525252);}.ds-button-ghost:hover:not(:disabled){background:var(--af-semantic-subtle, #f5f5f5);}.ds-button-ghost:focus-visible{outline:2px solid var(--af-semantic-focus, #737373);outline-offset:3px;}.ds-button-ghost:active:not(:disabled){filter:brightness(.94)}.ds-button-ghost:disabled{opacity:.5;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-button-ghost{transition:none}}"
     },
     {
       "name": "Danger Button",
       "kind": "button",
       "refersTo": "button-danger",
-      "description": "Compact danger action with medium size.",
-      "html": "<button class=\"ds-button ds-button--md ds-button--danger\">Save changes</button>",
-      "css": ".ds-button {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--ch-space-2);\n  border: 1px solid transparent;\n  border-radius: var(--ch-component-button-radius);\n  font:\n    500 var(--ch-fontSize-sm)/1 var(--ch-font-sans),\n    sans-serif;\n  cursor: pointer;\n  white-space: nowrap;\n  transition:\n    background var(--ch-duration-fast),\n    color var(--ch-duration-fast),\n    border-color var(--ch-duration-fast);\n  text-decoration: none;\n}\n.ds-button--md {\n  height: var(--ch-component-button-height-md);\n  padding: 0 var(--ch-space-4);\n}\n.ds-button:disabled {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-button:focus-visible,\n.ds-field-control:focus-within {\n  outline: 2px solid var(--ch-semantic-focus);\n  outline-offset: 3px;\n}\n.ds-button--danger {\n  background: var(--ch-semantic-danger-soft);\n  color: var(--ch-semantic-danger);\n}\n.ds-button--danger:hover:not(:disabled) {\n  border-color: var(--ch-semantic-danger);\n}\n@media (prefers-reduced-motion: reduce) {.ds-button {transition:none;}}"
+      "description": "Compact danger action.",
+      "html": "<button class=\"ds-button-danger\">Delete item</button>",
+      "css": ".ds-button-danger{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:var(--af-radius-sm,1px);height:32px;padding:0 16px;font-family:var(--af-font-sans, \"DM Sans\"),sans-serif;font-size:14px;font-weight:400;text-decoration:none;cursor:pointer;transition:background 120ms,color 120ms,border-color 120ms;background:var(--af-semantic-danger-soft, #ffedef);color:var(--af-semantic-danger, #b53649);}.ds-button-danger:hover:not(:disabled){border-color:var(--af-semantic-danger, #b53649);}.ds-button-danger:focus-visible{outline:2px solid var(--af-semantic-focus, #737373);outline-offset:3px;}.ds-button-danger:active:not(:disabled){filter:brightness(.94)}.ds-button-danger:disabled{opacity:.5;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-button-danger{transition:none}}"
     },
     {
       "name": "Text Field",
       "kind": "input",
       "refersTo": "field",
-      "description": "Labeled native input with connected helper text.",
-      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-workspace\">Workspace name</label><div class=\"ds-field-control\"><input id=\"ds-workspace\" value=\"Acme workspace\" aria-describedby=\"ds-workspace-help\" /></div><span id=\"ds-workspace-help\" class=\"ds-field-help\">Visible to your team.</span></div>",
-      "css": ".ds-field {\n  display: grid;\n  gap: var(--ch-space-2);\n  min-width: 0;\n}\n.ds-field-label {\n  font-size: var(--ch-fontSize-sm);\n  font-weight: 500;\n  color: var(--ch-semantic-foreground);\n}\n.ds-field-control {\n  display: flex;\n  align-items: center;\n  gap: var(--ch-space-2);\n  height: 36px;\n  background: var(--ch-component-field-bg);\n  border: 1px solid var(--ch-component-field-border);\n  border-radius: var(--ch-component-field-radius);\n  padding: 0 var(--ch-space-3);\n}\n.ds-field-control--error {\n  border-color: var(--ch-semantic-danger);\n}\n.ds-field-control:has(input:disabled) {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n.ds-field-control input {\n  min-width: 0;\n  width: 100%;\n  background: transparent;\n  color: var(--ch-semantic-foreground);\n  border: 0;\n  outline: 0;\n  font:\n    400 var(--ch-fontSize-sm)/1.5 var(--ch-font-sans),\n    sans-serif;\n}\n.ds-field-control input::placeholder {\n  color: var(--ch-semantic-muted);\n  opacity: 1;\n}\n.ds-field-leading {\n  display: flex;\n  color: var(--ch-semantic-muted);\n}\n.ds-field-leading svg {\n  width: 16px;\n  height: 16px;\n}\n.ds-field-help {\n  font-size: var(--ch-fontSize-xs);\n  color: var(--ch-semantic-muted);\n}\n.ds-field-error {\n  color: var(--ch-semantic-danger);\n}\n.ds-field {font-family:var(--ch-font-sans),sans-serif;}.ds-field-help {line-height:1.5;} .ds-field-control:focus-within {outline:2px solid var(--ch-semantic-focus);outline-offset:3px;}"
+      "description": "A single native input with an associated label and help; tokenized sizing and visible focus.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Email</label><input id=\"ds-email\" name=\"email\" type=\"email\" aria-describedby=\"ds-email-help\" placeholder=\"name@example.com\"><span id=\"ds-email-help\" class=\"ds-field-help\">Use your work address.</span></div>",
+      "css": ".ds-field{display:grid;gap:var(--af-space-2,8px);font-family:var(--af-font-sans,\"DM Sans\"),sans-serif;font-size:14px;color:var(--af-semantic-foreground,#0a0a0a)}.ds-field label{font-weight:500}.ds-field input{width:100%;min-width:0;height:var(--af-component-field-height-md,36px);padding:0 var(--af-space-3,12px);border:1px solid var(--af-component-field-border,#737373);border-radius:var(--af-component-field-radius,1px);background:var(--af-component-field-bg,#ffffff);color:var(--af-semantic-foreground,#0a0a0a);font:400 14px/1.5 var(--af-font-sans,\"DM Sans\"),sans-serif}.ds-field input::placeholder,.ds-field-help{color:var(--af-semantic-muted,#525252)}.ds-field-help{font-size:12px}.ds-field input:focus-visible{outline:2px solid var(--af-semantic-focus,#737373);outline-offset:3px}.ds-field input[aria-invalid=\"true\"]{border-color:var(--af-semantic-danger,#b53649)}.ds-field input:disabled{opacity:.5;cursor:not-allowed}.ds-field input[readonly]{background:var(--af-semantic-inset,#f5f5f5)}"
     },
     {
-      "name": "Outline Card",
-      "kind": "card",
-      "refersTo": "card-outline",
-      "description": "Flat bordered grouping surface with default padding.",
-      "html": "<div class=\"ds-card ds-card--outline ds-card--md\"><strong>Workspace settings</strong><p>Manage access and preferences.</p></div>",
-      "css": ".ds-card {\n  background: var(--ch-component-card-bg);\n  border-radius: var(--ch-component-card-radius);\n  min-width: 0;\n}\n.ds-card--outline {\n  border: 1px solid var(--ch-component-card-border);\n}\n.ds-card--md {\n  padding: var(--ch-space-5);\n}\n.ds-card {font:400 14px/1.5 var(--ch-font-sans),sans-serif;color:var(--ch-semantic-foreground);} .ds-card strong {font-weight:500;} .ds-card p {margin:8px 0 0;color:var(--ch-semantic-muted);}"
+      "name": "Horizontal Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Underlined current section on a flat horizontal rule.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Workspace\"><a href=\"#overview\" aria-current=\"page\">Overview</a><a href=\"#customers\">Customers</a><a href=\"#billing\">Billing</a></nav>",
+      "css": ".ds-nav{display:flex;gap:4px;border-bottom:1px solid var(--af-semantic-border, #e5e5e5);font-family:var(--af-font-sans, \"DM Sans\"),sans-serif;font-size:13px}.ds-nav a{padding:10px 12px;text-decoration:none;border-bottom:1px solid transparent;color:var(--af-semantic-muted, #525252)}.ds-nav a[aria-current]{color:var(--af-semantic-foreground, #0a0a0a);border-bottom-color:var(--af-semantic-foreground, #0a0a0a)}.ds-nav a:hover{background:var(--af-semantic-subtle, #f5f5f5);color:var(--af-semantic-foreground, #0a0a0a)}.ds-nav a:focus-visible{outline:2px solid var(--af-semantic-focus, #737373);outline-offset:3px;}"
     },
     {
       "name": "Accent Badge",
       "kind": "chip",
       "refersTo": "badge-accent",
-      "description": "Quiet cyan status badge.",
-      "html": "<span class=\"ds-badge ds-badge--accent\">Core</span>",
-      "css": ".ds-badge {\n  display: inline-flex;\n  align-items: center;\n  border-radius: var(--ch-radius-sm);\n  font-size: var(--ch-fontSize-xs);\n  line-height: 1.5;\n  font-weight: 500;\n  white-space: nowrap;\n  padding: 2px 8px;\n}\n.ds-badge--accent {\n  color: var(--ch-semantic-accent);\n  background: var(--ch-semantic-accent-soft);\n}\n.ds-badge {font-family:var(--ch-font-sans),sans-serif;}"
+      "description": "Readable status text on a quiet neutral fill.",
+      "html": "<span class=\"ds-badge\">Pending</span>",
+      "css": ".ds-badge{display:inline-flex;align-items:center;border-radius:var(--af-radius-sm,1px);padding:2px 8px;font-family:var(--af-font-sans, \"DM Sans\"),sans-serif;font-size:12px;line-height:1.5;font-weight:500;color:var(--af-semantic-accent, #171717);background:var(--af-semantic-accent-soft, #f5f5f5)}"
     },
     {
-      "name": "Sidebar Navigation",
-      "kind": "nav",
-      "refersTo": "navigation-active",
-      "description": "Compact links with quiet hover and explicit current state.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Documentation\"><a href=\"#overview\">Overview</a><a href=\"#components\" aria-current=\"page\">Components</a><a href=\"#tokens\">Tokens</a></nav>",
-      "css": ".ds-nav {\n  margin-bottom: 28px;\n  display: flex;\n  flex-direction: column;\n  gap: 3px;\n}\n.ds-nav a {\n  padding: 7px 10px;\n  font-size: 13px;\n  color: var(--ch-semantic-muted);\n  border-radius: 4px;\n}\n.ds-nav a:hover {\n  color: var(--ch-semantic-foreground);\n  background: var(--ch-semantic-subtle);\n}\n.ds-nav a[aria-current] {\n  background: var(--ch-semantic-accent-soft);\n  color: var(--ch-semantic-accent);\n  font-weight: 500;\n}\n.ds-nav {font-family:var(--ch-font-sans),sans-serif;line-height:1.5;} .ds-nav a {text-decoration:none;} .ds-nav a:focus-visible {outline:2px solid var(--ch-semantic-focus);outline-offset:4px;}"
+      "name": "Outline Card",
+      "kind": "card",
+      "refersTo": "card-outline",
+      "description": "Square flat panel with a thin structural seam.",
+      "html": "<section class=\"ds-card\"><h3>Workspace activity</h3><p>Recent changes appear here.</p></section>",
+      "css": ".ds-card{padding:20px;border:1px solid var(--af-semantic-border, #e5e5e5);border-radius:var(--af-radius-md,0px);background:var(--af-semantic-surface, #ffffff);color:var(--af-semantic-foreground, #0a0a0a);font-family:var(--af-font-sans, \"DM Sans\"),sans-serif;font-size:14px;line-height:1.5}.ds-card h3{margin:0;font-size:15px;font-weight:500}.ds-card p{margin:8px 0 0;color:var(--af-semantic-muted, #525252)}"
     },
     {
-      "name": "Data Table",
+      "name": "Ruled Table",
       "kind": "custom",
-      "refersTo": "table-row",
-      "description": "Native compact table with inset header and thin dividers.",
-      "html": "<table class=\"ds-table\"><caption>Example workspace members</caption><thead><tr><th scope=\"col\">Name</th><th scope=\"col\">Role</th></tr></thead><tbody><tr><td>Jordan Lee</td><td>Admin</td></tr><tr><td>Alex Kim</td><td>Member</td></tr></tbody></table>",
-      "css": ".ds-table {\n  border-collapse: collapse;\n  width: 100%;\n  font-size: var(--ch-fontSize-sm);\n  text-align: left;\n  color: var(--ch-semantic-foreground);\n}\n.ds-table th {\n  height: 40px;\n  background: var(--ch-component-table-header-bg);\n  font-size: var(--ch-fontSize-xs);\n  font-weight: 500;\n  color: var(--ch-semantic-muted);\n  white-space: nowrap;\n}\n.ds-table td {\n  height: var(--ch-component-table-row-height);\n}\n.ds-table th,\n.ds-table td {\n  padding: var(--ch-space-2) var(--ch-space-5);\n  border-bottom: 1px solid var(--ch-component-table-border);\n}\n.ds-table tbody tr:last-child td {\n  border-bottom: 0;\n}\n.ds-table tbody tr:hover {\n  background: var(--ch-semantic-inset);\n}\n.ds-table caption {\n  text-align: left;\n  padding: var(--ch-space-3) var(--ch-space-5);\n  font-size: var(--ch-fontSize-xs);\n  color: var(--ch-semantic-muted);\n}\n.ds-table {font-family:var(--ch-font-sans),sans-serif;line-height:1.5;}"
+      "refersTo": "table-header",
+      "description": "Technical headers and divided operational rows.",
+      "html": "<table class=\"ds-table\"><thead><tr><th scope=\"col\">Account</th><th scope=\"col\">Status</th></tr></thead><tbody><tr><td>Acme</td><td>Active</td></tr><tr><td>Northstar</td><td>Trial</td></tr></tbody></table>",
+      "css": ".ds-table{width:100%;border-collapse:collapse;text-align:left;font-family:var(--af-font-sans, \"DM Sans\"),sans-serif;font-size:14px;color:var(--af-semantic-foreground, #0a0a0a)}.ds-table th{height:40px;background:var(--af-semantic-inset, #f5f5f5);color:var(--af-semantic-muted, #525252);font:400 12px/1.5 var(--af-font-mono,\"Space Mono\"),monospace;text-transform:uppercase;letter-spacing:.02em}.ds-table th,.ds-table td{padding:8px 20px;border-bottom:1px solid var(--af-semantic-border, #e5e5e5)}.ds-table td{height:52px}.ds-table tbody tr:hover{background:var(--af-semantic-inset, #f5f5f5)}.ds-table tr:last-child td{border-bottom:0}"
     },
     {
-      "name": "Chamfer Mark",
+      "name": "Native Choices",
+      "kind": "input",
+      "refersTo": "choice-checked",
+      "description": "Native checkbox and radio inputs plus a checkbox-backed switch; shared size and checked-state tokens, normal keyboard behavior, and forced-colors support.",
+      "html": "<div class=\"ds-choices\"><label class=\"ds-choice\"><input class=\"ds-checkbox\" type=\"checkbox\" name=\"updates\" checked>Product updates</label><fieldset class=\"ds-radio-group\"><legend>Visibility</legend><label class=\"ds-choice\"><input class=\"ds-radio\" type=\"radio\" name=\"visibility\" value=\"team\" checked>Team</label><label class=\"ds-choice\"><input class=\"ds-radio\" type=\"radio\" name=\"visibility\" value=\"private\">Private</label></fieldset><label class=\"ds-choice\"><span class=\"ds-switch\"><input type=\"checkbox\" role=\"switch\" name=\"notifications\"><span class=\"ds-switch-track\" aria-hidden=\"true\"><span class=\"ds-switch-thumb\"></span></span></span>Notifications</label></div>",
+      "css": ".ds-choices{display:grid;gap:var(--af-space-2,8px);font:400 14px/1.5 var(--af-font-sans,\"DM Sans\"),sans-serif;color:var(--af-semantic-foreground,#0a0a0a)}.ds-choice{display:flex;align-items:flex-start;gap:var(--af-space-2,8px);min-height:32px;padding-block:5px;cursor:pointer}.ds-checkbox,.ds-radio{appearance:none;flex-shrink:0;width:var(--af-component-choice-size-md,18px);height:var(--af-component-choice-size-md,18px);margin:1px 0 0;border:1px solid var(--af-semantic-muted,#525252);border-radius:var(--af-radius-sm,1px);background:var(--af-component-field-bg,#ffffff);cursor:pointer}.ds-checkbox:checked{background-color:var(--af-component-choice-checked-bg,#171717);border-color:var(--af-component-choice-checked-bg,#171717);background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='%23171717' stroke-width='2'/%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:center;background-size:14px 14px}.ds-radio{border-radius:50%}.ds-radio:checked{border-color:var(--af-semantic-accent,#171717);border-width:5px}.ds-radio-group{min-width:0;border:0;margin:0;padding:0}.ds-radio-group legend{padding:0;font-weight:500}.ds-switch{display:inline-flex;position:relative;flex-shrink:0;width:var(--af-component-switch-width-md,36px);height:var(--af-component-switch-height-md,20px)}.ds-switch input{position:absolute;inset:0;margin:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:1}.ds-switch-track{box-sizing:border-box;width:100%;height:100%;padding:3px;background:var(--af-semantic-subtle,#f5f5f5);border:1px solid var(--af-semantic-muted,#525252);border-radius:var(--af-radius-sm,1px)}.ds-switch-thumb{display:block;width:40%;height:100%;background:var(--af-semantic-muted,#525252)}.ds-switch input:checked + .ds-switch-track{background:var(--af-component-choice-checked-bg,#171717);border-color:var(--af-component-choice-checked-bg,#171717)}.ds-switch input:checked + .ds-switch-track .ds-switch-thumb{margin-inline-start:auto;background:var(--af-component-choice-checked-fg,#fafafa)}.ds-checkbox:focus-visible,.ds-radio:focus-visible,.ds-switch input:focus-visible + .ds-switch-track{outline:2px solid var(--af-semantic-focus,#737373);outline-offset:3px}.ds-checkbox[aria-invalid=\"true\"],.ds-radio[aria-invalid=\"true\"],.ds-switch input[aria-invalid=\"true\"] + .ds-switch-track{border-color:var(--af-semantic-danger,#b53649)}.ds-checkbox:disabled,.ds-radio:disabled,.ds-switch input:disabled + .ds-switch-track{opacity:.5;cursor:not-allowed}.ds-choice:has(:disabled),.ds-switch input:disabled{cursor:not-allowed}@media(forced-colors:active){.ds-checkbox,.ds-radio{appearance:auto;background-image:none}.ds-switch-track{border-color:ButtonText}.ds-switch-thumb{background:ButtonText}.ds-switch input:checked + .ds-switch-track{background:Highlight;border-color:Highlight}.ds-switch input:checked + .ds-switch-track .ds-switch-thumb{background:HighlightText}}"
+    },
+    {
+      "name": "Quiet Selection",
+      "kind": "button",
+      "refersTo": "selection-active",
+      "description": "The shared pressed-toggle treatment also supplies the visual pair for selected tabs. This native button is a pressed-state specimen.",
+      "html": "<button type=\"button\" class=\"ds-selection\" aria-pressed=\"true\">Comfortable</button>",
+      "css": ".ds-selection{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:32px;min-width:32px;padding:0 12px;border:1px solid var(--af-component-selection-fg,#171717);border-radius:var(--af-radius-sm,1px);background:var(--af-component-selection-bg,#f5f5f5);color:var(--af-component-selection-fg,#171717);font:400 14px/1 var(--af-font-sans,\"DM Sans\"),sans-serif;cursor:pointer}.ds-selection:hover:not(:disabled){background:var(--af-semantic-subtle,#f5f5f5);color:var(--af-semantic-foreground,#0a0a0a)}.ds-selection[aria-pressed=\"true\"]{background:var(--af-component-selection-bg,#f5f5f5);color:var(--af-component-selection-fg,#171717)}.ds-selection:focus-visible{outline:2px solid var(--af-semantic-focus,#737373);outline-offset:3px}.ds-selection:disabled{opacity:.5;cursor:not-allowed}@media(forced-colors:active){.ds-selection[aria-pressed=\"true\"]{outline:1px solid Highlight}}"
+    },
+    {
+      "name": "Static Alert",
       "kind": "custom",
-      "description": "Original identity geometry, using theme-aware cyan and canvas.",
-      "html": "<svg class=\"ds-mark\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" role=\"img\" aria-label=\"Chamfer UI\"><path d=\"M10 4H30L36 10V30L30 36H10L4 30V10L10 4Z\" fill=\"currentColor\"/><path d=\"M14 12H28V18H18V26H28V32H14L10 28V16L14 12Z\" fill=\"var(--ch-semantic-canvas)\"/></svg>",
-      "css": ".ds-mark {color:var(--ch-semantic-accent);display:block;}"
+      "refersTo": "alert-neutral",
+      "description": "A flat message with readable title and copy; no live announcement role is imposed.",
+      "html": "<div class=\"ds-alert\"><svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"><circle cx=\"8\" cy=\"8\" r=\"6\" stroke=\"currentColor\"/><path d=\"M8 7v4M8 4.5v1\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg><div><div class=\"ds-alert-title\">Review before publishing</div><div class=\"ds-alert-description\">Check the changes and <a href=\"#review\">open the review</a>.</div></div></div>",
+      "css": ".ds-alert{display:flex;align-items:flex-start;gap:var(--af-space-3,12px);padding:var(--af-space-4,16px);border:1px solid var(--af-semantic-border,#e5e5e5);border-radius:var(--af-radius-md,0px);background:var(--af-semantic-surface,#ffffff);color:var(--af-semantic-foreground,#0a0a0a);font:400 14px/1.5 var(--af-font-sans,\"DM Sans\"),sans-serif;overflow-wrap:anywhere}.ds-alert>svg{flex:none;margin-top:2px}.ds-alert-title{font-weight:600}.ds-alert-description{margin-top:var(--af-space-1,4px)}.ds-alert-description a{color:inherit;text-decoration:underline;text-underline-offset:3px}.ds-alert-description a:hover{text-decoration-thickness:2px}.ds-alert-description a:focus-visible{outline:2px solid var(--af-semantic-focus,#737373);outline-offset:3px}"
+    },
+    {
+      "name": "Modal Panel",
+      "kind": "custom",
+      "refersTo": "dialog-md",
+      "description": "Static specimen of the shared Dialog and AlertDialog material; native top-layer and focus behavior belong to the React component.",
+      "html": "<div class=\"ds-modal-stage\"><section class=\"ds-modal\" role=\"dialog\" aria-labelledby=\"ds-modal-title\" aria-describedby=\"ds-modal-description\"><header class=\"ds-modal-header\"><h2 id=\"ds-modal-title\" class=\"ds-modal-title\">Confirm this change?</h2><p id=\"ds-modal-description\" class=\"ds-modal-description\">Review the task before choosing an action.</p></header><footer class=\"ds-modal-footer\"><button type=\"button\" class=\"ds-modal-button\">Cancel</button><button type=\"button\" class=\"ds-modal-button ds-modal-danger\">Confirm change</button></footer></section></div>",
+      "css": ".ds-modal-stage { padding: 16px; background: var(--af-component-dialog-backdrop); } .ds-modal { width: min(100%, var(--af-component-dialog-width-md)); margin: auto; color: var(--af-semantic-foreground); background: var(--af-semantic-surface); border: 1px solid var(--af-semantic-border-strong); border-radius: var(--af-radius-md); font-family: var(--af-font-sans), sans-serif; font-size: 14px; line-height: 1.6; text-align: start; } .ds-modal-header { display: grid; gap: var(--af-component-dialog-gap); padding: var(--af-component-dialog-padding); padding-bottom: 16px; } .ds-modal-title { margin: 0; font-size: 20px; font-weight: 600; line-height: 1.4; letter-spacing: normal; overflow-wrap: anywhere; } .ds-modal-description { margin: 0; color: var(--af-semantic-muted); font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; } .ds-modal-footer { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--af-component-dialog-gap); padding: 16px var(--af-component-dialog-padding); border-top: 1px solid var(--af-semantic-border); background: var(--af-semantic-subtle); } .ds-modal-button { height: 32px; padding: 0 16px; border: 1px solid var(--af-semantic-border-strong); border-radius: var(--af-radius-sm); background: var(--af-semantic-surface); color: var(--af-semantic-foreground); font-family: var(--af-font-sans), sans-serif; font-size: 14px; font-weight: 400; line-height: 1; cursor: pointer; transition: background 120ms, color 120ms, border-color 120ms; } .ds-modal-button:hover { background: var(--af-semantic-subtle); } .ds-modal-button:focus-visible { outline: 2px solid var(--af-semantic-focus); outline-offset: 3px; } .ds-modal-button:active { filter: brightness(.95); } .ds-modal-danger { background: var(--af-semantic-danger-soft); color: var(--af-semantic-danger); border-color: transparent; } .ds-modal-danger:hover { background: var(--af-semantic-danger-soft); border-color: var(--af-semantic-danger); } @media (max-width: 480px) { .ds-modal-footer { flex-direction: column; } .ds-modal-footer > button { width: 100%; } } @media (prefers-reduced-motion: reduce) { .ds-modal-button { transition: none; } } @media (forced-colors: active) { .ds-modal { border-color: CanvasText; } }"
+    },
+    {
+      "name": "Anchored Popover",
+      "kind": "custom",
+      "refersTo": "popover",
+      "description": "Static specimen of compact nonmodal task material; positioning, focus, and dismissal belong to the React component.",
+      "html": "<section class=\"ds-popover\" role=\"dialog\" aria-modal=\"false\" aria-labelledby=\"ds-popover-title\" aria-describedby=\"ds-popover-description\" tabindex=\"-1\"><h3 id=\"ds-popover-title\" class=\"ds-popover-title\">Project filters</h3><p id=\"ds-popover-description\" class=\"ds-popover-description\">Choose which projects to show.</p><button type=\"button\" class=\"ds-popover-close\">Done</button></section>",
+      "css": ".ds-popover{width:var(--af-component-popover-width,320px);max-width:100%;padding:var(--af-component-popover-padding,16px);display:grid;gap:var(--af-component-popover-gap,8px);border:1px solid var(--af-semantic-border-strong,#737373);border-radius:var(--af-radius-sm,1px);background:var(--af-semantic-surface,#ffffff);color:var(--af-semantic-foreground,#0a0a0a);font:400 14px/1.5 var(--af-font-sans,\"DM Sans\"),sans-serif;overflow-wrap:anywhere;text-align:start}.ds-popover-title{margin:0;font:500 16px/1.5 var(--af-font-sans,\"DM Sans\"),sans-serif;letter-spacing:0}.ds-popover-description{margin:0;color:var(--af-semantic-muted,#525252)}.ds-popover-close{justify-self:start;height:32px;padding:0 16px;border:1px solid var(--af-semantic-border-strong,#737373);border-radius:var(--af-radius-sm,1px);background:var(--af-semantic-surface,#ffffff);color:var(--af-semantic-foreground,#0a0a0a);font:400 14px/1 var(--af-font-sans,\"DM Sans\"),sans-serif;cursor:pointer}.ds-popover-close:hover{background:var(--af-semantic-subtle,#f5f5f5)}.ds-popover-close:active{filter:brightness(.94)}.ds-popover-close:focus-visible{outline:2px solid var(--af-semantic-focus,#737373);outline-offset:3px}.ds-popover:focus-visible{outline:2px solid var(--af-semantic-focus,#737373);outline-offset:2px}@media(forced-colors:active){.ds-popover{border:1px solid CanvasText;color:CanvasText;background:Canvas}}"
+    },
+    {
+      "name": "Supplemental Tooltip",
+      "kind": "custom",
+      "refersTo": "tooltip",
+      "description": "Static text specimen with complete trigger name; the React component owns delay, hover bridge, positioning, and Escape dismissal.",
+      "html": "<div class=\"ds-tooltip-stage\"><button type=\"button\" class=\"ds-tooltip-trigger\" aria-describedby=\"ds-tooltip-copy\">Show sample ID</button><div id=\"ds-tooltip-copy\" class=\"ds-tooltip\" role=\"tooltip\">Reveals the example project identifier.</div></div>",
+      "css": ".ds-tooltip-stage{display:grid;justify-items:start;gap:8px}.ds-tooltip-trigger{height:32px;padding:0 16px;border:1px solid var(--af-semantic-border-strong,#737373);border-radius:var(--af-radius-sm,1px);background:var(--af-semantic-surface,#ffffff);color:var(--af-semantic-foreground,#0a0a0a);font:400 14px/1 var(--af-font-sans,\"DM Sans\"),sans-serif;cursor:pointer}.ds-tooltip-trigger:hover{background:var(--af-semantic-subtle,#f5f5f5)}.ds-tooltip-trigger:active{filter:brightness(.94)}.ds-tooltip-trigger:focus-visible{outline:2px solid var(--af-semantic-focus,#737373);outline-offset:3px}.ds-tooltip{width:max-content;max-width:min(100%,var(--af-component-tooltip-max-width,272px));padding:var(--af-space-2,8px) var(--af-space-3,12px);border:0;border-radius:var(--af-radius-sm,1px);background:var(--af-component-tooltip-bg,var(--af-semantic-foreground,#0a0a0a));color:var(--af-component-tooltip-fg,var(--af-semantic-surface,#ffffff));font:400 12px/1.5 var(--af-font-sans,\"DM Sans\"),sans-serif;overflow-wrap:anywhere}@media(forced-colors:active){.ds-tooltip{border:1px solid CanvasText;color:CanvasText;background:Canvas}}"
+    },
+    {
+      "name": "Edge Sheet",
+      "kind": "custom",
+      "refersTo": "sheet-width-md",
+      "description": "Static material specimen; native modality, focus, state, and actions belong to the React component.",
+      "html": "<div class=\"ds-sheet-stage\"><section class=\"ds-sheet\" role=\"dialog\" aria-labelledby=\"ds-sheet-title\" aria-describedby=\"ds-sheet-description\"><header class=\"ds-sheet-header\"><h2 id=\"ds-sheet-title\" class=\"ds-sheet-title\">Edit workspace</h2><p id=\"ds-sheet-description\" class=\"ds-sheet-description\">Keep the active task beside the page.</p></header><div class=\"ds-sheet-body\"><p>The body scrolls while the task title and actions remain reachable.</p></div><footer class=\"ds-sheet-footer\"><button type=\"button\" class=\"ds-sheet-button\">Cancel</button><button type=\"button\" class=\"ds-sheet-button ds-sheet-primary\">Save workspace</button></footer></section></div>",
+      "css": ".ds-sheet{display:flex;flex-direction:column;min-height:0;overflow:hidden;color:var(--af-semantic-foreground);background:var(--af-semantic-surface);border:1px solid var(--af-semantic-border-strong);border-radius:var(--af-radius-md);font-family:var(--af-font-sans),sans-serif;font-size:14px;line-height:1.6;text-align:start}.ds-sheet-header{display:grid;gap:var(--af-component-dialog-gap);flex-shrink:0;padding:max(var(--af-component-dialog-padding),env(safe-area-inset-top,0px)) max(var(--af-component-dialog-padding),env(safe-area-inset-right,0px)) 16px max(var(--af-component-dialog-padding),env(safe-area-inset-left,0px))}.ds-sheet-title{margin:0;font-size:20px;font-weight:600;line-height:1.4;letter-spacing:normal;overflow-wrap:anywhere}.ds-sheet-description{margin:0;color:var(--af-semantic-muted);font-size:14px;line-height:1.6;overflow-wrap:anywhere}.ds-sheet-body{display:grid;gap:16px;flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;align-content:start;overflow-wrap:anywhere;padding:0 max(var(--af-component-dialog-padding),env(safe-area-inset-right,0px)) var(--af-component-dialog-padding) max(var(--af-component-dialog-padding),env(safe-area-inset-left,0px))}.ds-sheet-body p{margin:0}.ds-sheet-footer{display:flex;flex-wrap:wrap;flex-shrink:0;justify-content:flex-end;gap:var(--af-component-dialog-gap);margin-top:auto;padding:16px max(var(--af-component-dialog-padding),env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(var(--af-component-dialog-padding),env(safe-area-inset-left,0px));border-top:1px solid var(--af-semantic-border);background:var(--af-semantic-subtle)}.ds-sheet-button{height:32px;padding:0 16px;border:1px solid var(--af-semantic-border-strong);border-radius:var(--af-radius-sm);background:var(--af-semantic-surface);color:var(--af-semantic-foreground);font-family:var(--af-font-sans),sans-serif;font-size:14px;font-weight:400;line-height:1;cursor:pointer;transition:background 120ms,color 120ms,border-color 120ms}.ds-sheet-button:hover{background:var(--af-semantic-subtle)}.ds-sheet-button:focus-visible{outline:2px solid var(--af-semantic-focus);outline-offset:3px}.ds-sheet-button:active{filter:brightness(.94)}.ds-sheet-primary{background:var(--af-semantic-action);color:var(--af-semantic-action-foreground);border-color:transparent}.ds-sheet-primary:hover{background:var(--af-semantic-action-hover)}@media(max-width:480px){.ds-sheet-footer{flex-direction:column}.ds-sheet-footer>button{width:100%}}@media(prefers-reduced-motion:reduce){.ds-sheet-button{transition:none}}@media(forced-colors:active){.ds-sheet{border-color:CanvasText}}.ds-sheet-stage{display:flex;justify-content:flex-end;background:var(--af-component-dialog-backdrop)}.ds-sheet{width:min(100%,var(--af-component-sheet-width-md));height:100dvh;max-height:100dvh;border-top:0;border-right:0;border-bottom:0}"
+    },
+    {
+      "name": "Bottom Drawer",
+      "kind": "custom",
+      "refersTo": "drawer-width-md",
+      "description": "Static material specimen; native modality, focus, state, and actions belong to the React component.",
+      "html": "<div class=\"ds-drawer-stage\"><section class=\"ds-drawer\" role=\"dialog\" aria-labelledby=\"ds-drawer-title\" aria-describedby=\"ds-drawer-description\"><header class=\"ds-drawer-header\"><h2 id=\"ds-drawer-title\" class=\"ds-drawer-title\">Export workspace</h2><p id=\"ds-drawer-description\" class=\"ds-drawer-description\">Choose a local export from a bottom task panel.</p></header><div class=\"ds-drawer-body\"><p>Export settings remain consumer-owned.</p></div><footer class=\"ds-drawer-footer\"><button type=\"button\" class=\"ds-drawer-button\">Cancel</button><button type=\"button\" class=\"ds-drawer-button ds-drawer-primary\">Export JSON</button></footer></section></div>",
+      "css": ".ds-drawer{display:flex;flex-direction:column;min-height:0;overflow:hidden;color:var(--af-semantic-foreground);background:var(--af-semantic-surface);border:1px solid var(--af-semantic-border-strong);border-radius:var(--af-radius-md);font-family:var(--af-font-sans),sans-serif;font-size:14px;line-height:1.6;text-align:start}.ds-drawer-header{display:grid;gap:var(--af-component-dialog-gap);flex-shrink:0;padding:max(var(--af-component-dialog-padding),env(safe-area-inset-top,0px)) max(var(--af-component-dialog-padding),env(safe-area-inset-right,0px)) 16px max(var(--af-component-dialog-padding),env(safe-area-inset-left,0px))}.ds-drawer-title{margin:0;font-size:20px;font-weight:600;line-height:1.4;letter-spacing:normal;overflow-wrap:anywhere}.ds-drawer-description{margin:0;color:var(--af-semantic-muted);font-size:14px;line-height:1.6;overflow-wrap:anywhere}.ds-drawer-body{display:grid;gap:16px;flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;align-content:start;overflow-wrap:anywhere;padding:0 max(var(--af-component-dialog-padding),env(safe-area-inset-right,0px)) var(--af-component-dialog-padding) max(var(--af-component-dialog-padding),env(safe-area-inset-left,0px))}.ds-drawer-body p{margin:0}.ds-drawer-footer{display:flex;flex-wrap:wrap;flex-shrink:0;justify-content:flex-end;gap:var(--af-component-dialog-gap);margin-top:auto;padding:16px max(var(--af-component-dialog-padding),env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(var(--af-component-dialog-padding),env(safe-area-inset-left,0px));border-top:1px solid var(--af-semantic-border);background:var(--af-semantic-subtle)}.ds-drawer-button{height:32px;padding:0 16px;border:1px solid var(--af-semantic-border-strong);border-radius:var(--af-radius-sm);background:var(--af-semantic-surface);color:var(--af-semantic-foreground);font-family:var(--af-font-sans),sans-serif;font-size:14px;font-weight:400;line-height:1;cursor:pointer;transition:background 120ms,color 120ms,border-color 120ms}.ds-drawer-button:hover{background:var(--af-semantic-subtle)}.ds-drawer-button:focus-visible{outline:2px solid var(--af-semantic-focus);outline-offset:3px}.ds-drawer-button:active{filter:brightness(.94)}.ds-drawer-primary{background:var(--af-semantic-action);color:var(--af-semantic-action-foreground);border-color:transparent}.ds-drawer-primary:hover{background:var(--af-semantic-action-hover)}@media(max-width:480px){.ds-drawer-footer{flex-direction:column}.ds-drawer-footer>button{width:100%}}@media(prefers-reduced-motion:reduce){.ds-drawer-button{transition:none}}@media(forced-colors:active){.ds-drawer{border-color:CanvasText}}.ds-drawer-stage{display:flex;align-items:flex-end;justify-content:center;background:var(--af-component-dialog-backdrop)}.ds-drawer{width:min(100%,var(--af-component-drawer-width-md));max-height:85dvh;border-bottom:0}"
+    },
+    {
+      "name": "Action Menu",
+      "kind": "custom",
+      "refersTo": "menu-md",
+      "description": "Static material specimen shared by Dropdown Menu and Context Menu; roving focus, choices, placement, and dismissal belong to the React components.",
+      "html": "<div class=\"ds-menu\" role=\"menu\" aria-label=\"Project actions\"><div class=\"ds-menu-label\">Atlas workspace</div><button type=\"button\" class=\"ds-menu-item\" role=\"menuitem\" tabindex=\"0\">Duplicate project</button><button type=\"button\" class=\"ds-menu-item\" role=\"menuitemcheckbox\" aria-checked=\"true\" tabindex=\"-1\"><span class=\"ds-menu-check\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"m3 8 3 3 7-7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg></span>Pin project</button><div class=\"ds-menu-separator\" role=\"separator\" aria-orientation=\"horizontal\"></div><button type=\"button\" class=\"ds-menu-item ds-menu-danger\" role=\"menuitem\" tabindex=\"-1\">Archive project</button><button type=\"button\" class=\"ds-menu-item\" role=\"menuitem\" aria-disabled=\"true\" tabindex=\"-1\">Delete project<span class=\"ds-menu-shortcut\" aria-hidden=\"true\">Restricted</span></button></div>",
+      "css": ".ds-menu{width:var(--af-component-menu-width-md);max-width:100%;padding:var(--af-component-menu-padding);border:1px solid var(--af-component-menu-border);border-radius:var(--af-radius-sm);background:var(--af-component-menu-bg);color:var(--af-component-menu-fg);font:400 14px/1.5 var(--af-font-sans),sans-serif;overflow:auto;overscroll-behavior:contain}.ds-menu-item{display:flex;align-items:center;gap:8px;box-sizing:border-box;width:100%;min-height:var(--af-component-menu-item-height-md);padding:4px 8px;border:0;border-radius:var(--af-radius-sm);background:transparent;color:inherit;text-align:start;font:inherit;cursor:pointer;overflow-wrap:anywhere}.ds-menu-item:hover,.ds-menu-item:focus{background:var(--af-component-menu-active-bg);color:var(--af-component-menu-active-fg)}.ds-menu-item:focus-visible{outline:2px solid var(--af-semantic-focus);outline-offset:-2px}.ds-menu-danger{color:var(--af-semantic-danger)}.ds-menu-danger:hover,.ds-menu-danger:focus{color:var(--af-semantic-danger);background:var(--af-semantic-danger-soft)}.ds-menu-item[aria-disabled=\"true\"]{color:var(--af-semantic-muted);cursor:not-allowed}.ds-menu-label{padding:8px;font-weight:500}.ds-menu-check{display:flex;align-items:center;flex:0 0 16px;width:16px;height:16px}.ds-menu-check svg{width:16px;height:16px}.ds-menu-shortcut{margin-inline-start:auto;padding-inline-start:16px;color:var(--af-semantic-muted);font:400 12px/1.5 var(--af-font-mono),monospace;white-space:nowrap}.ds-menu-separator{height:1px;margin:4px calc(-1 * var(--af-component-menu-padding));background:var(--af-component-menu-border)}@media(pointer:coarse){.ds-menu-item{min-height:max(44px,var(--af-component-menu-item-height-md))}}@media(forced-colors:active){.ds-menu{border-color:CanvasText}.ds-menu-item:focus{outline:2px solid Highlight;outline-offset:-2px}.ds-menu-item[aria-disabled=\"true\"]{color:GrayText}}"
+    },
+    {
+      "name": "Toast Feedback",
+      "kind": "custom",
+      "refersTo": "toast",
+      "description": "Static success material specimen; provider-local queue, timing, announcements and focus behavior belong to the React Toast family.",
+      "html": "<div class=\"ds-toast\" role=\"group\" aria-labelledby=\"ds-toast-title\" aria-describedby=\"ds-toast-description\"><svg class=\"ds-toast-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"10\" cy=\"10\" r=\"7.25\"/><path d=\"m6.5 10 2.5 2.5 4.5-5\"/></svg><div class=\"ds-toast-body\"><div class=\"ds-toast-title\" id=\"ds-toast-title\">Changes saved</div><div class=\"ds-toast-description\" id=\"ds-toast-description\">Your changes are ready.</div></div><button type=\"button\" class=\"ds-toast-close\" aria-label=\"Dismiss notification\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"m4 4 8 8m0-8-8 8\"/></svg></button></div>",
+      "css": ".ds-toast{display:flex;align-items:flex-start;gap:12px;box-sizing:border-box;width:var(--af-component-toast-width);max-width:100%;min-width:0;padding:var(--af-component-toast-padding);border:1px solid var(--af-component-toast-border);border-radius:var(--af-radius-sm);background:var(--af-component-toast-bg);color:var(--af-component-toast-fg);font:400 14px/1.5 var(--af-font-sans),sans-serif;overflow-wrap:anywhere}.ds-toast-icon{width:20px;height:20px;flex:0 0 20px;color:var(--af-semantic-success);margin-top:1px}.ds-toast-body{flex:1;min-width:0}.ds-toast-title{font-weight:500}.ds-toast-description{color:var(--af-semantic-muted);margin-top:4px}.ds-toast-close{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:28px;min-width:28px;height:28px;padding:0;margin-top:-4px;margin-inline-end:-4px;border:1px solid transparent;border-radius:var(--af-radius-sm);background:transparent;color:var(--af-semantic-muted);cursor:pointer;transition:background var(--af-duration-fast),color var(--af-duration-fast),border-color var(--af-duration-fast)}.ds-toast-close svg{width:16px;height:16px}.ds-toast-close:hover{background:var(--af-semantic-subtle)}.ds-toast-close:focus-visible{outline:2px solid var(--af-semantic-focus);outline-offset:3px}.ds-toast-close:active{filter:brightness(0.94)}@media(pointer:coarse){.ds-toast-close{width:44px;min-width:44px;height:44px}}@media(forced-colors:active){.ds-toast{border-color:CanvasText}.ds-toast-icon{color:CanvasText}}"
     }
   ],
   "narrative": {
-    "northStar": "Precision UI for SaaS teams",
-    "overview": "Chamfer UI is a technical, compact system for SaaS designers and React developers. Cool neutral surfaces, restrained cyan, thin borders, and IBM Plex typography make controls and operational data easy to inspect. The original chamfered mark anchors the identity.\n\nThe visual thesis is precision across design and code. Semantic tokens own color roles and theme changes; reusable components own repeated geometry and states. This document records the implemented React and documentation styles. Matching Figma remains a product commitment; the prepared import scripts have not run, so live Figma tokens and layouts are not verified.",
+    "northStar": "Precision in a ruled workspace",
+    "overview": "antiflex/ui pairs precision in design and code with a reference-led visual language: neutral gray material, charcoal/light actions, thin ruled boundaries, and square geometry. Anybody gives display statements a distinctive voice; DM Sans keeps the compact interface readable; Space Mono separates technical labels and code. The approved antiflex/ui identity uses a geometric A mark; component behaviour, neutral token values and typography remain unchanged.\n\nThe user-requested Neutral default supersedes the previous mint theme; the established geometry and typography remain. This record describes the implemented system; surface composition can differ between marketing, reading documentation, and operational examples while sharing the same token roles.",
     "keyCharacteristics": [
-      "Technical, compact operational interfaces.",
-      "Cool neutrals with restrained cyan and separate status colors.",
-      "IBM Plex Sans for interface text; IBM Plex Mono for code and data.",
-      "Flat surfaces, thin borders, small control and card corners.",
-      "Native semantics, visible keyboard focus, reduced-motion support."
+      "Neutral light and dark material with charcoal actions in light mode and light actions in dark mode.",
+      "Anybody display, DM Sans interface, Space Mono technical roles.",
+      "Square panels, nearly square controls, thin structural seams.",
+      "Distinct marketing, documentation, and application layouts.",
+      "Native semantics, visible focus, and reduced-motion support.",
+      "Quiet selection, explicit feedback, and native-button disclosures.",
+      "Compact anchored assistance that keeps the surrounding page available.",
+      "Edge tasks with persistent titles and actions around an independently scrolling body.",
+      "Optional reference color and typography libraries with matching design and code names.",
+      "Local feedback with deliberate timing, explicit review, and recoverable actions.",
+      "Distinct command, link-navigation, option-selection, and single-date behaviors in the same flat material."
     ],
     "rules": [
       {
+        "name": "The Action and Link Rule",
+        "body": "Solid primary actions use the theme-specific neutral action/foreground pair; textual actions use the theme's accent role.",
+        "section": "colors"
+      },
+      {
         "name": "The Semantic Color Rule",
-        "body": "Use the semantic role for each surface, text, border, action, and status; switch the role mapping with the theme rather than hardcoding a light-mode color into a component.",
+        "body": "Use semantic roles for surfaces, information, borders, focus, and status so light and dark modes remain coherent.",
         "section": "colors"
       },
       {
-        "name": "The Task Accent Rule",
-        "body": "Use cyan for primary actions, active navigation, links, focus, and the identity mark. Use green, amber, and red to communicate status.",
+        "name": "The Optional Reference Rule",
+        "body": "Use the palette and typography reference namespaces for explicit design choices and specimens; keep semantic antiflex roles and the established three typography voices as the defaults.",
         "section": "colors"
       },
       {
-        "name": "The Plex Role Rule",
-        "body": "Use Sans for reading and controls. Use Mono for code, token names, aligned amounts, and operational metrics.",
+        "name": "The Three Voices Rule",
+        "body": "Use Anybody for display and identity, DM Sans for reading and controls, and Space Mono for technical labels, code, and aligned operational data.",
         "section": "typography"
       },
       {
-        "name": "The Flat Surface Rule",
-        "body": "Separate surfaces with neutral tone, spacing, and thin borders. Do not introduce shadows into the existing resting card and shell patterns.",
-        "section": "elevation"
+        "name": "The Stable Documentation Navigation Rule",
+        "body": "At widths of 768px and above, keep the documentation header pinned at the viewport top and the sidebar pinned below its 72px height. The sidebar fills the remaining dynamic viewport and scrolls independently while the article uses document scrolling. At widths up to 767px, keep the sidebar in normal flow with disclosed navigation. Component links and the component overview share one catalog ordered A–Z by display name; retain Overview before the component links.",
+        "section": "layout"
+      },
+      {
+        "name": "The Ruled Surface Rule",
+        "body": "Separate resting panels and shell regions with tone and thin borders; keep the established flat material.",
+        "section": "elevation & depth"
+      },
+      {
+        "name": "The One Control Rule",
+        "body": "Each Field associates one native control with its Label. Use FieldSet and FieldLegend for related controls. Field resolves an explicit native or antiflex child control ID through transparent wrappers, including InputGroup; otherwise it uses `controlId`, then a generated ID. Its Label and description/error IDs share that resolved ID. Control props can override inherited required or invalid state, and described-by IDs are merged without duplicates. A consumer's own custom control component that hides its rendered control must share an explicit ID through Field's `controlId`. Label's required asterisk is hidden from assistive technology: the control's native `required` attribute carries the requirement. Standalone Label does not make a control required.",
+        "section": "components"
+      },
+      {
+        "name": "The Native Ownership Rule",
+        "body": "Uncontrolled values use `defaultValue` or `defaultChecked` and reset through the native form. Controlled values use `value` or `checked` and remain consumer-owned; the form's reset handler must restore consumer state and validation state. RadioGroup follows the same distinction through `value`/`defaultValue`; Checkbox's indeterminate visual state is separately consumer-owned. Keep names, native validity, form association, and disabled behavior intact.",
+        "section": "components"
+      },
+      {
+        "name": "The Explicit Feedback Rule",
+        "body": "Keep feedback readable as text, label measurable progress, and choose announcements intentionally at the consuming surface.",
+        "section": "components"
+      },
+      {
+        "name": "The Deliberate Notification Rule",
+        "body": "Ordinary neutral and success messages default to six seconds; warning, danger, and actionable messages persist unless the consumer explicitly supplies a duration. Zero disables expiry. Queue timers begin only when a message is visible and the viewport is attached. Hover, viewport focus, a hidden document, and window blur pause timers, which resume with remaining time; a pending action pauses its own timer. Updating a message resets its duration. Keep essential information available in the application beyond transient feedback.",
+        "section": "components"
+      },
+      {
+        "name": "The Uninterrupted Work Rule",
+        "body": "New feedback never takes focus. Keep stable polite/status and assertive/alert announcers separate from visible named groups; announce only visible new or updated messages, and reserve explicit assertive priority for urgency. Use one ToastViewport per ToastProvider. Offer a visible Review notifications action through the viewport ref when explicit focus access is useful; do not install a global shortcut. Escape dismisses only from within that viewport. Removing a focused message restores another notification control or its recorded origin only while focus is still owned, preserving focus moved by an action into a dialog.",
+        "section": "components"
+      },
+      {
+        "name": "The Scoped Collection Rule",
+        "body": "Tabs and ToggleGroup maintain one enabled Tab stop per collection, recover to the first enabled item when needed, and discover rendered descendants through custom wrappers. Nested collections retain their own focus order. Arrow navigation skips disabled items, follows orientation and horizontal text direction, and supports Home/End. ToggleGroup can disable looping; Tabs loop. Controlled selection and pressed values remain consumer-owned; defaults initialize uncontrolled state once.",
+        "section": "components"
+      },
+      {
+        "name": "The Protected Task Rule",
+        "body": "Open modal content with native `dialog.showModal()` so the page outside the active modal is inert. Keep Tab and Shift+Tab inside that modal, exclude nested dialog controls from its focus loop, and let Escape close the topmost modal. Nested modals share a reference-counted document scroll lock; closing the last one restores the original inline overflow setting.",
+        "section": "components"
+      },
+      {
+        "name": "The Modal Ownership Rule",
+        "body": "Controlled open state, form drafts, validation, submission, and body content remain consumer-owned. Close/Cancel/Action call the consumer handler before requesting closure; preventing the click's default keeps the modal open. Return focus to the invoker or `returnFocusRef` when the target is connected and focusable. Focus return is queued so a workflow action mounted by the closing update can receive it. Closing a modal does not itself save, discard, or reset form values.",
+        "section": "components"
+      },
+      {
+        "name": "The Persistent Panel Actions Rule",
+        "body": "Place Header, Body, and Footer directly inside Content, or inside one direct form. Let Body shrink and scroll independently while Header and Footer stay reachable. Preserve the inherited footer action order when actions stack at widths up to 480px. Do not add wrappers that break this flex anatomy.",
+        "section": "components"
+      },
+      {
+        "name": "The Anchored Task Rule",
+        "body": "Use a nonmodal Popover for a small task that belongs to its trigger. Move initial focus to the first focusable descendant or Content; an explicit `initialFocusRef` must target a visible descendant. Do not trap Tab or make the page inert. Escape, a completed outside pointer gesture, or focus leaving both trigger and panel requests dismissal of the top floating layer. Close and Escape restore the trigger or `returnFocusRef` when focusable; outside/focus dismissal preserves an outside focus destination. Controlled consumers must honor `onOpenChange`; form drafts, validation, and applying changes remain consumer-owned.",
+        "section": "components"
+      },
+      {
+        "name": "The Supplemental Help Rule",
+        "body": "Give the trigger a complete visible or accessible action name. Tooltip adds context; essential instructions and errors stay visible. Tooltip contains no controls and receives no focus. Disabled native buttons need visible help because they cannot receive keyboard focus. Use Popover when assistance needs an interactive control.",
+        "section": "components"
+      },
+      {
+        "name": "The Local Command Rule",
+        "body": "Name each menu and keep one roving focus stop per menu level. Dropdown Enter/Space/ArrowDown starts at the first item; ArrowUp starts at the last. Up/Down wrap, Home/End and buffered typeahead navigate the current level, and disabled items remain discoverable through `aria-disabled` without activating. Click or the forward arrow opens a submenu; the backward arrow closes it. Escape closes one floating level and restores its invoker; Tab/Shift+Tab close the entire tree and move beyond the root invoker. Outside pointer completion and focus exit request dismissal. Menus do not trap focus or open submenus on hover.",
+        "section": "components"
+      },
+      {
+        "name": "The Menu Ownership Rule",
+        "body": "Controlled open and choice state remain consumer-owned. Ordinary selection closes the tree; checkbox and radio items stay open by default unless `closeOnSelect` requests closure. Preventing `onSelect` cancels automatic close and choice changes, and cancels Link navigation; preventing the click cancels selection. Restore focus only while the menu still owns it so an action opening a modal preserves the modal's focus. Keep persistence, permissions, networking, and destructive confirmation in the consuming workflow.",
+        "section": "components"
+      },
+      {
+        "name": "The Navigation Intent Rule",
+        "body": "Use Menubar for application commands and Navigation Menu for destinations. Preserve real links, the visible Hover Card toggle, and normal page access around nonmodal layers.",
+        "section": "components"
+      },
+      {
+        "name": "The Selection Ownership Rule",
+        "body": "Keep search text, active option, and committed value distinct. Preserve native form mirrors for Select and Combobox, scroll the listbox rather than the page, and reserve Command for consumer-owned local actions.",
+        "section": "components"
       }
     ],
     "dos": [
-      "Do use semantic colors so every component follows the light and dark theme mappings.",
-      "Do preserve the small control corners and slightly larger card corners defined in the frontmatter.",
-      "Do keep labels, helper text, error text, and keyboard focus connected to the control they explain.",
-      "Do use Plex Mono for technical names, code, and data that benefits from alignment.",
-      "Do reflow compact grids and reveal mobile navigation without hiding the page content."
+      "- **Do** use semantic roles for both theme mappings and re-resolve semantic component aliases at nested theme boundaries.",
+      "- **Do** preserve the approved antiflex/ui name, A mark, and authored vector artwork.",
+      "- **Do** retain square panels, nearly square controls, and thin seams.",
+      "- **Do** keep visible labels, connected help/error text, and keyboard focus.",
+      "- **Do** use the three typography roles for their distinct jobs.",
+      "- **Do** pair Field with one native control and use FieldSet/FieldLegend for related choices.",
+      "- **Do** preserve consumer ownership of controlled values, reset state, and checkbox indeterminacy.",
+      "- **Do** retain logical addon alignment, normal button Tab order, and native form behavior.",
+      "- **Do** name tab lists and toggle groups, preserve scoped keyboard collections, and keep controlled state consumer-owned.",
+      "- **Do** choose feedback announcements deliberately and retain progress labels, alternative text, and useful empty-state guidance.",
+      "- **Do** name modal tasks, keep focus inside the active modal, and provide a reachable focus-return target.",
+      "- **Do** keep modal form state consumer-owned and preserve footer action order when stacking.",
+      "- **Do** keep Sheet and Drawer Header/Body/Footer direct, or within one direct form, so Body scrolls without hiding actions.",
+      "- **Do** name anchored tasks, provide a close action, and preserve consumer-owned floating state.",
+      "- **Do** keep tooltip triggers fully named and essential or disabled-control help visible.",
+      "- **Do** expose context commands through a visible actions button and retain discoverable disabled menu items.",
+      "- **Do** keep actionable Toast messages persistent by default, preserve remaining time when paused, and mount one viewport per local provider.",
+      "- **Do** offer explicit notification review and put actionable modal feedback providers and viewports inside the active modal.",
+      "- **Do** preserve canonical reference OKLCH and the explicit Figma pixel/percentage typography unit bridge.",
+      "- **Do** keep optional reference utilities namespaced with `af-` and disclose family/font-feature availability.",
+      "- **Do** distinguish navigation links, application commands, active options, committed values, and the selected date.",
+      "- **Do** preserve the listbox border/padding allocation and visible final row when Command lists overflow.",
+      "- **Do** provide a visible Hover Card toggle and disclose single Gregorian date and local-action limits."
     ],
     "donts": [
-      "Don't enlarge the cyan accent into a decorative background treatment across ordinary panels.",
-      "Don't replace flat bordered cards with elevated, heavily rounded containers.",
-      "Don't replace the approved chamfered identity mark or the Plex font pairing.",
-      "Don't communicate success, warning, or error with color alone; retain a readable label.",
-      "Don't treat the prepared Figma import as evidence of a verified live Figma system."
+      "- **Don't** substitute textual accent colors for the action fill and its paired foreground.",
+      "- **Don't** replace flat ruled panels with resting shadows or broadly rounded cards.",
+      "- **Don't** communicate status with color alone; retain readable labels.",
+      "- **Don't** substitute reference-site branding or content for antiflex's own identity.",
+      "- **Don't** use a visible required marker as a substitute for native required state.",
+      "- **Don't** treat ButtonGroup as a toolbar or replace native radio/select keyboard behavior with invented navigation.",
+      "- **Don't** use primary-action fills for quiet listbox, tab, or toggle selection, or make every static message a live announcement; Calendar's committed date retains its explicit action-fill treatment.",
+      "- **Don't** treat Accordion headings as a one-Tab-stop collection or let nested widgets join their parent's arrow navigation.",
+      "- **Don't** dismiss AlertDialog from the backdrop or assume closing a modal commits or resets its form.",
+      "- **Don't** add swipe or snap-point expectations to Drawer or treat Sheet sides as logical RTL edges.",
+      "- **Don't** trap focus in Popover, add a floating scrim, or treat a popover as a modal confirmation.",
+      "- **Don't** put interactive content in Tooltip or use it as the only action name, instruction, or error.",
+      "- **Don't** add hover-open submenus, custom long-press gestures, or global key bindings from shortcut hints; keep menus for discrete commands and choices.",
+      "- **Don't** steal focus for new notifications, duplicate visible messages as live regions, or install global notification shortcuts.",
+      "- **Don't** promote the full reference palette, 128px endpoint, or -0.05em tracking option into antiflex's default brand identity.",
+      "- **Don't** replace canonical OKLCH with clipped preview HEX or synthesize unsupported font faces.",
+      "- **Don't** infer range selection, alternative calendars, virtualized lists, global shortcuts, or backend persistence from workspace-tool specimens."
     ]
   }
 }

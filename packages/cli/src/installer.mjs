@@ -48,20 +48,20 @@ export function checkedPath(root, relative) {
 function project(cwd) {
   const root = fs.realpathSync(path.resolve(cwd));
   const manifestPath = checkedPath(root, 'package.json');
-  if (!fs.existsSync(manifestPath)) throw Error('Run Chamfer inside an existing React project.');
+  if (!fs.existsSync(manifestPath)) throw Error('Run antiflex inside an existing React project.');
   const original = fs.readFileSync(manifestPath, 'utf8');
   const manifest = JSON.parse(original);
   if (!manifest.dependencies?.react && !manifest.devDependencies?.react)
-    throw Error('The project must declare React before installing Chamfer.');
+    throw Error('The project must declare React before installing antiflex.');
   return { root, manifest, original };
 }
 function configFor(root) {
-  const file = checkedPath(root, 'chamfer.json');
+  const file = checkedPath(root, 'antiflex.json');
   if (!fs.existsSync(file))
-    throw Error('Run chamfer init first to connect your stylesheet and tokens.');
+    throw Error('Run antiflex init first to connect your stylesheet and tokens.');
   const config = JSON.parse(fs.readFileSync(file, 'utf8'));
   if (config.version !== 1 || config.tailwind !== 4)
-    throw Error('Unsupported Chamfer configuration. This installer supports Tailwind CSS 4.');
+    throw Error('Unsupported antiflex configuration. This installer supports Tailwind CSS 4.');
   for (const name of ['css', 'componentsDir', 'stylesDir']) checkedPath(root, config[name]);
   return config;
 }
@@ -86,7 +86,7 @@ function apply(plan, dryRun) {
       )
         throw Error('File changed during installation: ' + write.relative);
       fs.mkdirSync(path.dirname(write.target), { recursive: true });
-      const temporary = write.target + '.chamfer-' + crypto.randomUUID();
+      const temporary = write.target + '.antiflex-' + crypto.randomUUID();
       try {
         fs.writeFileSync(temporary, write.content);
         fs.renameSync(temporary, write.target);
@@ -130,7 +130,7 @@ function manager(manifest, root) {
 }
 export function initialize(cwd, options = {}) {
   const { root, manifest, original } = project(cwd);
-  if (fs.existsSync(checkedPath(root, 'chamfer.json'))) {
+  if (fs.existsSync(checkedPath(root, 'antiflex.json'))) {
     const config = configFor(root);
     for (const [option, key] of [
       ['css', 'css'],
@@ -139,7 +139,7 @@ export function initialize(cwd, options = {}) {
     ])
       if (options[option] && relativePath(options[option]) !== config[key])
         throw Error(
-          'Chamfer is already configured. Edit chamfer.json deliberately to change paths.',
+          'antiflex is already configured. Edit antiflex.json deliberately to change paths.',
         );
     return { files: [], alreadyConfigured: true, config };
   }
@@ -155,7 +155,7 @@ export function initialize(cwd, options = {}) {
   const stylesheet =
     options.css || cssCandidates.find((candidate) => fs.existsSync(checkedPath(root, candidate)));
   if (!stylesheet)
-    throw Error('No stylesheet found. Run chamfer init --css <your-existing-stylesheet>.');
+    throw Error('No stylesheet found. Run antiflex init --css <your-existing-stylesheet>.');
   const css = relativePath(stylesheet);
   if (path.posix.extname(css) !== '.css') throw Error('Choose an existing .css stylesheet.');
   const cssFile = checkedPath(root, css);
@@ -166,13 +166,13 @@ export function initialize(cwd, options = {}) {
     version: 1,
     tailwind: 4,
     css,
-    componentsDir: relativePath(options.componentsDir || prefix + 'components/chamfer'),
-    stylesDir: relativePath(options.stylesDir || prefix + 'styles/chamfer'),
+    componentsDir: relativePath(options.componentsDir || prefix + 'components/antiflex'),
+    stylesDir: relativePath(options.stylesDir || prefix + 'styles/antiflex'),
   };
   checkedPath(root, config.componentsDir);
   checkedPath(root, config.stylesDir);
   if (css === config.stylesDir || css.startsWith(config.stylesDir + '/'))
-    throw Error('Your entry stylesheet must be outside the generated Chamfer styles directory.');
+    throw Error('Your entry stylesheet must be outside the generated antiflex styles directory.');
   for (const directory of [config.componentsDir, config.stylesDir]) {
     const target = checkedPath(root, directory);
     if (fs.existsSync(target) && !fs.statSync(target).isDirectory())
@@ -217,7 +217,7 @@ export function initialize(cwd, options = {}) {
     }
   if (Object.keys(dependencies).length)
     addWrite(plan, root, 'package.json', json(manifest, original));
-  addWrite(plan, root, 'chamfer.json', json(config));
+  addWrite(plan, root, 'antiflex.json', json(config));
   const result = finish(root, plan, options, { config, dependencies, packageManager: pm });
   if (!options.dryRun && !options.skipInstall && Object.keys(dependencies).length) {
     const install = spawnSync(pm, ['install'], {
@@ -227,7 +227,7 @@ export function initialize(cwd, options = {}) {
     });
     if (install.error || install.status !== 0)
       throw Error(
-        'Chamfer files are ready, but dependency installation failed. Run ' +
+        'antiflex files are ready, but dependency installation failed. Run ' +
           pm +
           ' install to finish.',
       );
@@ -239,10 +239,10 @@ export function addComponents(cwd, requested, options = {}) {
   const config = configFor(root);
   const registry = readRegistry();
   const explicit = options.all ? Object.keys(registry.components) : [...new Set(requested)];
-  if (!explicit.length) throw Error('Name a component, or use chamfer add --all.');
+  if (!explicit.length) throw Error('Name a component, or use antiflex add --all.');
   for (const name of explicit)
     if (!Object.hasOwn(registry.components, name))
-      throw Error('Unknown component: ' + name + '. Run chamfer list.');
+      throw Error('Unknown component: ' + name + '. Run antiflex list.');
   const ordered = [];
   const seen = new Set();
   function visit(name) {
@@ -276,13 +276,19 @@ export function addComponents(cwd, requested, options = {}) {
           'Your component has changes: ' + relative + '. Use --force to replace it with a backup.',
         );
       backup ||=
-        '.chamfer/backups/' +
+        '.antiflex/backups/' +
         new Date().toISOString().replaceAll(':', '-') +
         '-' +
         crypto.randomUUID().slice(0, 8);
       addWrite(plan, root, backup + '/' + relative, previous);
     }
     addWrite(plan, root, relative, content);
+  }
+  const utilities = new Set(ordered.flatMap((name) => registry.components[name].utilities || []));
+  for (const file of utilities) {
+    const relative = config.componentsDir + '/' + path.basename(file);
+    if (!fs.existsSync(checkedPath(root, relative)))
+      addWrite(plan, root, relative, payload('components/' + file));
   }
   const utils = config.componentsDir + '/utils.ts';
   if (!fs.existsSync(checkedPath(root, utils)))

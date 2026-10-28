@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Button } from '@chamfer/ui';
+import { Button } from '@antiflex/ui';
 import { IconCheck, IconCopy } from '@tabler/icons-react';
 export function Code({ children, label = 'TypeScript' }: { children: string; label?: string }) {
   const [copied, setCopied] = useState(false);
@@ -44,7 +44,7 @@ export function Code({ children, label = 'TypeScript' }: { children: string; lab
       >
         <code>{children}</code>
       </pre>
-      <span className="ch-sr-only" role="status">
+      <span className="af-sr-only" role="status">
         {copied
           ? 'Code copied.'
           : failed

@@ -12,3 +12,6 @@ apps/docs/next-env.d.ts
 assets/previews/browser-evidence.json
 packages/cli/registry
 artifacts
+
+# Private template is a separate workspace.
+pro/

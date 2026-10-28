@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
+import { colorToSrgb } from '../packages/tokens/src/foundations.ts';
 const root = path.resolve(import.meta.dirname, '..');
 const require = createRequire(path.join(root, 'apps/docs/package.json'));
 const React = require('react');
@@ -32,9 +33,9 @@ const ICONS = Object.fromEntries(
 const TOKEN_DATA = JSON.parse(
   fs.readFileSync(path.join(root, 'packages/tokens/src/tokens.json'), 'utf8'),
 );
-const BRAND_SVG = fs.readFileSync(path.join(root, 'assets/brand/chamfer-mark.svg'), 'utf8');
+const BRAND_SVG = fs.readFileSync(path.join(root, 'assets/brand/antiflex-mark.svg'), 'utf8');
 const { orders } = await import('../apps/docs/components/dashboard-data.ts');
-const preamble = `const TOKEN_DATA=${JSON.stringify(TOKEN_DATA)};\nconst ICONS=${JSON.stringify(ICONS)};\nconst BRAND_SVG=${JSON.stringify(BRAND_SVG)};\nconst ORDER_DATA=${JSON.stringify(orders)};\n`;
+const preamble = `const TOKEN_DATA=${JSON.stringify(TOKEN_DATA)};\nconst referenceColorToSrgb=${colorToSrgb.toString()};\nconst ICONS=${JSON.stringify(ICONS)};\nconst BRAND_SVG=${JSON.stringify(BRAND_SVG)};\nconst ORDER_DATA=${JSON.stringify(orders)};\n`;
 const common =
   fs.readFileSync(path.join(root, 'scripts/figma/common.js'), 'utf8') +
   '\n' +
@@ -58,14 +59,14 @@ fs.writeFileSync(
     common +
     '\n' +
     sources.join('\n') +
-    `\n(async()=>{try{const foundation=await buildFoundations();const components=await buildComponents();const dashboard=await buildDashboard();figma.showUI('<html><body style="font:14px sans-serif;padding:20px"><h2>Chamfer UI — Foundation</h2><p>Created native variables, component variants, and dashboard layouts.</p><pre style="white-space:pre-wrap">'+JSON.stringify({foundation,components,dashboard},null,2)+'</pre></body></html>',{width:520,height:420});}catch(error){figma.showUI('<html><body style="font:14px sans-serif;padding:24px"><h2>Import needs attention</h2><pre style="white-space:pre-wrap">'+String(error)+'</pre></body></html>',{width:520,height:320});}})();`,
+    `\n(async()=>{try{const foundation=await buildFoundations();const components=await buildComponents();const dashboard=await buildDashboard();figma.showUI('<html><body style="font:14px sans-serif;padding:20px"><h2>antiflex/ui — Foundation</h2><p>Created native variables, component variants, and dashboard layouts.</p><pre style="white-space:pre-wrap">'+JSON.stringify({foundation,components,dashboard},null,2)+'</pre></body></html>',{width:520,height:420});}catch(error){figma.showUI('<html><body style="font:14px sans-serif;padding:24px"><h2>Import needs attention</h2><pre style="white-space:pre-wrap">'+String(error)+'</pre></body></html>',{width:520,height:320});}})();`,
 );
 fs.writeFileSync(
   path.join(output, 'manifest.json'),
   JSON.stringify(
     {
-      name: 'Chamfer UI — Foundation',
-      id: 'chamfer-ui-foundation',
+      name: 'antiflex/ui — Foundation',
+      id: 'antiflex-ui-foundation',
       api: '1.0.0',
       main: 'code.js',
       editorType: ['figma'],
@@ -77,6 +78,38 @@ fs.writeFileSync(
   ),
 );
 fs.writeFileSync(path.join(output, 'tokens.json'), JSON.stringify(TOKEN_DATA, null, 2));
+// Existing-file theme reconciliation is explicit and page-scoped for safe retries.
+fs.writeFileSync(
+  path.join(output, 'rebrand-tokens.js'),
+  preamble + fs.readFileSync(path.join(root, 'scripts/figma/rebrand-tokens.js'), 'utf8'),
+);
+for (const [name, id] of [
+  ['foundations', '3:2'],
+  ['components', '5:2'],
+  ['dashboard', '6:2'],
+]) {
+  fs.writeFileSync(
+    path.join(output, 'rebrand-' + name + '.js'),
+    'const PAGE_ID=' +
+      JSON.stringify(id) +
+      ';\n' +
+      fs.readFileSync(path.join(root, 'scripts/figma/rebrand-page.js'), 'utf8'),
+  );
+}
+fs.writeFileSync(
+  path.join(output, 'rebrand-layout.js'),
+  'const PAGE_ID="6:2";\n' +
+    fs.readFileSync(path.join(root, 'scripts/figma/rebrand-layout.js'), 'utf8'),
+);
+fs.writeFileSync(
+  path.join(output, 'rebrand-presentation.js'),
+  'const PAGE_ID="6:2";\n' +
+    fs.readFileSync(path.join(root, 'scripts/figma/rebrand-presentation.js'), 'utf8'),
+);
+fs.writeFileSync(
+  path.join(output, 'rebrand-app-shell.js'),
+  fs.readFileSync(path.join(root, 'scripts/figma/rebrand-app-shell.js'), 'utf8'),
+);
 console.log('Figma connector phase scripts and native development plugin generated.');
 
 fs.copyFileSync(

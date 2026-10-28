@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Brand } from './brand';
 import { ThemeToggle } from './theme';
-import { Badge } from '@chamfer/ui';
+import { Badge } from '@antiflex/ui';
 export function SiteHeader() {
   const path = usePathname();
   return (
@@ -12,7 +12,7 @@ export function SiteHeader() {
         Skip to content
       </a>
       <header className="site-header">
-        <Link className="brand-link" href="/" aria-label="Chamfer UI home">
+        <Link className="brand-link" href="/" aria-label="antiflex/ui home">
           <Brand />
         </Link>
         <nav aria-label="Main navigation">
@@ -31,8 +31,13 @@ export function SiteHeader() {
           >
             Foundations
           </Link>
-          <Link href="/dashboard" aria-current={path === '/dashboard' ? 'page' : undefined}>
-            Dashboard<span className="nav-demo"> demo</span>
+          <Link
+            href="/examples"
+            aria-current={
+              path.startsWith('/examples') || path.startsWith('/demo') ? 'page' : undefined
+            }
+          >
+            Examples
           </Link>
         </nav>
         <div className="header-right">

@@ -1,0 +1,26 @@
+{
+  "pageId": "61:12",
+  "componentFamilies": 2,
+  "variants": 12,
+  "responsiveConstructionComponents": 2,
+  "reviewInstances": 8,
+  "variableCount": 144,
+  "newVariables": 8,
+  "reviewFrames": [
+    {
+      "id": "62:218",
+      "name": "Modals / Review / Light",
+      "width": 1200,
+      "height": 1423
+    },
+    {
+      "id": "62:301",
+      "name": "Modals / Review / Dark",
+      "width": 1200,
+      "height": 1423
+    }
+  ],
+  "issues": [],
+  "createdNodeIds": [],
+  "mutatedNodeIds": []
+}

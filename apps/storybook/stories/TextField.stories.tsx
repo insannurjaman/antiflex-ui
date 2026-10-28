@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { TextField } from '@chamfer/ui';
+import { TextField } from '@antiflex/ui';
 const meta = {
   title: 'Components/TextField',
   component: TextField,

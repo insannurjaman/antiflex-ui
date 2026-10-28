@@ -1,5 +1,5 @@
 name: Feature request
-description: Propose a capability for Chamfer UI.
+description: Propose a capability for antiflex/ui.
 body:
   - type: textarea
     id: problem

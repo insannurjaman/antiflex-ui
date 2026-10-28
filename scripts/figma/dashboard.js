@@ -1,10 +1,10 @@
 async function buildDashboard() {
   await fonts();
-  const page = await pageFor('Chamfer / Dashboard');
+  const page = await pageFor('antiflex / Dashboard');
   const { map, collections } = await tokenMap();
   const existing = page.children.find((n) => n.name === 'Dashboard / Desktop / Light');
   if (existing) return result({ pageId: page.id, frameId: existing.id, alreadyExists: true });
-  const componentPage = figma.root.children.find((p) => p.name === 'Chamfer / Components');
+  const componentPage = figma.root.children.find((p) => p.name === 'antiflex / Components');
   if (!componentPage) throw new Error('Run components first.');
   await componentPage.loadAsync();
   const sets = Object.fromEntries(
@@ -133,7 +133,7 @@ async function buildDashboard() {
       email.componentPropertyReferences = { characters: propertyKeys.Email };
     } else if (field === 'Status') badge(cell, 'Paid', 'success');
     else {
-      const value = { Order: 'CH-1048', Plan: 'Scale', Amount: '$249', Date: 'Oct 14' }[field];
+      const value = { Order: 'AF-1048', Plan: 'Scale', Amount: '$249', Date: 'Oct 14' }[field];
       const t = label(
         cell,
         value,
@@ -162,7 +162,7 @@ async function buildDashboard() {
     root.itemSpacing = 0;
     fill(root, 'semantic.canvas', map);
     setTheme(root, collections, mode);
-    const top = row(root, 'Chamfer / Site navigation', width, mobile ? 102 : 72);
+    const top = row(root, 'antiflex / Site navigation', width, mobile ? 102 : 72);
     top.paddingLeft = mobile ? 20 : 40;
     top.paddingRight = mobile ? 20 : 40;
     gap(top, '12', map);
@@ -183,7 +183,7 @@ async function buildDashboard() {
     logo.resize(28, 28);
     brand.appendChild(logo);
     for (const n of logo.findAll(() => true)) createdNodeIds.push(n.id);
-    label(brand, 'chamfer/ui', 23, 'semantic.foreground', false, 'Medium');
+    label(brand, 'antiflex/ui', 23, 'semantic.foreground', false, 'Medium');
     const navigation = frame(top, 'Navigation', mobile ? 350 : 660, 24, 'HORIZONTAL');
     gap(navigation, '6', map);
     for (const v of ['Documentation', 'Components', 'Foundations', 'Dashboard'])

@@ -45,7 +45,7 @@ async function reconcileDashboard(root, map, collections, sets, metric) {
   if (dashboardLink) dashboardLink.characters = 'Dashboard demo';
   if (!mobile && !find('Site tools')) {
     nav.layoutGrow = 1;
-    const tools = frame(find('Chamfer / Site navigation'), 'Site tools', 110, 32, 'HORIZONTAL');
+    const tools = frame(find('antiflex / Site navigation'), 'Site tools', 110, 32, 'HORIZONTAL');
     tools.counterAxisAlignItems = 'CENTER';
     gap(tools, '4', map);
     instance(tools, getVariant(sets.Badge, { Variant: 'neutral', Size: 'sm' }), 'v0.1.0');
@@ -93,11 +93,11 @@ async function reconcileDashboard(root, map, collections, sets, metric) {
         fixedWidth(n, 200);
       }
     sidebar.insertChild(1, links);
-    const note = frame(sidebar, 'Chamfer product note', 200);
+    const note = frame(sidebar, 'antiflex product note', 200);
     gap(note, '4', map);
     padding(note, '3', map);
     note.paddingTop = 48;
-    label(note, 'BUILT WITH CHAMFER', 9, 'semantic.muted', true);
+    label(note, 'BUILT WITH ANTIFLEX', 9, 'semantic.muted', true);
     for (const n of sidebar.children.slice())
       if (
         n.type === 'TEXT' &&

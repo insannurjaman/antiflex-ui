@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Badge, Separator } from '@chamfer/ui';
+import { componentCount } from '@antiflex/ui/catalog';
+import { Badge, Separator } from '@antiflex/ui';
 import { OverviewSpecimen } from '../../components/specimens';
 export const metadata = { title: 'Introduction' };
 export default function Introduction() {
@@ -8,7 +9,7 @@ export default function Introduction() {
       <div className="doc-breadcrumb">Documentation / Getting started</div>
       <h1>Introduction</h1>
       <p className="doc-lead">
-        Precision UI for SaaS teams. An original foundation that speaks the same language in design
+        Familiar patterns, thoughtful defaults, and intuitive experiences. One foundation for design
         and code.
       </p>
       <div className="doc-meta">
@@ -16,10 +17,11 @@ export default function Introduction() {
         <span>React · TypeScript · Tailwind CSS</span>
       </div>
       <OverviewSpecimen />
-      <h2>A small system, fully considered.</h2>
+      <h2>A shared foundation, growing together.</h2>
       <p>
-        Chamfer starts with eight components. Each has a typed API, native semantics, light and dark
-        themes, and a Storybook specimen. The dashboard shows them working together.
+        antiflex now includes {componentCount} component families. Each has a typed API, native
+        semantics, light and dark themes, and a Storybook specimen. The dashboard shows them working
+        together.
       </p>
       <Separator />
       <h2>From a value to a decision.</h2>
@@ -31,13 +33,13 @@ export default function Introduction() {
         <span>
           Primitive
           <br />
-          <code>cyan / 700</code>
+          <code>neutral / 900</code>
         </span>
         <b aria-hidden="true">→</b>
         <span>
           Semantic
           <br />
-          <code>accent</code>
+          <code>action</code>
         </span>
         <b aria-hidden="true">→</b>
         <span>

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { AppShell } from '@chamfer/ui';
+import { AppShell } from '@antiflex/ui';
 const meta = {
   title: 'Components/AppShell',
   component: AppShell,
@@ -22,3 +22,5 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {};
+
+export const HorizontalNavigation: Story = { args: { navigationLayout: 'top' } };

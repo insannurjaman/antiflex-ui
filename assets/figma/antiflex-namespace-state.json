@@ -1,0 +1,1095 @@
+{
+  "date": "2026-10-28",
+  "fileKey": "H2vHC7eByauNSQL06qtO3o",
+  "collections": [
+    {
+      "id": "VariableCollectionId:3:3",
+      "before": "Chamfer / Primitives",
+      "name": "antiflex / Primitives",
+      "count": 403
+    },
+    {
+      "id": "VariableCollectionId:3:4",
+      "before": "Chamfer / Semantic",
+      "name": "antiflex / Semantic",
+      "count": 27
+    },
+    {
+      "id": "VariableCollectionId:3:5",
+      "before": "Chamfer / Components",
+      "name": "antiflex / Components",
+      "count": 106
+    }
+  ],
+  "textStyles": [
+    {
+      "id": "S:6a4462779f7cfa58156df3b18952ba7f872c5831,",
+      "before": "Chamfer / Display",
+      "name": "antiflex / Display"
+    },
+    {
+      "id": "S:c0094ba20c06871718073421cc9402945fd8c084,",
+      "before": "Chamfer / Heading",
+      "name": "antiflex / Heading"
+    },
+    {
+      "id": "S:5d0363a479d0112ae7d574a1464bfc8afdcf3c88,",
+      "before": "Chamfer / Title",
+      "name": "antiflex / Title"
+    },
+    {
+      "id": "S:aa43fea1c10a8796f68bc08b6b26e8198e0a7200,",
+      "before": "Chamfer / Body",
+      "name": "antiflex / Body"
+    },
+    {
+      "id": "S:a00b82c720de2bb6ede5fc8d65ec183edd155fdc,",
+      "before": "Chamfer / Label",
+      "name": "antiflex / Label"
+    },
+    {
+      "id": "S:e341c197466778fa23b4ef75e3a4f6e8e43fcea7,",
+      "before": "Chamfer / Code",
+      "name": "antiflex / Code"
+    },
+    {
+      "id": "S:a6863e718c9a6df771747a4cc990f9fccd624736,",
+      "before": "Chamfer / Form label",
+      "name": "antiflex / Form label"
+    },
+    {
+      "id": "S:35f56f57668ec696f0b0c3d4d3bc0c1bec98faf4,",
+      "before": "Chamfer / Form help",
+      "name": "antiflex / Form help"
+    },
+    {
+      "id": "S:331a3094be5992d69f4b0daea17d83e228756ad8,",
+      "before": "Chamfer / Feedback title",
+      "name": "antiflex / Feedback title"
+    },
+    {
+      "id": "S:c64153235624f51d24004729d92b1b340296cb21,",
+      "before": "Chamfer / Interface title",
+      "name": "antiflex / Interface title"
+    },
+    {
+      "id": "S:ac1f32d23c2c9acc7ac9290c0bb9ad98ce69b326,",
+      "before": "Chamfer / Avatar small",
+      "name": "antiflex / Avatar small"
+    },
+    {
+      "id": "S:21273adefebbcfe45df6b2513674629627931750,",
+      "before": "Chamfer / Avatar medium",
+      "name": "antiflex / Avatar medium"
+    },
+    {
+      "id": "S:a9d8b7082d0e845c75ef97cbf33bff5659cd314b,",
+      "before": "Chamfer / Body large",
+      "name": "antiflex / Body large"
+    },
+    {
+      "id": "S:5129c5068ecfea80d33a29ae7ca6a0457c25b6a2,",
+      "before": "Chamfer / Modal title",
+      "name": "antiflex / Modal title"
+    },
+    {
+      "id": "S:938060d0164c92d32819e15c27044095cb9c50fd,",
+      "before": "Chamfer / Modal description",
+      "name": "antiflex / Modal description"
+    },
+    {
+      "id": "S:650b4b0637d16fa6a3a8902952f89db410ddd607,",
+      "before": "Chamfer / Button label",
+      "name": "antiflex / Button label"
+    },
+    {
+      "id": "S:1bba5bf9e562001cdbb4c097247a0a900fbae9e0,",
+      "before": "Chamfer / Type scale / xs",
+      "name": "antiflex / Type scale / xs"
+    },
+    {
+      "id": "S:fb7eb75af879235b21f44d776491d13df4c3f807,",
+      "before": "Chamfer / Type scale / sm",
+      "name": "antiflex / Type scale / sm"
+    },
+    {
+      "id": "S:43db395fdf8d20cd8349f62bb1e915576ba8b94c,",
+      "before": "Chamfer / Type scale / base",
+      "name": "antiflex / Type scale / base"
+    },
+    {
+      "id": "S:28854b4649f1eca3a4e9591d461496e047d6fa85,",
+      "before": "Chamfer / Type scale / lg",
+      "name": "antiflex / Type scale / lg"
+    },
+    {
+      "id": "S:f9c8758d74b7c58ab78acb6cb9e59d698062e10b,",
+      "before": "Chamfer / Type scale / xl",
+      "name": "antiflex / Type scale / xl"
+    },
+    {
+      "id": "S:c749260d004e21a199d72d2c6ba9b88abdb6a612,",
+      "before": "Chamfer / Type scale / 2xl",
+      "name": "antiflex / Type scale / 2xl"
+    },
+    {
+      "id": "S:2874446308a8da1a6875c300047452d64d7bacdb,",
+      "before": "Chamfer / Type scale / 3xl",
+      "name": "antiflex / Type scale / 3xl"
+    },
+    {
+      "id": "S:367a5edc57fcfb7673b2d119f841613b7c90c75c,",
+      "before": "Chamfer / Type scale / 4xl",
+      "name": "antiflex / Type scale / 4xl"
+    },
+    {
+      "id": "S:0878814d2e7e73292645d2eb1ba432e46dd46696,",
+      "before": "Chamfer / Type scale / 5xl",
+      "name": "antiflex / Type scale / 5xl"
+    },
+    {
+      "id": "S:81d34380aadf12588b18ebc989391c60a504b13d,",
+      "before": "Chamfer / Type scale / 6xl",
+      "name": "antiflex / Type scale / 6xl"
+    },
+    {
+      "id": "S:c74b271f415bb2522efce2d6203ce73eafa5fe53,",
+      "before": "Chamfer / Type scale / 7xl",
+      "name": "antiflex / Type scale / 7xl"
+    },
+    {
+      "id": "S:33e19944d931d3ec3c0814cea7cdf297d3dc561d,",
+      "before": "Chamfer / Type scale / 8xl",
+      "name": "antiflex / Type scale / 8xl"
+    },
+    {
+      "id": "S:6ef86b2030db5b9ea702b96aa11f3d8b6cc639f3,",
+      "before": "Chamfer / Type scale / 9xl",
+      "name": "antiflex / Type scale / 9xl"
+    },
+    {
+      "id": "S:bd743170f73e5fb02330698ca9f3ebd44be6d981,",
+      "before": "Chamfer / Type weight / thin",
+      "name": "antiflex / Type weight / thin"
+    },
+    {
+      "id": "S:c5287857c60808002f1b23586e0242fdbe11f4d8,",
+      "before": "Chamfer / Type weight / extralight",
+      "name": "antiflex / Type weight / extralight"
+    },
+    {
+      "id": "S:d74177430a9a5271ea4f55981727a0ecd135991f,",
+      "before": "Chamfer / Type weight / light",
+      "name": "antiflex / Type weight / light"
+    },
+    {
+      "id": "S:c3e63bf9a1aa97aa5bed756f0d74c5c2d5ca75a5,",
+      "before": "Chamfer / Type weight / normal",
+      "name": "antiflex / Type weight / normal"
+    },
+    {
+      "id": "S:abf704b7eacd13ececc967a9ae4a6439b7749118,",
+      "before": "Chamfer / Type weight / medium",
+      "name": "antiflex / Type weight / medium"
+    },
+    {
+      "id": "S:9594e52fa6f6b7f5d64e40523cb0e574432a5483,",
+      "before": "Chamfer / Type weight / semibold",
+      "name": "antiflex / Type weight / semibold"
+    },
+    {
+      "id": "S:a84445913498a456bb60ae7cd3d83dd708aa7615,",
+      "before": "Chamfer / Type weight / bold",
+      "name": "antiflex / Type weight / bold"
+    },
+    {
+      "id": "S:54993cb8161391939b7ccbf9dec27a0307b3e1e6,",
+      "before": "Chamfer / Type weight / extrabold",
+      "name": "antiflex / Type weight / extrabold"
+    },
+    {
+      "id": "S:55d96d32f860a59f3d25e28602e742f7fcf01151,",
+      "before": "Chamfer / Type weight / black",
+      "name": "antiflex / Type weight / black"
+    },
+    {
+      "id": "S:2888f0849bc7fad822d364ff8055c085bae662eb,",
+      "before": "Chamfer / Type tracking / tighter",
+      "name": "antiflex / Type tracking / tighter"
+    },
+    {
+      "id": "S:0f6d289b82b1ea43705d99095bcd222ede72fe8e,",
+      "before": "Chamfer / Type tracking / tight",
+      "name": "antiflex / Type tracking / tight"
+    },
+    {
+      "id": "S:8e7b75ca35057a1d26ba2a72095560d4486a5a0c,",
+      "before": "Chamfer / Type tracking / normal",
+      "name": "antiflex / Type tracking / normal"
+    },
+    {
+      "id": "S:7f5206c61013d588e001108a0086f0b3ebd48364,",
+      "before": "Chamfer / Type tracking / wide",
+      "name": "antiflex / Type tracking / wide"
+    },
+    {
+      "id": "S:e6d4e3bfa694d2757c94dede01b19c699e74cb31,",
+      "before": "Chamfer / Type tracking / wider",
+      "name": "antiflex / Type tracking / wider"
+    },
+    {
+      "id": "S:402836ca47be39557eaec8fed1c335c612fd8beb,",
+      "before": "Chamfer / Type tracking / widest",
+      "name": "antiflex / Type tracking / widest"
+    },
+    {
+      "id": "S:a20aca18d535331b6b3698a59329135da92692df,",
+      "before": "Chamfer / Type leading / none",
+      "name": "antiflex / Type leading / none"
+    },
+    {
+      "id": "S:0e02ad2ef036b8fb073a4a494be60e9327a48ef9,",
+      "before": "Chamfer / Type leading / tight",
+      "name": "antiflex / Type leading / tight"
+    },
+    {
+      "id": "S:e38aac0c63d0170f123bceb91f83b1db0e2708e2,",
+      "before": "Chamfer / Type leading / snug",
+      "name": "antiflex / Type leading / snug"
+    },
+    {
+      "id": "S:b8274f177731cf1a444e31880aa1a2a84edea720,",
+      "before": "Chamfer / Type leading / normal",
+      "name": "antiflex / Type leading / normal"
+    },
+    {
+      "id": "S:39b9981f154037f325c5650aded841887a53b792,",
+      "before": "Chamfer / Type leading / relaxed",
+      "name": "antiflex / Type leading / relaxed"
+    },
+    {
+      "id": "S:77c842f111dc4ea6c6d95e13721456156c51ec0e,",
+      "before": "Chamfer / Type leading / loose",
+      "name": "antiflex / Type leading / loose"
+    },
+    {
+      "id": "S:389f8d3b87fc9ef5c7f41dd4eec1c453fb12b1c3,",
+      "before": "Chamfer / Type family / Sans",
+      "name": "antiflex / Type family / Sans"
+    },
+    {
+      "id": "S:a9b01cfa33d5cccdf3a3f3d2f7f2b2bc49b293b5,",
+      "before": "Chamfer / Type family / Display",
+      "name": "antiflex / Type family / Display"
+    },
+    {
+      "id": "S:4c46cbfd85abbdc2cc222a63294df46ecfc5a60f,",
+      "before": "Chamfer / Type family / Mono",
+      "name": "antiflex / Type family / Mono"
+    },
+    {
+      "id": "S:c44ac9cda02e07ab58d7f8f79ab980d6505cd4d9,",
+      "before": "Chamfer / Type italic / DM Sans",
+      "name": "antiflex / Type italic / DM Sans"
+    },
+    {
+      "id": "S:a870d7993bc7b8e511db71a518230c2ad2d21e5c,",
+      "before": "Chamfer / Type italic / Anybody",
+      "name": "antiflex / Type italic / Anybody"
+    }
+  ],
+  "effectStyles": [
+    {
+      "id": "S:c5bb02a7af45c44da9eb5668667320345316a341,",
+      "before": "Chamfer / Elevation / Low",
+      "name": "antiflex / Elevation / Low"
+    }
+  ],
+  "webSyntaxChangedIds": [
+    "VariableID:3:6",
+    "VariableID:3:7",
+    "VariableID:3:8",
+    "VariableID:3:9",
+    "VariableID:3:10",
+    "VariableID:3:11",
+    "VariableID:3:12",
+    "VariableID:3:13",
+    "VariableID:3:14",
+    "VariableID:3:15",
+    "VariableID:3:16",
+    "VariableID:3:17",
+    "VariableID:3:18",
+    "VariableID:3:19",
+    "VariableID:3:20",
+    "VariableID:3:21",
+    "VariableID:3:22",
+    "VariableID:3:23",
+    "VariableID:3:24",
+    "VariableID:3:25",
+    "VariableID:3:26",
+    "VariableID:3:27",
+    "VariableID:3:28",
+    "VariableID:3:29",
+    "VariableID:3:30",
+    "VariableID:3:31",
+    "VariableID:3:32",
+    "VariableID:3:33",
+    "VariableID:3:34",
+    "VariableID:3:35",
+    "VariableID:3:36",
+    "VariableID:3:37",
+    "VariableID:3:38",
+    "VariableID:3:39",
+    "VariableID:3:40",
+    "VariableID:3:41",
+    "VariableID:3:42",
+    "VariableID:3:43",
+    "VariableID:3:44",
+    "VariableID:3:45",
+    "VariableID:3:46",
+    "VariableID:3:47",
+    "VariableID:3:48",
+    "VariableID:3:49",
+    "VariableID:3:50",
+    "VariableID:3:51",
+    "VariableID:3:52",
+    "VariableID:3:53",
+    "VariableID:3:54",
+    "VariableID:3:55",
+    "VariableID:3:56",
+    "VariableID:3:57",
+    "VariableID:3:58",
+    "VariableID:3:59",
+    "VariableID:3:60",
+    "VariableID:3:61",
+    "VariableID:3:62",
+    "VariableID:3:63",
+    "VariableID:3:64",
+    "VariableID:3:65",
+    "VariableID:3:66",
+    "VariableID:3:67",
+    "VariableID:3:68",
+    "VariableID:3:69",
+    "VariableID:3:70",
+    "VariableID:3:71",
+    "VariableID:3:72",
+    "VariableID:3:73",
+    "VariableID:3:74",
+    "VariableID:3:75",
+    "VariableID:3:76",
+    "VariableID:3:77",
+    "VariableID:3:78",
+    "VariableID:3:79",
+    "VariableID:3:80",
+    "VariableID:3:81",
+    "VariableID:3:82",
+    "VariableID:3:83",
+    "VariableID:3:84",
+    "VariableID:3:85",
+    "VariableID:3:86",
+    "VariableID:3:87",
+    "VariableID:3:88",
+    "VariableID:3:89",
+    "VariableID:3:90",
+    "VariableID:3:91",
+    "VariableID:3:92",
+    "VariableID:3:93",
+    "VariableID:3:94",
+    "VariableID:3:95",
+    "VariableID:3:96",
+    "VariableID:3:97",
+    "VariableID:3:98",
+    "VariableID:3:99",
+    "VariableID:3:100",
+    "VariableID:3:101",
+    "VariableID:3:102",
+    "VariableID:34:2",
+    "VariableID:34:3",
+    "VariableID:34:4",
+    "VariableID:34:5",
+    "VariableID:34:6",
+    "VariableID:34:7",
+    "VariableID:34:8",
+    "VariableID:34:9",
+    "VariableID:34:10",
+    "VariableID:34:11",
+    "VariableID:34:12",
+    "VariableID:47:2",
+    "VariableID:47:3",
+    "VariableID:47:4",
+    "VariableID:47:5",
+    "VariableID:47:6",
+    "VariableID:47:7",
+    "VariableID:47:8",
+    "VariableID:47:9",
+    "VariableID:47:10",
+    "VariableID:47:11",
+    "VariableID:47:12",
+    "VariableID:47:13",
+    "VariableID:47:14",
+    "VariableID:47:15",
+    "VariableID:54:2",
+    "VariableID:54:3",
+    "VariableID:54:4",
+    "VariableID:54:5",
+    "VariableID:54:6",
+    "VariableID:54:7",
+    "VariableID:54:8",
+    "VariableID:54:9",
+    "VariableID:54:10",
+    "VariableID:54:11",
+    "VariableID:54:12",
+    "VariableID:54:13",
+    "VariableID:54:14",
+    "VariableID:54:15",
+    "VariableID:61:2",
+    "VariableID:61:3",
+    "VariableID:61:4",
+    "VariableID:61:5",
+    "VariableID:61:6",
+    "VariableID:61:7",
+    "VariableID:61:8",
+    "VariableID:61:9",
+    "VariableID:66:2",
+    "VariableID:66:3",
+    "VariableID:66:4",
+    "VariableID:66:5",
+    "VariableID:66:6",
+    "VariableID:66:7",
+    "VariableID:70:2",
+    "VariableID:70:3",
+    "VariableID:70:4",
+    "VariableID:70:5",
+    "VariableID:70:6",
+    "VariableID:70:7",
+    "VariableID:70:8",
+    "VariableID:70:9",
+    "VariableID:70:10",
+    "VariableID:75:339",
+    "VariableID:75:340",
+    "VariableID:75:341",
+    "VariableID:75:342",
+    "VariableID:75:343",
+    "VariableID:75:344",
+    "VariableID:75:345",
+    "VariableID:75:346",
+    "VariableID:75:347",
+    "VariableID:75:348",
+    "VariableID:75:349",
+    "VariableID:75:350",
+    "VariableID:75:351",
+    "VariableID:75:352",
+    "VariableID:75:353",
+    "VariableID:75:354",
+    "VariableID:75:355",
+    "VariableID:75:356",
+    "VariableID:75:357",
+    "VariableID:75:358",
+    "VariableID:75:359",
+    "VariableID:75:360",
+    "VariableID:75:361",
+    "VariableID:75:362",
+    "VariableID:75:363",
+    "VariableID:75:364",
+    "VariableID:75:365",
+    "VariableID:75:366",
+    "VariableID:75:367",
+    "VariableID:75:368",
+    "VariableID:75:369",
+    "VariableID:75:370",
+    "VariableID:75:371",
+    "VariableID:75:372",
+    "VariableID:75:373",
+    "VariableID:75:374",
+    "VariableID:75:375",
+    "VariableID:75:376",
+    "VariableID:75:377",
+    "VariableID:75:378",
+    "VariableID:75:379",
+    "VariableID:75:380",
+    "VariableID:75:381",
+    "VariableID:75:382",
+    "VariableID:75:383",
+    "VariableID:75:384",
+    "VariableID:75:385",
+    "VariableID:75:386",
+    "VariableID:75:387",
+    "VariableID:75:388",
+    "VariableID:75:389",
+    "VariableID:75:390",
+    "VariableID:75:391",
+    "VariableID:75:392",
+    "VariableID:75:393",
+    "VariableID:75:394",
+    "VariableID:75:395",
+    "VariableID:75:396",
+    "VariableID:75:397",
+    "VariableID:75:398",
+    "VariableID:75:399",
+    "VariableID:75:400",
+    "VariableID:75:401",
+    "VariableID:75:402",
+    "VariableID:75:403",
+    "VariableID:75:404",
+    "VariableID:75:405",
+    "VariableID:75:406",
+    "VariableID:75:407",
+    "VariableID:75:408",
+    "VariableID:75:409",
+    "VariableID:75:410",
+    "VariableID:75:411",
+    "VariableID:75:412",
+    "VariableID:75:413",
+    "VariableID:75:414",
+    "VariableID:75:415",
+    "VariableID:75:416",
+    "VariableID:75:417",
+    "VariableID:75:418",
+    "VariableID:75:419",
+    "VariableID:75:420",
+    "VariableID:75:421",
+    "VariableID:75:422",
+    "VariableID:75:423",
+    "VariableID:75:424",
+    "VariableID:75:425",
+    "VariableID:75:426",
+    "VariableID:75:427",
+    "VariableID:75:428",
+    "VariableID:75:429",
+    "VariableID:75:430",
+    "VariableID:75:431",
+    "VariableID:75:432",
+    "VariableID:75:433",
+    "VariableID:75:434",
+    "VariableID:75:435",
+    "VariableID:75:436",
+    "VariableID:75:437",
+    "VariableID:75:438",
+    "VariableID:75:439",
+    "VariableID:75:440",
+    "VariableID:75:441",
+    "VariableID:75:442",
+    "VariableID:75:443",
+    "VariableID:75:444",
+    "VariableID:75:445",
+    "VariableID:75:446",
+    "VariableID:75:447",
+    "VariableID:75:448",
+    "VariableID:75:449",
+    "VariableID:75:450",
+    "VariableID:75:451",
+    "VariableID:75:452",
+    "VariableID:75:453",
+    "VariableID:75:454",
+    "VariableID:75:455",
+    "VariableID:75:456",
+    "VariableID:75:457",
+    "VariableID:75:458",
+    "VariableID:75:459",
+    "VariableID:75:460",
+    "VariableID:75:461",
+    "VariableID:75:462",
+    "VariableID:75:463",
+    "VariableID:75:464",
+    "VariableID:75:465",
+    "VariableID:75:466",
+    "VariableID:75:467",
+    "VariableID:75:468",
+    "VariableID:75:469",
+    "VariableID:75:470",
+    "VariableID:75:471",
+    "VariableID:75:472",
+    "VariableID:75:473",
+    "VariableID:75:474",
+    "VariableID:75:475",
+    "VariableID:75:476",
+    "VariableID:75:477",
+    "VariableID:75:478",
+    "VariableID:75:479",
+    "VariableID:75:480",
+    "VariableID:75:481",
+    "VariableID:75:482",
+    "VariableID:75:483",
+    "VariableID:75:484",
+    "VariableID:75:485",
+    "VariableID:75:486",
+    "VariableID:75:487",
+    "VariableID:75:488",
+    "VariableID:75:489",
+    "VariableID:75:490",
+    "VariableID:75:491",
+    "VariableID:75:492",
+    "VariableID:75:493",
+    "VariableID:75:494",
+    "VariableID:75:495",
+    "VariableID:75:496",
+    "VariableID:75:497",
+    "VariableID:75:498",
+    "VariableID:75:499",
+    "VariableID:75:500",
+    "VariableID:75:501",
+    "VariableID:75:502",
+    "VariableID:75:503",
+    "VariableID:75:504",
+    "VariableID:75:505",
+    "VariableID:75:506",
+    "VariableID:75:507",
+    "VariableID:75:508",
+    "VariableID:75:509",
+    "VariableID:75:510",
+    "VariableID:75:511",
+    "VariableID:75:512",
+    "VariableID:75:513",
+    "VariableID:75:514",
+    "VariableID:75:515",
+    "VariableID:75:516",
+    "VariableID:75:517",
+    "VariableID:75:518",
+    "VariableID:75:519",
+    "VariableID:75:520",
+    "VariableID:75:521",
+    "VariableID:75:522",
+    "VariableID:75:523",
+    "VariableID:75:524",
+    "VariableID:75:525",
+    "VariableID:75:526",
+    "VariableID:75:527",
+    "VariableID:75:528",
+    "VariableID:75:529",
+    "VariableID:75:530",
+    "VariableID:75:531",
+    "VariableID:75:532",
+    "VariableID:75:533",
+    "VariableID:75:534",
+    "VariableID:75:535",
+    "VariableID:75:536",
+    "VariableID:75:537",
+    "VariableID:75:538",
+    "VariableID:75:539",
+    "VariableID:75:540",
+    "VariableID:75:541",
+    "VariableID:75:542",
+    "VariableID:75:543",
+    "VariableID:75:544",
+    "VariableID:75:545",
+    "VariableID:75:546",
+    "VariableID:75:547",
+    "VariableID:75:548",
+    "VariableID:75:549",
+    "VariableID:75:550",
+    "VariableID:75:551",
+    "VariableID:75:552",
+    "VariableID:75:553",
+    "VariableID:75:554",
+    "VariableID:75:555",
+    "VariableID:75:556",
+    "VariableID:75:557",
+    "VariableID:75:558",
+    "VariableID:75:559",
+    "VariableID:75:560",
+    "VariableID:75:561",
+    "VariableID:75:562",
+    "VariableID:75:563",
+    "VariableID:75:564",
+    "VariableID:75:565",
+    "VariableID:75:566",
+    "VariableID:75:567",
+    "VariableID:75:568",
+    "VariableID:75:569",
+    "VariableID:75:570",
+    "VariableID:75:571",
+    "VariableID:75:572",
+    "VariableID:75:573",
+    "VariableID:75:574",
+    "VariableID:75:575",
+    "VariableID:75:576",
+    "VariableID:75:577",
+    "VariableID:75:578",
+    "VariableID:75:579",
+    "VariableID:75:580",
+    "VariableID:75:581",
+    "VariableID:75:582",
+    "VariableID:75:583",
+    "VariableID:75:584",
+    "VariableID:75:585",
+    "VariableID:75:586",
+    "VariableID:75:587",
+    "VariableID:75:588",
+    "VariableID:75:589",
+    "VariableID:75:590",
+    "VariableID:75:591",
+    "VariableID:75:592",
+    "VariableID:75:593",
+    "VariableID:75:594",
+    "VariableID:75:595",
+    "VariableID:75:596",
+    "VariableID:75:597",
+    "VariableID:75:598",
+    "VariableID:75:599",
+    "VariableID:75:600",
+    "VariableID:75:601",
+    "VariableID:75:602",
+    "VariableID:75:603",
+    "VariableID:75:604",
+    "VariableID:75:605",
+    "VariableID:75:606",
+    "VariableID:75:607",
+    "VariableID:75:608",
+    "VariableID:75:609",
+    "VariableID:75:610",
+    "VariableID:75:611",
+    "VariableID:75:612",
+    "VariableID:75:613",
+    "VariableID:75:614",
+    "VariableID:75:615",
+    "VariableID:75:616",
+    "VariableID:75:617",
+    "VariableID:75:618",
+    "VariableID:75:619",
+    "VariableID:75:620",
+    "VariableID:75:621",
+    "VariableID:75:622",
+    "VariableID:75:623",
+    "VariableID:75:624",
+    "VariableID:75:625",
+    "VariableID:75:626",
+    "VariableID:75:627",
+    "VariableID:75:628",
+    "VariableID:75:629",
+    "VariableID:75:630",
+    "VariableID:75:631",
+    "VariableID:75:632",
+    "VariableID:75:633",
+    "VariableID:75:634",
+    "VariableID:75:635",
+    "VariableID:75:636",
+    "VariableID:75:637",
+    "VariableID:75:638",
+    "VariableID:75:639",
+    "VariableID:75:640",
+    "VariableID:75:641",
+    "VariableID:75:642",
+    "VariableID:75:643",
+    "VariableID:75:644",
+    "VariableID:75:645",
+    "VariableID:75:646",
+    "VariableID:75:647",
+    "VariableID:75:648",
+    "VariableID:75:649",
+    "VariableID:75:650",
+    "VariableID:75:651",
+    "VariableID:75:652",
+    "VariableID:75:653",
+    "VariableID:75:654",
+    "VariableID:75:655",
+    "VariableID:75:656",
+    "VariableID:75:657",
+    "VariableID:75:658",
+    "VariableID:75:659",
+    "VariableID:75:660",
+    "VariableID:75:661",
+    "VariableID:75:662",
+    "VariableID:75:663",
+    "VariableID:75:664",
+    "VariableID:75:665",
+    "VariableID:75:666",
+    "VariableID:75:667",
+    "VariableID:75:668",
+    "VariableID:75:669",
+    "VariableID:75:670",
+    "VariableID:75:671",
+    "VariableID:75:672",
+    "VariableID:75:673",
+    "VariableID:75:674",
+    "VariableID:75:675",
+    "VariableID:82:3",
+    "VariableID:82:4",
+    "VariableID:82:5",
+    "VariableID:82:6",
+    "VariableID:82:7",
+    "VariableID:82:8",
+    "VariableID:82:9",
+    "VariableID:82:10",
+    "VariableID:82:11",
+    "VariableID:82:12",
+    "VariableID:82:13",
+    "VariableID:82:14",
+    "VariableID:87:3",
+    "VariableID:87:4",
+    "VariableID:87:5",
+    "VariableID:87:6",
+    "VariableID:87:7",
+    "VariableID:87:8",
+    "VariableID:87:9",
+    "VariableID:97:105",
+    "VariableID:97:106",
+    "VariableID:97:107",
+    "VariableID:97:108",
+    "VariableID:97:109",
+    "VariableID:97:110",
+    "VariableID:97:111",
+    "VariableID:97:112",
+    "VariableID:97:113",
+    "VariableID:97:114",
+    "VariableID:97:115",
+    "VariableID:97:116",
+    "VariableID:97:117",
+    "VariableID:97:118",
+    "VariableID:97:119",
+    "VariableID:97:120",
+    "VariableID:97:121",
+    "VariableID:97:122",
+    "VariableID:97:123",
+    "VariableID:97:124",
+    "VariableID:97:125"
+  ],
+  "variableCount": 536,
+  "valuesChanged": false,
+  "pages": [
+    {
+      "id": "3:2",
+      "data": {
+        "pageId": "3:2",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "5:2",
+      "data": {
+        "pageId": "5:2",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "6:2",
+      "data": {
+        "pageId": "6:2",
+        "changed": [
+          {
+            "id": "6:111",
+            "text": "AF-1048"
+          },
+          {
+            "id": "I6:293;6:111",
+            "text": "AF-1048"
+          },
+          {
+            "id": "I6:311;6:111",
+            "text": "AF-1034"
+          },
+          {
+            "id": "I6:329;6:111",
+            "text": "AF-1047"
+          },
+          {
+            "id": "I6:347;6:111",
+            "text": "AF-1033"
+          },
+          {
+            "id": "I6:365;6:111",
+            "text": "AF-1046"
+          },
+          {
+            "id": "I6:384;6:111",
+            "text": "AF-1032"
+          },
+          {
+            "id": "I6:573;6:111",
+            "text": "AF-1048"
+          },
+          {
+            "id": "I6:591;6:111",
+            "text": "AF-1034"
+          },
+          {
+            "id": "I6:609;6:111",
+            "text": "AF-1047"
+          },
+          {
+            "id": "I6:627;6:111",
+            "text": "AF-1033"
+          },
+          {
+            "id": "I6:645;6:111",
+            "text": "AF-1046"
+          },
+          {
+            "id": "I6:664;6:111",
+            "text": "AF-1032"
+          },
+          {
+            "id": "I6:823;6:111",
+            "text": "AF-1048"
+          },
+          {
+            "id": "I6:841;6:111",
+            "text": "AF-1034"
+          },
+          {
+            "id": "I6:859;6:111",
+            "text": "AF-1047"
+          },
+          {
+            "id": "I6:877;6:111",
+            "text": "AF-1033"
+          },
+          {
+            "id": "I6:895;6:111",
+            "text": "AF-1046"
+          },
+          {
+            "id": "I6:914;6:111",
+            "text": "AF-1032"
+          },
+          {
+            "id": "I6:1073;6:111",
+            "text": "AF-1048"
+          },
+          {
+            "id": "I6:1091;6:111",
+            "text": "AF-1034"
+          },
+          {
+            "id": "I6:1109;6:111",
+            "text": "AF-1047"
+          },
+          {
+            "id": "I6:1127;6:111",
+            "text": "AF-1033"
+          },
+          {
+            "id": "I6:1145;6:111",
+            "text": "AF-1046"
+          },
+          {
+            "id": "I6:1164;6:111",
+            "text": "AF-1032"
+          }
+        ],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "20:1099",
+      "data": {
+        "pageId": "20:1099",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "47:16",
+      "data": {
+        "pageId": "47:16",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "54:18",
+      "data": {
+        "pageId": "54:18",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "61:12",
+      "data": {
+        "pageId": "61:12",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "66:8",
+      "data": {
+        "pageId": "66:8",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "70:11",
+      "data": {
+        "pageId": "70:11",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "75:676",
+      "data": {
+        "pageId": "75:676",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "75:2593",
+      "data": {
+        "pageId": "75:2593",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "82:2",
+      "data": {
+        "pageId": "82:2",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "87:2",
+      "data": {
+        "pageId": "87:2",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "101:2",
+      "data": {
+        "pageId": "101:2",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "103:2",
+      "data": {
+        "pageId": "103:2",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "104:27",
+      "data": {
+        "pageId": "104:27",
+        "changed": [],
+        "renamed": [],
+        "remaining": 0
+      }
+    }
+  ]
+}

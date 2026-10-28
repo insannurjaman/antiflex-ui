@@ -1,5 +1,5 @@
 {
-  "name": "@chamfer/ui",
+  "name": "@antiflex/ui",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -8,7 +8,8 @@
       "types": "./src/index.tsx",
       "default": "./src/index.tsx"
     },
-    "./styles.css": "./src/styles.css"
+    "./styles.css": "./src/styles.css",
+    "./catalog": "./src/catalog.ts"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
@@ -19,7 +20,7 @@
     "react-dom": "^19.0.0"
   },
   "dependencies": {
-    "@chamfer/tokens": "workspace:*"
+    "@antiflex/tokens": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",

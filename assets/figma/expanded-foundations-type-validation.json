@@ -1,0 +1,32 @@
+{
+  "errors": [],
+  "groups": {
+    "scale": 13,
+    "weight": 9,
+    "tracking": 6,
+    "leading": 6
+  },
+  "newStyles": 39,
+  "totalTextStyles": 55,
+  "boards": [
+    {
+      "id": "75:2633",
+      "width": 1240,
+      "height": 2960,
+      "mode": {
+        "VariableCollectionId:3:4": "3:1"
+      },
+      "textNodes": 59
+    },
+    {
+      "id": "75:2719",
+      "width": 1240,
+      "height": 2960,
+      "mode": {
+        "VariableCollectionId:3:4": "3:2"
+      },
+      "textNodes": 59
+    }
+  ],
+  "unitBridge": "Sizes/default line-height bind pixel variables; leading ratios and tracking em are converted to Figma native percent styles. System serif is browser-provided."
+}

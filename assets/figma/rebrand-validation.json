@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-15",
+  "variables": 108,
+  "issues": [],
+  "pass": true,
+  "components": [
+    { "id": "5:42", "name": "Button / primary", "variants": 18 },
+    { "id": "5:82", "name": "Button / secondary", "variants": 18 },
+    { "id": "5:122", "name": "Button / ghost", "variants": 18 },
+    { "id": "5:162", "name": "Button / danger", "variants": 18 },
+    { "id": "5:238", "name": "TextField", "variants": 15 },
+    { "id": "5:259", "name": "Badge", "variants": 10 },
+    { "id": "5:284", "name": "Card", "variants": 8 },
+    { "id": "5:289", "name": "Separator", "variants": 4 },
+    { "id": "5:292", "name": "Skeleton", "variants": 2 },
+    { "id": "5:366", "name": "Table", "variants": 3 },
+    { "id": "5:386", "name": "AppShell", "variants": 4 }
+  ],
+  "limitations": [
+    "Static screen layouts approximate browser content and state",
+    "Old delivery copy and native export not refreshed in this redesign"
+  ]
+}

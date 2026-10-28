@@ -1,0 +1,947 @@
+{
+  "date": "2026-10-28",
+  "fileKey": "H2vHC7eByauNSQL06qtO3o",
+  "sessionId": "6157d4fb-b909-49f2-9f9e-ca5e9a7eee4f",
+  "scope": "Existing page/node names, visible brand text and five A insets. No file-title mutation or variable values changed.",
+  "states": [
+    {
+      "id": "5:2",
+      "data": {
+        "pageId": "5:2",
+        "before": "Chamfer / Components",
+        "name": "antiflex / Components",
+        "changes": [],
+        "marks": [],
+        "renamed": [
+          {
+            "id": "5:387",
+            "before": "Chamfer / Component specimens",
+            "after": "antiflex / Component specimens"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6:2",
+      "data": {
+        "pageId": "6:2",
+        "before": "Chamfer / Dashboard",
+        "name": "antiflex / Dashboard",
+        "changes": [
+          {
+            "id": "6:133",
+            "before": "chamfer/ui",
+            "after": "antiflex/ui",
+            "width": 123,
+            "height": 35
+          },
+          {
+            "id": "12:590",
+            "before": "BUILT WITH CHAMFER",
+            "after": "BUILT WITH ANTIFLEX",
+            "width": 105,
+            "height": 14
+          },
+          {
+            "id": "6:413",
+            "before": "chamfer/ui",
+            "after": "antiflex/ui",
+            "width": 123,
+            "height": 35
+          },
+          {
+            "id": "12:751",
+            "before": "BUILT WITH CHAMFER",
+            "after": "BUILT WITH ANTIFLEX",
+            "width": 105,
+            "height": 14
+          },
+          {
+            "id": "6:693",
+            "before": "chamfer/ui",
+            "after": "antiflex/ui",
+            "width": 123,
+            "height": 35
+          },
+          {
+            "id": "6:943",
+            "before": "chamfer/ui",
+            "after": "antiflex/ui",
+            "width": 123,
+            "height": 35
+          }
+        ],
+        "marks": [],
+        "renamed": [
+          {
+            "id": "6:128",
+            "before": "Chamfer / Site navigation",
+            "after": "antiflex / Site navigation"
+          },
+          {
+            "id": "6:133",
+            "before": "chamfer/ui",
+            "after": "antiflex/ui"
+          },
+          {
+            "id": "12:589",
+            "before": "Chamfer product note",
+            "after": "antiflex product note"
+          },
+          {
+            "id": "12:590",
+            "before": "BUILT WITH CHAMFER",
+            "after": "BUILT WITH ANTIFLEX"
+          },
+          {
+            "id": "6:408",
+            "before": "Chamfer / Site navigation",
+            "after": "antiflex / Site navigation"
+          },
+          {
+            "id": "6:413",
+            "before": "chamfer/ui",
+            "after": "antiflex/ui"
+          },
+          {
+            "id": "12:750",
+            "before": "Chamfer product note",
+            "after": "antiflex product note"
+          },
+          {
+            "id": "12:751",
+            "before": "BUILT WITH CHAMFER",
+            "after": "BUILT WITH ANTIFLEX"
+          },
+          {
+            "id": "6:688",
+            "before": "Chamfer / Site navigation",
+            "after": "antiflex / Site navigation"
+          },
+          {
+            "id": "6:693",
+            "before": "chamfer/ui",
+            "after": "antiflex/ui"
+          },
+          {
+            "id": "6:938",
+            "before": "Chamfer / Site navigation",
+            "after": "antiflex / Site navigation"
+          },
+          {
+            "id": "6:943",
+            "before": "chamfer/ui",
+            "after": "antiflex/ui"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20:1099",
+      "data": {
+        "pageId": "20:1099",
+        "before": "Chamfer Pro / SaaS workspace",
+        "name": "antiflex Pro / SaaS workspace",
+        "changes": [
+          {
+            "id": "20:1166",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 111,
+            "height": 27
+          },
+          {
+            "id": "20:1406",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 111,
+            "height": 27
+          },
+          {
+            "id": "20:1648",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 98,
+            "height": 24
+          },
+          {
+            "id": "20:1876",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 98,
+            "height": 24
+          },
+          {
+            "id": "20:2102",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 111,
+            "height": 27
+          },
+          {
+            "id": "20:2326",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 111,
+            "height": 27
+          },
+          {
+            "id": "20:2552",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 98,
+            "height": 24
+          },
+          {
+            "id": "20:2764",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 98,
+            "height": 24
+          },
+          {
+            "id": "21:1011",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 111,
+            "height": 27
+          },
+          {
+            "id": "21:1195",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 111,
+            "height": 27
+          },
+          {
+            "id": "21:1381",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 98,
+            "height": 24
+          },
+          {
+            "id": "21:1553",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro",
+            "width": 98,
+            "height": 24
+          }
+        ],
+        "marks": [],
+        "renamed": [
+          {
+            "id": "20:1166",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "20:1406",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "20:1648",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "20:1876",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "20:2102",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "20:2326",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "20:2552",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "20:2764",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "21:1011",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "21:1195",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "21:1381",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          },
+          {
+            "id": "21:1553",
+            "before": "Chamfer Pro",
+            "after": "antiflex Pro"
+          }
+        ]
+      }
+    },
+    {
+      "id": "47:16",
+      "data": {
+        "pageId": "47:16",
+        "before": "Chamfer / Forms",
+        "name": "antiflex / Forms",
+        "changes": [
+          {
+            "id": "49:11",
+            "before": "Chamfer / Form foundation",
+            "after": "antiflex / Form foundation",
+            "width": 332,
+            "height": 42
+          },
+          {
+            "id": "49:275",
+            "before": "Chamfer / Form foundation",
+            "after": "antiflex / Form foundation",
+            "width": 332,
+            "height": 42
+          }
+        ],
+        "marks": [],
+        "renamed": [
+          {
+            "id": "49:11",
+            "before": "Chamfer / Form foundation",
+            "after": "antiflex / Form foundation"
+          },
+          {
+            "id": "49:275",
+            "before": "Chamfer / Form foundation",
+            "after": "antiflex / Form foundation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "54:18",
+      "data": {
+        "pageId": "54:18",
+        "before": "Chamfer / Feedback & navigation",
+        "name": "antiflex / Feedback & navigation",
+        "changes": [
+          {
+            "id": "54:559",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation",
+            "width": 441,
+            "height": 42
+          },
+          {
+            "id": "54:705",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation",
+            "width": 441,
+            "height": 42
+          },
+          {
+            "id": "54:968",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation",
+            "width": 441,
+            "height": 42
+          },
+          {
+            "id": "54:1157",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation",
+            "width": 441,
+            "height": 42
+          },
+          {
+            "id": "54:1303",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation",
+            "width": 441,
+            "height": 42
+          },
+          {
+            "id": "54:1566",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation",
+            "width": 441,
+            "height": 42
+          }
+        ],
+        "marks": [],
+        "renamed": [
+          {
+            "id": "54:559",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation"
+          },
+          {
+            "id": "54:705",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation"
+          },
+          {
+            "id": "54:968",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation"
+          },
+          {
+            "id": "54:1157",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation"
+          },
+          {
+            "id": "54:1303",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation"
+          },
+          {
+            "id": "54:1566",
+            "before": "Chamfer / Feedback and navigation",
+            "after": "antiflex / Feedback and navigation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "61:12",
+      "data": {
+        "pageId": "61:12",
+        "before": "Chamfer / Modals",
+        "name": "antiflex / Modals",
+        "changes": [],
+        "marks": [],
+        "renamed": []
+      }
+    },
+    {
+      "id": "66:8",
+      "data": {
+        "pageId": "66:8",
+        "before": "Chamfer / Floating",
+        "name": "antiflex / Floating",
+        "changes": [],
+        "marks": [],
+        "renamed": []
+      }
+    },
+    {
+      "id": "70:11",
+      "data": {
+        "pageId": "70:11",
+        "before": "Chamfer / Panels",
+        "name": "antiflex / Panels",
+        "changes": [],
+        "marks": [],
+        "renamed": []
+      }
+    },
+    {
+      "id": "75:676",
+      "data": {
+        "pageId": "75:676",
+        "before": "Chamfer / Color library",
+        "name": "antiflex / Color library",
+        "changes": [
+          {
+            "id": "75:680",
+            "before": "Canonical OKLCH in CSS. These Figma swatches use clipped sRGB previews. Chamfer semantic light/dark roles remain unchanged.",
+            "after": "Canonical OKLCH in CSS. These Figma swatches use clipped sRGB previews. antiflex semantic light/dark roles remain unchanged.",
+            "width": 1192,
+            "height": 21
+          },
+          {
+            "id": "75:1638",
+            "before": "Canonical OKLCH in CSS. These Figma swatches use clipped sRGB previews. Chamfer semantic light/dark roles remain unchanged.",
+            "after": "Canonical OKLCH in CSS. These Figma swatches use clipped sRGB previews. antiflex semantic light/dark roles remain unchanged.",
+            "width": 1192,
+            "height": 21
+          }
+        ],
+        "marks": [],
+        "renamed": []
+      }
+    },
+    {
+      "id": "75:2593",
+      "data": {
+        "pageId": "75:2593",
+        "before": "Chamfer / Type library",
+        "name": "antiflex / Type library",
+        "changes": [
+          {
+            "id": "75:2706",
+            "before": "tighter · Chamfer typography",
+            "after": "tighter · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2707",
+            "before": "tight · Chamfer typography",
+            "after": "tight · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2708",
+            "before": "normal · Chamfer typography",
+            "after": "normal · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2709",
+            "before": "wide · Chamfer typography",
+            "after": "wide · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2710",
+            "before": "wider · Chamfer typography",
+            "after": "wider · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2711",
+            "before": "widest · Chamfer typography",
+            "after": "widest · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2792",
+            "before": "tighter · Chamfer typography",
+            "after": "tighter · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2793",
+            "before": "tight · Chamfer typography",
+            "after": "tight · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2794",
+            "before": "normal · Chamfer typography",
+            "after": "normal · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2795",
+            "before": "wide · Chamfer typography",
+            "after": "wide · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2796",
+            "before": "wider · Chamfer typography",
+            "after": "wider · antiflex typography",
+            "width": 1192,
+            "height": 32
+          },
+          {
+            "id": "75:2797",
+            "before": "widest · Chamfer typography",
+            "after": "widest · antiflex typography",
+            "width": 1192,
+            "height": 32
+          }
+        ],
+        "marks": [],
+        "renamed": [
+          {
+            "id": "75:2706",
+            "before": "tighter · Chamfer typography",
+            "after": "tighter · antiflex typography"
+          },
+          {
+            "id": "75:2707",
+            "before": "tight · Chamfer typography",
+            "after": "tight · antiflex typography"
+          },
+          {
+            "id": "75:2708",
+            "before": "normal · Chamfer typography",
+            "after": "normal · antiflex typography"
+          },
+          {
+            "id": "75:2709",
+            "before": "wide · Chamfer typography",
+            "after": "wide · antiflex typography"
+          },
+          {
+            "id": "75:2710",
+            "before": "wider · Chamfer typography",
+            "after": "wider · antiflex typography"
+          },
+          {
+            "id": "75:2711",
+            "before": "widest · Chamfer typography",
+            "after": "widest · antiflex typography"
+          },
+          {
+            "id": "75:2792",
+            "before": "tighter · Chamfer typography",
+            "after": "tighter · antiflex typography"
+          },
+          {
+            "id": "75:2793",
+            "before": "tight · Chamfer typography",
+            "after": "tight · antiflex typography"
+          },
+          {
+            "id": "75:2794",
+            "before": "normal · Chamfer typography",
+            "after": "normal · antiflex typography"
+          },
+          {
+            "id": "75:2795",
+            "before": "wide · Chamfer typography",
+            "after": "wide · antiflex typography"
+          },
+          {
+            "id": "75:2796",
+            "before": "wider · Chamfer typography",
+            "after": "wider · antiflex typography"
+          },
+          {
+            "id": "75:2797",
+            "before": "widest · Chamfer typography",
+            "after": "widest · antiflex typography"
+          }
+        ]
+      }
+    },
+    {
+      "id": "82:2",
+      "data": {
+        "pageId": "82:2",
+        "before": "Chamfer / Menus",
+        "name": "antiflex / Menus",
+        "changes": [],
+        "marks": [],
+        "renamed": []
+      }
+    },
+    {
+      "id": "87:2",
+      "data": {
+        "pageId": "87:2",
+        "before": "Chamfer / Toast",
+        "name": "antiflex / Toast",
+        "changes": [],
+        "marks": [],
+        "renamed": []
+      }
+    },
+    {
+      "id": "101:2",
+      "data": {
+        "pageId": "101:2",
+        "before": "Chamfer / Workspace navigation",
+        "name": "antiflex / Workspace navigation",
+        "changes": [
+          {
+            "id": "101:74",
+            "before": "Get to know Chamfer UI.",
+            "after": "Get to know antiflex/ui.",
+            "width": 318,
+            "height": 18
+          },
+          {
+            "id": "101:87",
+            "before": "Get to know Chamfer UI.",
+            "after": "Get to know antiflex/ui.",
+            "width": 318,
+            "height": 18
+          },
+          {
+            "id": "I101:129;101:74",
+            "before": "Get to know antiflex/ui.",
+            "after": "Get to know antiflex/ui.",
+            "width": 318,
+            "height": 18
+          },
+          {
+            "id": "I101:173;101:74",
+            "before": "Get to know antiflex/ui.",
+            "after": "Get to know antiflex/ui.",
+            "width": 318,
+            "height": 18
+          },
+          {
+            "id": "I101:217;101:74",
+            "before": "Get to know antiflex/ui.",
+            "after": "Get to know antiflex/ui.",
+            "width": 318,
+            "height": 18
+          },
+          {
+            "id": "I101:261;101:74",
+            "before": "Get to know antiflex/ui.",
+            "after": "Get to know antiflex/ui.",
+            "width": 318,
+            "height": 18
+          }
+        ],
+        "marks": [],
+        "renamed": [
+          {
+            "id": "101:74",
+            "before": "Get to know Chamfer UI.",
+            "after": "Get to know antiflex/ui."
+          },
+          {
+            "id": "101:87",
+            "before": "Get to know Chamfer UI.",
+            "after": "Get to know antiflex/ui."
+          },
+          {
+            "id": "I101:129;101:74",
+            "before": "Get to know antiflex/ui.",
+            "after": "Get to know antiflex/ui."
+          },
+          {
+            "id": "I101:173;101:74",
+            "before": "Get to know antiflex/ui.",
+            "after": "Get to know antiflex/ui."
+          },
+          {
+            "id": "I101:217;101:74",
+            "before": "Get to know antiflex/ui.",
+            "after": "Get to know antiflex/ui."
+          },
+          {
+            "id": "I101:261;101:74",
+            "before": "Get to know antiflex/ui.",
+            "after": "Get to know antiflex/ui."
+          }
+        ]
+      }
+    },
+    {
+      "id": "103:2",
+      "data": {
+        "pageId": "103:2",
+        "before": "Chamfer / Search and selection",
+        "name": "antiflex / Search and selection",
+        "changes": [],
+        "marks": [],
+        "renamed": []
+      }
+    },
+    {
+      "id": "104:27",
+      "data": {
+        "pageId": "104:27",
+        "before": "Chamfer / Date tools",
+        "name": "antiflex / Date tools",
+        "changes": [],
+        "marks": [],
+        "renamed": []
+      }
+    },
+    {
+      "id": "3:2",
+      "data": {
+        "pageId": "3:2",
+        "name": "antiflex / Foundations",
+        "changed": [
+          {
+            "id": "3:115",
+            "text": "antiflex/ui",
+            "width": 171,
+            "height": 48
+          },
+          {
+            "id": "3:116",
+            "text": "less flex. More function.",
+            "width": 698,
+            "height": 84
+          },
+          {
+            "id": "3:175",
+            "text": "Typography / antiflex",
+            "width": 273,
+            "height": 42
+          },
+          {
+            "id": "3:219",
+            "text": "Core code is MIT licensed. antiflex Pro assets and commerce are a future milestone. Dashboard records are synthetic.",
+            "width": 1050,
+            "height": 21
+          }
+        ],
+        "renamed": ["3:110", "3:112"],
+        "mark": {
+          "id": "3:114",
+          "width": 24,
+          "height": 24,
+          "x": 12,
+          "y": 12,
+          "paths": [
+            {
+              "windingRule": "EVENODD",
+              "data": "M 0 24 L 8.4 0 L 15.6 0 L 24 24 L 16.8 24 L 15 18 L 9 18 L 7.199999999999999 24 L 0 24 Z M 10.799999999999999 12 L 13.2 12 L 12 7.199999999999999 L 10.799999999999999 12 Z"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "finalDashboard": {
+    "pageId": "6:2",
+    "changed": [
+      {
+        "id": "6:132",
+        "x": 7,
+        "y": 7,
+        "width": 14,
+        "height": 14,
+        "boundVariables": {
+          "fills": [
+            {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:3:67"
+            }
+          ]
+        }
+      },
+      {
+        "id": "6:412",
+        "x": 7,
+        "y": 7,
+        "width": 14,
+        "height": 14,
+        "boundVariables": {
+          "fills": [
+            {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:3:67"
+            }
+          ]
+        }
+      },
+      {
+        "id": "6:692",
+        "x": 7,
+        "y": 7,
+        "width": 14,
+        "height": 14,
+        "boundVariables": {
+          "fills": [
+            {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:3:67"
+            }
+          ]
+        }
+      },
+      {
+        "id": "6:942",
+        "x": 7,
+        "y": 7,
+        "width": 14,
+        "height": 14,
+        "boundVariables": {
+          "fills": [
+            {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:3:67"
+            }
+          ]
+        }
+      }
+    ],
+    "variableCount": 536,
+    "pages": [
+      {
+        "id": "0:1",
+        "name": "Page 1"
+      },
+      {
+        "id": "3:2",
+        "name": "antiflex / Foundations"
+      },
+      {
+        "id": "5:2",
+        "name": "antiflex / Components"
+      },
+      {
+        "id": "6:2",
+        "name": "antiflex / Dashboard"
+      },
+      {
+        "id": "20:1099",
+        "name": "antiflex Pro / SaaS workspace"
+      },
+      {
+        "id": "47:16",
+        "name": "antiflex / Forms"
+      },
+      {
+        "id": "54:18",
+        "name": "antiflex / Feedback & navigation"
+      },
+      {
+        "id": "61:12",
+        "name": "antiflex / Modals"
+      },
+      {
+        "id": "66:8",
+        "name": "antiflex / Floating"
+      },
+      {
+        "id": "70:11",
+        "name": "antiflex / Panels"
+      },
+      {
+        "id": "75:676",
+        "name": "antiflex / Color library"
+      },
+      {
+        "id": "75:2593",
+        "name": "antiflex / Type library"
+      },
+      {
+        "id": "82:2",
+        "name": "antiflex / Menus"
+      },
+      {
+        "id": "87:2",
+        "name": "antiflex / Toast"
+      },
+      {
+        "id": "101:2",
+        "name": "antiflex / Workspace navigation"
+      },
+      {
+        "id": "103:2",
+        "name": "antiflex / Search and selection"
+      },
+      {
+        "id": "104:27",
+        "name": "antiflex / Date tools"
+      }
+    ]
+  }
+}

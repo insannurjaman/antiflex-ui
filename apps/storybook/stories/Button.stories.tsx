@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Button } from '@chamfer/ui';
+import { Button } from '@antiflex/ui';
 const meta = {
   title: 'Components/Button',
   component: Button,

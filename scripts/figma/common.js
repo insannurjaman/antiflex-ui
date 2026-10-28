@@ -21,12 +21,14 @@ function flatten(object, prefix = '') {
   );
 }
 function cssName(key) {
-  return 'var(--ch-' + key.replaceAll('.', '-') + ')';
+  return 'var(--af-' + key.replaceAll('.', '-') + ')';
 }
 async function fonts() {
   const available = (await figma.listAvailableFontsAsync()).map((f) => f.fontName);
-  for (const family of ['IBM Plex Sans', 'IBM Plex Mono'])
-    for (const style of ['Regular', 'Medium']) {
+  for (const family of ['DM Sans', 'Space Mono', 'Anybody'])
+    for (const style of family === 'Space Mono'
+      ? ['Regular', 'Bold']
+      : ['Regular', 'Medium', 'SemiBold']) {
       const font = available.find((f) => f.family === family && f.style === style);
       if (!font) throw new Error('Required product font not available: ' + family + ' ' + style);
       await figma.loadFontAsync(font);
@@ -45,7 +47,7 @@ async function tokenMap() {
   const collections = await figma.variables.getLocalVariableCollectionsAsync();
   const variables = await figma.variables.getLocalVariablesAsync();
   const ownIds = new Set(
-    collections.filter((c) => c.name.startsWith('Chamfer /')).map((c) => c.id),
+    collections.filter((c) => c.name.startsWith('antiflex /')).map((c) => c.id),
   );
   const map = {};
   for (const v of variables.filter((v) => ownIds.has(v.variableCollectionId)))
@@ -54,10 +56,12 @@ async function tokenMap() {
 }
 function paint(variable, consumer) {
   if (!variable) throw new Error('Missing color variable');
+  const value = consumer ? variable.resolveForConsumer(consumer).value : { r: 0, g: 0, b: 0 };
   return figma.variables.setBoundVariableForPaint(
     {
       type: 'SOLID',
-      color: consumer ? variable.resolveForConsumer(consumer).value : { r: 0, g: 0, b: 0 },
+      color: { r: value.r, g: value.g, b: value.b },
+      ...(value.a === undefined ? {} : { opacity: value.a }),
     },
     'color',
     variable,
@@ -109,7 +113,10 @@ function text(
 ) {
   const node = remember(figma.createText());
   node.name = value.slice(0, 60);
-  node.fontName = { family: mono ? 'IBM Plex Mono' : 'IBM Plex Sans', style: weight };
+  node.fontName = {
+    family: mono ? 'Space Mono' : 'DM Sans',
+    style: mono && weight === 'Medium' ? 'Regular' : weight,
+  };
   node.fontSize = size;
   const sizeToken = Object.keys(map).find(
     (key) => key.startsWith('fontSize.') && Object.values(map[key].valuesByMode)[0] === size,
@@ -147,7 +154,7 @@ function result(extra = {}) {
   return { createdNodeIds, mutatedNodeIds, variableIds, ...extra };
 }
 function setTheme(node, collections, mode) {
-  const semantic = collections.find((c) => c.name === 'Chamfer / Semantic');
+  const semantic = collections.find((c) => c.name === 'antiflex / Semantic');
   if (!semantic) throw new Error('Missing semantic collection');
   const value = semantic.modes.find((m) => m.name === mode);
   if (!value) throw new Error('Missing ' + mode + ' mode');
@@ -192,7 +199,7 @@ async function bindTypography(page, map) {
       await figma.loadFontAsync(usedFont);
     const matching = styles.find(
       (style) =>
-        style.name.startsWith('Chamfer /') &&
+        style.name.startsWith('antiflex /') &&
         style.fontName.family === font.family &&
         style.fontName.style === font.style &&
         style.fontSize === node.fontSize &&
@@ -204,8 +211,8 @@ async function bindTypography(page, map) {
       (key) => Math.abs(Object.values(map[key].valuesByMode)[0] - node.fontSize) < 0.001,
     );
     if (sizeKey) bind(node, 'fontSize', sizeKey, map);
-    if (font.family === 'IBM Plex Sans' || font.family === 'IBM Plex Mono')
-      bind(node, 'fontFamily', font.family === 'IBM Plex Sans' ? 'font.sans' : 'font.mono', map);
+    if (font.family === 'DM Sans' || font.family === 'Space Mono')
+      bind(node, 'fontFamily', font.family === 'DM Sans' ? 'font.sans' : 'font.mono', map);
     mutatedNodeIds.push(node.id);
   }
 }

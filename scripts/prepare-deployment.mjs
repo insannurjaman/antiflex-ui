@@ -15,7 +15,9 @@ const allowed = (file) =>
   file.startsWith('packages/') ||
   file.startsWith('apps/' + surface + '/') ||
   file === 'scripts/build-tokens.mjs';
-const names = [...new Set(tracked.filter(allowed))].sort();
+const names = [...new Set(tracked.filter(allowed))]
+  .filter((file) => fs.existsSync(path.join(root, file)))
+  .sort();
 if (
   names.some(
     (file) =>
@@ -31,7 +33,7 @@ const files = names.map((file) => ({
 }));
 const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root }).toString().trim();
 const request = {
-  name: 'chamfer-ui-' + surface,
+  name: surface === 'docs' ? 'antiflex-ui' : 'antiflex-storybook',
   files,
   target: 'preview',
   projectSettings: {

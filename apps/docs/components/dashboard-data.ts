@@ -29,7 +29,7 @@ const customers = [
   ['Owen Hall', 'owen@grid.example', 'OH'],
 ];
 export const orders: Order[] = customers.map(([customer, email, initials], i) => ({
-  id: `CH-${1048 - i}`,
+  id: `AF-${1048 - i}`,
   customer,
   email,
   initials,

@@ -16,6 +16,6 @@ const sha256 = crypto
   .update(fs.readFileSync(path.join(artifacts, tarball)))
   .digest('hex');
 fs.writeFileSync(path.join(artifacts, 'SHA256SUMS'), `${sha256}  ${tarball}\n`);
-const notes = fs.readFileSync(path.join(root, 'docs/releases/0.1.0-alpha.1.md'), 'utf8');
+const notes = fs.readFileSync(path.join(root, 'docs/releases/' + pkg.version + '.md'), 'utf8');
 fs.writeFileSync(path.join(artifacts, 'RELEASE_NOTES.md'), notes);
 console.log(`Prepared ${tarball}, SHA256SUMS, and RELEASE_NOTES.md. No publish was performed.`);

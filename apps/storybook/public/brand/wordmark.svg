@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="48" viewBox="0 0 260 48" fill="none">
+<g transform="translate(0 4)"><path d="M10 4H30L36 10V30L30 36H10L4 30V10L10 4Z" fill="#171717"/><path fill-rule="evenodd" d="M10 30L17 10H23L30 30H24L22.5 25H17.5L16 30ZM19 20H21L20 16Z" fill="#fafafa"/></g>
+<text x="50" y="34" fill="#171717" font-family="Anybody, sans-serif" font-size="28" font-weight="600" letter-spacing="-0.7">antiflex<tspan fill="#666666" font-weight="400">/ui</tspan></text>
+</svg>

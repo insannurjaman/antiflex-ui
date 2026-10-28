@@ -2,6 +2,14 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import {
+  ToastProvider,
+  ToastViewport,
+  useToast,
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuCheckboxItem,
   AppShell,
   Badge,
   Button,
@@ -15,9 +23,16 @@ import {
   TableCell,
   TableCaption,
   Skeleton,
+  Empty,
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationButton,
   cx,
-} from '@chamfer/ui';
+  type AppShellProps,
+} from '@antiflex/ui';
 import {
+  IconDots,
   IconArrowDown,
   IconArrowUp,
   IconArrowUpRight,
@@ -47,14 +62,56 @@ const date = (s: string) =>
     day: 'numeric',
     timeZone: 'UTC',
   });
-export function Dashboard() {
+const planLabel = (plan: Order['plan'], embedded: boolean) =>
+  embedded ? (plan === 'Scale' ? 'Business' : plan === 'Growth' ? 'Pro' : plan) : plan;
+export interface DashboardProps {
+  embedded?: boolean;
+  view?: 'overview' | 'orders';
+  customerCount?: number;
+  activityContent?: React.ReactNode;
+}
+export function Dashboard({
+  embedded = false,
+  view = 'overview',
+  customerCount,
+  activityContent,
+}: DashboardProps) {
+  return (
+    <ToastProvider>
+      <DashboardContent
+        embedded={embedded}
+        view={view}
+        customerCount={customerCount}
+        activityContent={activityContent}
+      />
+      <ToastViewport label="Workspace notifications" />
+    </ToastProvider>
+  );
+}
+function DashboardFrame({ embedded, ...props }: AppShellProps & { embedded: boolean }) {
+  return embedded ? (
+    <div className="demo-dashboard">{props.children}</div>
+  ) : (
+    <AppShell {...props} />
+  );
+}
+function DashboardContent({
+  embedded,
+  view,
+  customerCount,
+  activityContent,
+}: DashboardProps & { embedded: boolean; view: 'overview' | 'orders' }) {
+  const [flagged, setFlagged] = useState<string[]>([]);
   const [query, setQuery] = useState('');
   const [status, setStatus] = useState('All statuses');
   const [sort, setSort] = useState<SortKey>('date');
   const [direction, setDirection] = useState<'ascending' | 'descending'>('descending');
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [notice, setNotice] = useState('');
+  const { toast } = useToast();
+  const setNotice = (title: string) => {
+    toast({ title, variant: 'success' });
+  };
   const [range, setRange] = useState('14');
   const [active, setActive] = useState('Overview');
   const source = useMemo(
@@ -67,7 +124,7 @@ export function Dashboard() {
         .filter(
           (o) =>
             (status === 'All statuses' || o.status === status) &&
-            `${o.customer} ${o.email} ${o.id} ${o.plan}`
+            `${o.customer} ${o.email} ${o.id} ${planLabel(o.plan, embedded)}`
               .toLowerCase()
               .includes(query.toLowerCase()),
         )
@@ -75,7 +132,7 @@ export function Dashboard() {
           const result = sort === 'amount' ? a.amount - b.amount : a[sort].localeCompare(b[sort]);
           return direction === 'ascending' ? result : -result;
         }),
-    [source, query, status, sort, direction],
+    [source, query, status, sort, direction, embedded],
   );
   const totalPages = Math.max(1, Math.ceil(filtered.length / 6));
   const currentPage = Math.min(page, totalPages);
@@ -99,12 +156,14 @@ export function Dashboard() {
   const exportCSV = () => {
     const text = [
       'Order,Customer,Plan,Status,Amount,Date',
-      ...filtered.map((o) => [o.id, o.customer, o.plan, o.status, o.amount, o.date].join(',')),
+      ...filtered.map((o) =>
+        [o.id, o.customer, planLabel(o.plan, embedded), o.status, o.amount, o.date].join(','),
+      ),
     ].join('\n');
     const url = URL.createObjectURL(new Blob([text], { type: 'text/csv;charset=utf-8;' }));
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'chamfer-sample-orders.csv';
+    a.download = 'antiflex-sample-orders.csv';
     a.click();
     URL.revokeObjectURL(url);
     setNotice(`${filtered.length} sample orders exported.`);
@@ -132,7 +191,9 @@ export function Dashboard() {
     </TableHead>
   );
   return (
-    <AppShell
+    <DashboardFrame
+      embedded={embedded}
+      navigationLayout="top"
       header={
         <>
           <Link className="workspace-name" href="/dashboard">
@@ -175,7 +236,7 @@ export function Dashboard() {
             ))}
           </nav>
           <div className="workspace-sidebar-note">
-            <span className="token-name">BUILT WITH CHAMFER</span>
+            <span className="token-name">BUILT WITH ANTIFLEX</span>
             <p>
               One system.
               <br />
@@ -200,11 +261,15 @@ export function Dashboard() {
           <div className="dashboard-context">
             Orbit workspace <span>/</span> Overview
           </div>
-          <h1>Workspace overview</h1>
-          <p>A clear view of your business, down to the details.</p>
+          <h1>{view === 'orders' ? 'Orders' : 'Workspace overview'}</h1>
+          <p>
+            {view === 'orders'
+              ? 'Review, filter, and export your sample transactions.'
+              : 'A clear view of your business, down to the details.'}
+          </p>
         </div>
         <div className="dashboard-heading-actions">
-          <label className="ch-sr-only" htmlFor="date-range">
+          <label className="af-sr-only" htmlFor="date-range">
             Date range
           </label>
           <select
@@ -224,14 +289,14 @@ export function Dashboard() {
           </Button>
         </div>
       </div>
-      <div className="metrics-grid">
+      <div className="metrics-grid" hidden={view === 'orders'}>
         {[
           ['Revenue', money(revenue), `${paid.length} paid orders`, IconChartBar],
           ['Orders', String(source.length), 'Across three plans', IconShoppingBag],
           [
             'Customers',
-            String(new Set(source.map((o) => o.email)).size),
-            'Unique sample customers',
+            String(customerCount ?? new Set(source.map((o) => o.email)).size),
+            customerCount === undefined ? 'Unique sample customers' : 'Across the sample workspace',
             IconLayoutDashboard,
           ],
           ['Pending', String(pending), 'Awaiting payment', IconActivity],
@@ -246,7 +311,7 @@ export function Dashboard() {
           </Card>
         ))}
       </div>
-      <div className="dashboard-middle">
+      <div className="dashboard-middle" hidden={view === 'orders'}>
         <Card id="revenue" padding="lg" className="revenue-panel">
           <div className="panel-heading">
             <div>
@@ -265,32 +330,36 @@ export function Dashboard() {
             </div>
             <IconActivity size={18} />
           </div>
-          <div className="activity-list">
-            {source.slice(0, 3).map((o) => (
-              <div key={o.id}>
-                <span className="activity-icon">
-                  <IconCircleCheck size={17} />
-                </span>
-                <div>
-                  <p>
-                    <strong>{o.customer.split(' ')[0]}</strong>{' '}
-                    {o.status === 'Paid'
-                      ? 'completed a payment'
-                      : o.status === 'Pending'
-                        ? 'started an order'
-                        : 'received a refund'}
-                  </p>
-                  <span>
-                    {o.plan} plan · {money(o.amount)}
-                  </span>
-                </div>
-                <time dateTime={o.date}>{date(o.date)}</time>
+          {activityContent ?? (
+            <>
+              <div className="activity-list">
+                {source.slice(0, 3).map((o) => (
+                  <div key={o.id}>
+                    <span className="activity-icon">
+                      <IconCircleCheck size={17} />
+                    </span>
+                    <div>
+                      <p>
+                        <strong>{o.customer.split(' ')[0]}</strong>{' '}
+                        {o.status === 'Paid'
+                          ? 'completed a payment'
+                          : o.status === 'Pending'
+                            ? 'started an order'
+                            : 'received a refund'}
+                      </p>
+                      <span>
+                        {planLabel(o.plan, embedded)} plan · {money(o.amount)}
+                      </span>
+                    </div>
+                    <time dateTime={o.date}>{date(o.date)}</time>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <a className="activity-link" href="#orders" onClick={() => setActive('Orders')}>
-            View all orders <IconArrowRightSmall />
-          </a>
+              <a className="activity-link" href="#orders" onClick={() => setActive('Orders')}>
+                View all orders <IconArrowRightSmall />
+              </a>
+            </>
+          )}
         </Card>
       </div>
       <section id="orders" className="orders-panel">
@@ -325,7 +394,7 @@ export function Dashboard() {
             }}
           />
           <div className="orders-toolbar-right">
-            <label className="ch-sr-only" htmlFor="status-filter">
+            <label className="af-sr-only" htmlFor="status-filter">
               Filter by status
             </label>
             <select
@@ -354,8 +423,8 @@ export function Dashboard() {
           aria-busy={loading}
         >
           <Table>
-            <TableCaption className="ch-sr-only">
-              Synthetic SaaS orders for the Chamfer UI demonstration
+            <TableCaption className="af-sr-only">
+              Synthetic SaaS orders for the antiflex/ui demonstration
             </TableCaption>
             <TableHeader>
               <TableRow>
@@ -365,13 +434,14 @@ export function Dashboard() {
                 <TableHead>Status</TableHead>
                 {sortHeader('amount', 'Amount')}
                 {sortHeader('date', 'Date')}
+                <TableHead>Actions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {loading ? (
                 Array.from({ length: 6 }, (_, i) => (
                   <TableRow key={i}>
-                    {Array.from({ length: 6 }, (_, j) => (
+                    {Array.from({ length: 7 }, (_, j) => (
                       <TableCell key={j}>
                         <Skeleton style={{ height: 16, width: j === 1 ? 120 : 60 }} />
                       </TableCell>
@@ -394,7 +464,9 @@ export function Dashboard() {
                       </div>
                     </TableCell>
                     <TableCell>
-                      <span className="plan-text text-foreground">{o.plan}</span>
+                      <span className="plan-text text-foreground">
+                        {planLabel(o.plan, embedded)}
+                      </span>
                     </TableCell>
                     <TableCell>
                       <Badge
@@ -415,15 +487,69 @@ export function Dashboard() {
                     <TableCell>
                       <span className="table-date">{date(o.date)}</span>
                     </TableCell>
+                    <TableCell>
+                      <DropdownMenu>
+                        <DropdownMenuTrigger
+                          size="sm"
+                          variant="ghost"
+                          aria-label={`Actions for ${o.id}`}
+                        >
+                          <IconDots />
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent aria-label={`Order ${o.id} actions`} align="end">
+                          <DropdownMenuCheckboxItem
+                            checked={flagged.includes(o.id)}
+                            onCheckedChange={(checked) => {
+                              setFlagged((ids) =>
+                                checked ? [...ids, o.id] : ids.filter((id) => id !== o.id),
+                              );
+                              setNotice(
+                                `${o.id} ${checked ? 'flagged for review' : 'unflagged'} in this local sample.`,
+                              );
+                            }}
+                          >
+                            Flag for review
+                          </DropdownMenuCheckboxItem>
+                          <DropdownMenuItem
+                            onSelect={() => {
+                              const url = URL.createObjectURL(
+                                new Blob(
+                                  [
+                                    JSON.stringify(
+                                      { ...o, plan: planLabel(o.plan, embedded) },
+                                      null,
+                                      2,
+                                    ),
+                                  ],
+                                  {
+                                    type: 'application/json',
+                                  },
+                                ),
+                              );
+                              const link = document.createElement('a');
+                              link.href = url;
+                              link.download = `antiflex-sample-${o.id}.json`;
+                              link.click();
+                              URL.revokeObjectURL(url);
+                              setNotice(`${o.id} sample record exported.`);
+                            }}
+                          >
+                            Download record JSON
+                          </DropdownMenuItem>
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                    </TableCell>
                   </TableRow>
                 ))
               ) : (
                 <TableRow>
-                  <TableCell colSpan={6}>
-                    <div className="empty-state">
-                      <IconSearch size={24} />
-                      <strong>No matching orders</strong>
-                      <p>Try a different name or clear the filters.</p>
+                  <TableCell colSpan={7}>
+                    <Empty
+                      className="orders-empty"
+                      icon={<IconSearch size={24} />}
+                      title="No matching orders"
+                      description="Try a different name or clear the filters."
+                    >
                       <Button
                         variant="secondary"
                         size="sm"
@@ -435,7 +561,7 @@ export function Dashboard() {
                       >
                         Clear filters
                       </Button>
-                    </div>
+                    </Empty>
                   </TableCell>
                 </TableRow>
               )}
@@ -450,39 +576,40 @@ export function Dashboard() {
                 ? `${(currentPage - 1) * 6 + 1}–${Math.min(currentPage * 6, filtered.length)} of ${filtered.length} orders`
                 : '0 orders'}
           </span>
-          <div>
-            <Button
-              variant="secondary"
-              size="sm"
-              aria-label="Previous page"
-              disabled={currentPage === 1 || loading}
-              onClick={() => setPage(currentPage - 1)}
-            >
-              <IconChevronLeft />
-            </Button>
-            <span>
-              Page {currentPage} of {totalPages}
-            </span>
-            <Button
-              variant="secondary"
-              size="sm"
-              aria-label="Next page"
-              disabled={currentPage === totalPages || loading}
-              onClick={() => setPage(currentPage + 1)}
-            >
-              <IconChevronRight />
-            </Button>
-          </div>
+          <Pagination aria-label="Orders pages">
+            <PaginationContent>
+              <PaginationItem>
+                <PaginationButton
+                  aria-label="Previous page"
+                  disabled={currentPage === 1 || loading}
+                  onClick={() => setPage(currentPage - 1)}
+                >
+                  <IconChevronLeft />
+                </PaginationButton>
+              </PaginationItem>
+              <PaginationItem>
+                <span>
+                  Page {currentPage} of {totalPages}
+                </span>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationButton
+                  aria-label="Next page"
+                  disabled={currentPage === totalPages || loading}
+                  onClick={() => setPage(currentPage + 1)}
+                >
+                  <IconChevronRight />
+                </PaginationButton>
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
         </div>
       </section>
       <div className="dashboard-footer">
         <span>Illustrative data · No live business or payment connection</span>
-        <Link href="/docs">Made with Chamfer UI ↗</Link>
+        <Link href="/docs">Made with antiflex/ui ↗</Link>
       </div>
-      <div className="ch-sr-only" role="status">
-        {notice}
-      </div>
-    </AppShell>
+    </DashboardFrame>
   );
 }
 function IconArrowRightSmall() {
@@ -519,7 +646,7 @@ function RevenueChart({ data, range }: { data: Order[]; range: string }) {
             width={barWidth}
             height={(v / max) * 130}
             rx="2"
-            fill="var(--ch-semantic-accent)"
+            fill="var(--af-semantic-accent)"
             opacity={i === values.length - 1 ? 1 : 0.55}
           />
         ))}

@@ -1,11 +1,12 @@
 {
-  "name": "@chamfer/tokens",
+  "name": "@antiflex/tokens",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "exports": {
     "./css": "./src/tokens.css",
     "./tailwind": "./src/tailwind.css",
-    "./json": "./src/tokens.json"
+    "./json": "./src/tokens.json",
+    "./foundations": "./src/foundations.ts"
   }
 }
