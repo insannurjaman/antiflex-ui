@@ -1,0 +1,191 @@
+{
+  "milestone": "antiflex-namespace",
+  "date": "2026-10-28",
+  "source": {
+    "commit": "7f3f6cb8d4200c41c750cae4a225003fd8e54274",
+    "repository": "https://github.com/insannurjaman/antiflex-ui",
+    "pushedTo": "main"
+  },
+  "npm": {
+    "name": "antiflex-ui",
+    "version": "0.1.0-alpha.2",
+    "dist.integrity": "sha512-+ltXLvvIIUkqUxPERbEIjSzm5tbnc/ZicuSgftf8LFLiwy+/GxY/pxAKJ+f8MGzAW0+oER5WS5Ibt2Y4oh+52Q==",
+    "dist.tarball": "https://registry.npmjs.org/antiflex-ui/-/antiflex-ui-0.1.0-alpha.2.tgz",
+    "sha256": "ba9c63d87d4e47bfdb9b9db13a1ccfb6926f89ed340b53d86f08d1e26b18e69d",
+    "matchesTestedTarball": true,
+    "published": true,
+    "tag": "alpha"
+  },
+  "deployments": [
+    {
+      "id": "dpl_RJYHLjVoV6w53ztfFZRgB6zKfBeN",
+      "name": "antiflex-ui",
+      "state": "READY",
+      "url": "https://antiflex-py5ezov0w-insans-projects-1a9cbf77.vercel.app",
+      "target": "production",
+      "commit": "7f3f6cb8d4200c41c750cae4a225003fd8e54274"
+    },
+    {
+      "id": "dpl_DNfVGXb7wvSNCPiVUZHtRfxJKoPa",
+      "name": "antiflex-storybook",
+      "state": "READY",
+      "url": "https://antiflex-storybook-5c2hd9ajx-insans-projects-1a9cbf77.vercel.app",
+      "target": "production",
+      "commit": "7f3f6cb8d4200c41c750cae4a225003fd8e54274"
+    }
+  ],
+  "checks": {
+    "builds": ["ui", "docs", "storybook"],
+    "localBrowserScenarios": 292,
+    "installerUnitTests": 19,
+    "postCopyBrowserChecks": 6,
+    "hostedBrowserChecks": 30,
+    "browsers": ["Chromium", "WebKit"],
+    "consumerCatalog": {
+      "packed": 50,
+      "publishedRegistry": 50
+    },
+    "tokenValuesPreserved": true,
+    "routes": [
+      {
+        "route": "/",
+        "status": 200
+      },
+      {
+        "route": "/docs",
+        "status": 200
+      },
+      {
+        "route": "/docs/installation",
+        "status": 200
+      },
+      {
+        "route": "/docs/components",
+        "status": 200
+      },
+      {
+        "route": "/examples",
+        "status": 200
+      },
+      {
+        "route": "/dashboard",
+        "status": 200
+      },
+      {
+        "route": "/demo/overview",
+        "status": 200
+      },
+      {
+        "route": "/demo/analytics",
+        "status": 200
+      },
+      {
+        "route": "/demo/orders",
+        "status": 200
+      },
+      {
+        "route": "/demo/customers",
+        "status": 200
+      },
+      {
+        "route": "/demo/projects",
+        "status": 200
+      },
+      {
+        "route": "/demo/activity",
+        "status": 200
+      },
+      {
+        "route": "/demo/team",
+        "status": 200
+      },
+      {
+        "route": "/demo/settings",
+        "status": 200
+      },
+      {
+        "route": "/demo/profile",
+        "status": 200
+      },
+      {
+        "route": "/demo/billing",
+        "status": 200
+      },
+      {
+        "route": "/demo/checkout",
+        "status": 200
+      },
+      {
+        "route": "/demo/sign-in",
+        "status": 200
+      },
+      {
+        "route": "/demo/onboarding",
+        "status": 200
+      }
+    ],
+    "download": {
+      "url": "https://antiflex-ui.vercel.app/downloads/antiflex-ui-0.1.0-alpha.2.tgz",
+      "bytes": 82682,
+      "sha256": "ba9c63d87d4e47bfdb9b9db13a1ccfb6926f89ed340b53d86f08d1e26b18e69d"
+    },
+    "storybook": {
+      "stories": 304
+    },
+    "analytics": {
+      "docs": {
+        "loaders": [
+          {
+            "url": "/623ff873efc6b419/script.js",
+            "status": 200
+          }
+        ],
+        "queuedPagePaths": ["/docs", "/docs/foundations"],
+        "localTransportStub": false,
+        "requests": [],
+        "pageErrors": [],
+        "verified": true,
+        "collectionNote": "Vercel excludes navigator.webdriver/Headless clients. Real-browser ingestion is verified separately through project counts."
+      },
+      "storybook": {
+        "loaders": [
+          {
+            "url": "/_vercel/insights/script.js",
+            "status": 200
+          },
+          {
+            "url": "/_vercel/insights/script.js",
+            "status": 200
+          }
+        ],
+        "queuedPagePaths": ["/story/components-tooltip--open"],
+        "managerPagePaths": [
+          "/story/components-button--primary",
+          "/story/components-badge--neutral"
+        ],
+        "localTransportStub": false,
+        "requests": [],
+        "pageErrors": [],
+        "verified": true,
+        "collectionNote": "Vercel excludes navigator.webdriver/Headless clients. Real-browser ingestion is verified separately through project counts."
+      }
+    }
+  },
+  "figma": {
+    "fileKey": "H2vHC7eByauNSQL06qtO3o",
+    "renamedCollections": 3,
+    "renamedTextStyles": 55,
+    "webSyntaxEntries": 536,
+    "valuesAndBindingsPreserved": true,
+    "evidence": "assets/figma/antiflex-namespace-state.json"
+  },
+  "visualReview": {
+    "verdict": "ship",
+    "report": "design/research/antiflex-namespace-finish-review.md",
+    "responsiveWidths": [1440, 768, 390],
+    "themes": ["light", "dark"]
+  },
+  "remaining": {
+    "previousNpmPackageNotice": "Waiting for separate user security-key approval; old package is retained."
+  }
+}
