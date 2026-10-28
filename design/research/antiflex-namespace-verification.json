@@ -14,7 +14,17 @@
     "sha256": "ba9c63d87d4e47bfdb9b9db13a1ccfb6926f89ed340b53d86f08d1e26b18e69d",
     "matchesTestedTarball": true,
     "published": true,
-    "tag": "alpha"
+    "tag": "alpha",
+    "previousPackage": {
+      "name": "chamfer-ui",
+      "deprecated": true,
+      "message": "Moved to antiflex-ui. Install antiflex-ui@0.1.0-alpha.2.",
+      "verifiedVia": [
+        "npm registry",
+        "public npm package page"
+      ],
+      "packageRetained": true
+    }
   },
   "deployments": [
     {
@@ -35,12 +45,19 @@
     }
   ],
   "checks": {
-    "builds": ["ui", "docs", "storybook"],
+    "builds": [
+      "ui",
+      "docs",
+      "storybook"
+    ],
     "localBrowserScenarios": 292,
     "installerUnitTests": 19,
     "postCopyBrowserChecks": 6,
     "hostedBrowserChecks": 30,
-    "browsers": ["Chromium", "WebKit"],
+    "browsers": [
+      "Chromium",
+      "WebKit"
+    ],
     "consumerCatalog": {
       "packed": 50,
       "publishedRegistry": 50
@@ -140,7 +157,10 @@
             "status": 200
           }
         ],
-        "queuedPagePaths": ["/docs", "/docs/foundations"],
+        "queuedPagePaths": [
+          "/docs",
+          "/docs/foundations"
+        ],
         "localTransportStub": false,
         "requests": [],
         "pageErrors": [],
@@ -158,7 +178,9 @@
             "status": 200
           }
         ],
-        "queuedPagePaths": ["/story/components-tooltip--open"],
+        "queuedPagePaths": [
+          "/story/components-tooltip--open"
+        ],
         "managerPagePaths": [
           "/story/components-button--primary",
           "/story/components-badge--neutral"
@@ -182,10 +204,15 @@
   "visualReview": {
     "verdict": "ship",
     "report": "design/research/antiflex-namespace-finish-review.md",
-    "responsiveWidths": [1440, 768, 390],
-    "themes": ["light", "dark"]
+    "responsiveWidths": [
+      1440,
+      768,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ]
   },
-  "remaining": {
-    "previousNpmPackageNotice": "Waiting for separate user security-key approval; old package is retained."
-  }
+  "remaining": {}
 }
